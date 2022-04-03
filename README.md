@@ -4,4 +4,4 @@
 
 Slika ER-diagrama, na podlagi katerega bomo oblikovale našo podatkovno bazo.
 
-![Er diagram] (er_diagram.png)
+![Er diagram](er_diagram.png)
