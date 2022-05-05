@@ -18,7 +18,7 @@ class Route(bottle.Route):
 
 def template(*largs, **kwargs):
     """
-    Izpis predloge s podajanjem funkcije url.
+    Izpis predloge s podajanjem funkcije url
     """
     return bottle.template(*largs, **kwargs, url=bottle.url)
 
