@@ -9,35 +9,33 @@ import csv
 
 def ustvari_tabelo():
     cur.execute("""
-    CREATE TABLE oseba (
-        emso SERIAL UNIQUE PRIMARY KEY,
+    CREATE TABLE komitent (
+        id INTEGER REFERENCES oseba(id),
         ime TEXT NOT NULL,
         priimek TEXT NOT NULL,
-        email TEXT NOT NULL unique,
-        naslov TEXT NOT NULL,
-        regija TEXT NOT NULL,
-        telefon INTEGER         
+        kupuje_nepremicnino INTEGER REFERENCES nepremicnina(id),
+        njegov_agent INTEGER REFERENCES agent(id)
     );
     """) 
     conn.commit()
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE oseba;
+        DROP TABLE komitent;
     """)
     conn.commit()
 
 def uvozi_podatke():
-    with open("podatki/osebe.csv", encoding="utf-16", errors='ignore') as f:
+    with open("podatki/komitent.csv", encoding="utf-16", errors='ignore') as f:
         rd = csv.reader(f)
         next(rd) # izpusti naslovno vrstico
         for r in rd:
             cur.execute("""
-                INSERT INTO oseba
-                (emso,ime,priimek,email,naslov,regija,telefon)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                INSERT INTO komitent
+                (id,ime,priimek, kupuje_nepremicnino, njegov_agent)
+                VALUES (%s, %s, %s, %s, %s)
             """, r)
-            print("Uvožena oseba %s z ID-jem %s" % (r[1], r[0]))
+            print("Uvožen komitent %s z ID-jem %s" % (r[1], r[0]))
     conn.commit()
 
 
