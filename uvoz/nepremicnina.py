@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import uvoz.auth as auth
+import auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -46,4 +46,4 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
 #pobrisi_tabelo()
 #ustvari_tabelo()
-uvozi_podatke()
+#uvozi_podatke()
