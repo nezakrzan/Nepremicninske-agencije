@@ -9,41 +9,39 @@ import csv
 
 def ustvari_tabelo():
     cur.execute("""
-    CREATE TABLE oseba (
-        emso SERIAL UNIQUE PRIMARY KEY,
-        ime TEXT NOT NULL,
-        priimek TEXT NOT NULL,
-        email TEXT NOT NULL unique,
-        naslov TEXT NOT NULL,
-        regija TEXT NOT NULL,
-        telefon INTEGER         
-    );
-    """) 
+        CREATE TABLE agencija (
+            id SERIAL UNIQUE PRIMARY KEY NOT NULL,
+            ime TEXT NOT NULL,
+            mesto TEXT NOT NULL,
+            postna_st INTEGER REFERENCES posta(postna_stevilka)
+            );
+    """)
     conn.commit()
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE oseba;
+        DROP TABLE agencija;
     """)
     conn.commit()
 
 def uvozi_podatke():
-    with open("podatki/osebe.csv", encoding="utf-16", errors='ignore') as f:
+    with open("podatki/agencija.csv", encoding="utf-16", errors='ignore') as f:
         rd = csv.reader(f)
         next(rd) # izpusti naslovno vrstico
         for r in rd:
             cur.execute("""
-                INSERT INTO oseba
-                (emso,ime,priimek,email,naslov,regija,telefon)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-            """, r)
-            print("Uvožena oseba %s z ID-jem %s" % (r[1], r[0]))
+                INSERT INTO agencija
+                (id,ime,mesto, postna_st)
+                VALUES (%s, %s, %s, %s)
+                """, r)
+            rid, = cur.fetchone()
+            print("Uvožena agencija %s z ID-jem %s" % (r[1], r[0]))
     conn.commit()
 
 
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-# pobrisi_tabelo()
-# ustvari_tabelo()
+#ustvari_tabelo()
 uvozi_podatke()
+
