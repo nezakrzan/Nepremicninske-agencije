@@ -1,1001 +1,1001 @@
-id,velikost,cena,ulica,hisna_stevilka,postna_stevilka,leto_izgradnje,datum_nakupa,kupuje_agencija
-1,72,422893,8 Mallard Alley,492,572,1998,11/1/2021,Schoen Inc
-2,59,271118,86493 Gale Avenue,0368,474,2003,11/10/2021,Abernathy-Quitzon
-3,89,463379,42069 Ridgeview Junction,28,209,2006,4/9/2022,"Fahey, Ledner and Dooley"
-4,75,961542,45 New Castle Road,89,206,2007,12/21/2021,Kunze Inc
-5,49,676609,66 Lawn Lane,458,381,2007,10/6/2021,Emard-Rohan
-6,57,771075,8 Onsgard Court,89,313,2007,5/14/2021,Gorczany LLC
-7,78,794398,0 Continental Crossing,925,846,2002,8/6/2021,"Koch, Morar and Kuhn"
-8,41,488725,41 Porter Circle,76,984,1992,12/29/2021,Gorczany LLC
-9,57,403033,75 Spohn Center,1581,745,2012,2/24/2022,Wisozk Group
-10,45,483478,826 Porter Drive,74,150,2004,1/14/2022,O'Hara-Wilkinson
-11,61,537515,05 Bay Pass,46983,809,2007,3/6/2022,"Heaney, Upton and Ferry"
-12,98,611907,597 Susan Road,775,380,2002,10/10/2021,"Schinner, Schneider and Runolfsson"
-13,93,707173,978 Pepper Wood Center,97,569,1997,10/19/2021,"Treutel, Senger and Murphy"
-14,82,968474,27774 Crowley Pass,8328,436,2012,12/26/2021,"Schinner, Schneider and Runolfsson"
-15,42,289221,05907 Sloan Way,08,872,2009,1/29/2022,Wisozk Group
-16,47,398825,3 Pierstorff Trail,40666,464,2003,5/13/2021,"Collier, Zulauf and Stamm"
-17,82,772985,82 Valley Edge Crossing,3,181,1991,2/23/2022,Paucek Inc
-18,89,561765,64386 Holy Cross Avenue,0,526,2009,6/20/2021,Keeling and Sons
-19,75,678430,679 Northridge Avenue,70015,393,2000,4/15/2022,"Fahey, Ledner and Dooley"
-20,77,595304,66 Maple Drive,26,309,1990,1/14/2022,Wisozk Group
-21,53,635717,88 Prentice Drive,4280,551,2004,8/8/2021,Herzog-Senger
-22,95,711379,303 Sachs Street,1814,461,2001,11/18/2021,"Collier, Zulauf and Stamm"
-23,65,241615,99 Thompson Avenue,16635,628,2011,9/28/2021,"Lesch, Kihn and Barrows"
-24,63,357797,46506 Fair Oaks Street,43756,241,2009,5/7/2021,O'Conner Group
-25,97,201670,2 Shasta Junction,3,79,1997,6/4/2021,Zieme-Denesik
-26,53,852686,0 Chive Point,75,426,1993,6/30/2021,"Crooks, Hane and Lindgren"
-27,58,558782,39706 Ridgeview Road,2,374,2007,9/27/2021,"Treutel, Senger and Murphy"
-28,52,943845,02 Valley Edge Center,6,701,2006,3/23/2022,Gerlach Group
-29,71,854228,79 Rutledge Terrace,25385,586,1994,10/15/2021,Paucek Inc
-30,55,491835,709 Dayton Trail,41929,114,1993,10/22/2021,O'Conner Group
-31,87,210992,3 Carpenter Parkway,804,327,2007,8/17/2021,"Rohan, Gleason and Treutel"
-32,84,503687,2206 Hazelcrest Way,05622,918,2004,5/8/2021,Rohan-Brakus
-33,43,200446,195 Russell Junction,60510,511,2007,6/11/2021,"Shanahan, Gleason and Hahn"
-34,89,223557,97101 Gina Junction,1,10,2003,11/30/2021,Kunze Inc
-35,76,562279,01749 Arrowood Drive,00,835,1997,2/25/2022,Gerlach Group
-36,93,510412,90 Everett Plaza,485,12,2010,3/13/2022,Gorczany LLC
-37,44,330055,00719 Rockefeller Drive,6,631,1993,6/16/2021,Morar and Sons
-38,84,611309,4 Dennis Plaza,197,733,2006,9/27/2021,Zieme-Denesik
-39,77,458907,36 Ronald Regan Crossing,8598,945,2006,12/24/2021,Mueller Group
-40,90,735641,54 Swallow Pass,6,960,2012,10/14/2021,Paucek Inc
-41,87,343644,39515 Brown Street,86236,106,2005,3/29/2022,"Rohan, Gleason and Treutel"
-42,86,979208,397 Caliangt Way,0,716,2004,2/23/2022,"Langworth, Murphy and Balistreri"
-43,66,297992,7627 Melody Park,2603,421,1995,2/2/2022,Abernathy-Quitzon
-44,62,448529,2 Meadow Valley Terrace,7515,651,1993,12/16/2021,"Fahey, Ledner and Dooley"
-45,47,861462,662 Melrose Court,48,74,2011,6/9/2021,Mueller Group
-46,90,396790,4 Sachs Hill,5,836,2012,7/3/2021,Morar and Sons
-47,77,759249,11925 Maryland Avenue,335,998,2001,8/17/2021,Emard-Rohan
-48,81,854086,758 Northridge Park,317,382,2001,12/28/2021,Mueller Group
-49,84,489507,2127 Heffernan Terrace,2,103,2007,8/31/2021,"Heaney, Upton and Ferry"
-50,46,692790,78 Sage Parkway,9,662,2000,10/1/2021,"Heaney, Upton and Ferry"
-51,99,967533,3 Main Crossing,87,100,2007,5/2/2022,"Treutel, Senger and Murphy"
-52,62,414642,3898 Messerschmidt Drive,6139,911,2012,4/2/2022,"Koch, Morar and Kuhn"
-53,93,780233,3 Pond Parkway,293,487,1991,2/9/2022,"Koch, Morar and Kuhn"
-54,50,814108,403 Crownhardt Crossing,895,429,2006,12/6/2021,Keeling and Sons
-55,63,926564,8 Rigney Court,056,604,2006,12/3/2021,Herzog-Senger
-56,79,340103,6 Portage Alley,0911,791,1996,6/28/2021,Paucek Inc
-57,60,357423,9154 Moland Circle,70411,845,1989,7/17/2021,"Langworth, Murphy and Balistreri"
-58,83,827892,5658 Bartillon Avenue,1264,678,1994,3/2/2022,Gorczany LLC
-59,77,984015,10 Village Road,4,508,2010,7/27/2021,O'Hara-Wilkinson
-60,66,928928,92 Anthes Street,80,793,2012,2/8/2022,Morar and Sons
-61,90,587402,18733 Northland Lane,62,325,2011,5/9/2021,Mueller Group
-62,74,570838,1 Sullivan Place,3,6,2008,11/5/2021,Gorczany LLC
-63,75,845302,2109 Granby Alley,36233,213,2009,9/28/2021,"Collier, Zulauf and Stamm"
-64,41,616282,41 Old Shore Junction,1481,823,2008,1/17/2022,Morar and Sons
-65,71,827253,918 Toban Court,71275,833,2005,5/6/2021,"Shanahan, Gleason and Hahn"
-66,100,725343,33569 Mcguire Road,894,498,2005,9/18/2021,"Lesch, Kihn and Barrows"
-67,94,401917,35 Hudson Place,146,616,2006,8/18/2021,"Schinner, Schneider and Runolfsson"
-68,88,781866,4 Chinook Way,3044,906,1999,6/3/2021,Rohan-Brakus
-69,77,869481,28 Dryden Court,806,117,1994,6/22/2021,"Dickinson, Toy and Trantow"
-70,87,811334,6308 Atwood Road,2,417,1994,6/17/2021,O'Conner Group
-71,66,358949,947 Anthes Junction,58,647,2008,10/20/2021,Gerlach Group
-72,76,629008,86556 Union Court,3,260,2002,12/26/2021,O'Conner Group
-73,82,931422,52053 Longview Pass,96435,134,2007,3/23/2022,Rohan-Brakus
-74,67,390222,5 Jenifer Hill,2,754,2003,11/4/2021,Schoen Inc
-75,81,325311,2 Utah Trail,59006,963,2003,9/24/2021,"Heaney, Upton and Ferry"
-76,66,285267,00487 Welch Street,43458,335,2009,1/10/2022,"Lesch, Kihn and Barrows"
-77,40,725785,01872 Farragut Lane,2,874,1999,7/23/2021,Mueller Group
-78,93,291662,98 Shopko Street,8949,544,1995,4/10/2022,Gerlach Group
-79,46,563520,450 Loftsgordon Junction,52,603,2008,6/19/2021,"Shanahan, Gleason and Hahn"
-80,79,618730,83237 Shopko Point,91908,346,1993,8/13/2021,Herzog-Senger
-81,60,522144,5 4th Crossing,25956,691,1995,6/11/2021,"Fahey, Ledner and Dooley"
-82,90,295764,88 Grover Terrace,3386,57,2012,11/15/2021,"Dickinson, Toy and Trantow"
-83,97,519324,6 Lerdahl Terrace,706,268,1997,12/16/2021,"Collier, Zulauf and Stamm"
-84,61,255736,55 Meadow Vale Point,414,408,2011,3/22/2022,"Rohan, Gleason and Treutel"
-85,61,553327,101 Tomscot Alley,6,720,2005,4/27/2022,"Collier, Zulauf and Stamm"
-86,43,365633,1 Vermont Court,9910,158,2004,5/25/2021,Wisozk Group
-87,64,577829,70 Clemons Lane,7029,988,2008,3/23/2022,"Fahey, Ledner and Dooley"
-88,63,773499,40 Village Green Circle,92886,763,1998,1/18/2022,"Dickinson, Toy and Trantow"
-89,56,749824,93 Marcy Hill,4,94,2009,12/12/2021,Zieme-Denesik
-90,73,963648,74498 Holy Cross Place,76,438,2001,7/6/2021,Gerlach Group
-91,76,328969,235 Dexter Avenue,295,627,2002,5/12/2021,"Dickinson, Toy and Trantow"
-92,54,714464,1829 Heffernan Circle,145,66,2010,10/20/2021,Gorczany LLC
-93,52,867630,22 Onsgard Place,4,395,2011,8/28/2021,Kshlerin Inc
-94,89,475831,31 Bluestem Plaza,1825,540,2005,8/17/2021,"Dickinson, Toy and Trantow"
-95,65,932708,64048 Bobwhite Pass,4,630,1988,12/31/2021,Morar and Sons
-96,65,538098,129 Del Mar Street,036,133,1995,5/26/2021,Wisozk Group
-97,43,913345,21766 Del Sol Hill,73,889,2009,11/16/2021,Herzog-Senger
-98,58,952639,6 Manley Terrace,446,141,2010,2/2/2022,"Crooks, Hane and Lindgren"
-99,57,251442,1 Walton Street,538,751,1995,2/17/2022,Abernathy-Quitzon
-100,45,697960,5 Shoshone Plaza,27666,562,2012,6/1/2021,Gerlach Group
-101,94,685015,3619 Daystar Point,7,299,2006,1/28/2022,"Crooks, Hane and Lindgren"
-102,57,829461,084 Pine View Point,3,726,2003,6/24/2021,"Fahey, Ledner and Dooley"
-103,73,959568,1 Dwight Terrace,039,970,2010,3/31/2022,Abernathy-Quitzon
-104,100,361669,72792 Briar Crest Way,0640,197,2005,4/22/2022,Kunze Inc
-105,94,881329,593 Kinsman Road,36391,553,2010,5/5/2022,"Dickinson, Toy and Trantow"
-106,55,838220,49 Sugar Circle,88,208,2010,1/30/2022,"Collier, Zulauf and Stamm"
-107,79,245782,34423 Mitchell Parkway,69,330,1991,7/24/2021,"Crooks, Hane and Lindgren"
-108,69,758191,53022 Badeau Hill,5095,555,2013,5/16/2021,"Collier, Zulauf and Stamm"
-109,91,904123,3096 Di Loreto Road,6699,283,1977,4/15/2022,Mueller Group
-110,43,764152,1 Park Meadow Place,0,905,2008,5/25/2021,Conroy-Lemke
-111,71,254603,1796 Delladonna Avenue,4,469,2008,2/13/2022,O'Conner Group
-112,89,999034,06 Helena Road,109,351,2004,1/14/2022,"Schinner, Schneider and Runolfsson"
-113,42,586174,4 Fuller Lane,8241,912,2009,11/22/2021,"Lesch, Kihn and Barrows"
-114,63,562694,93550 Butterfield Road,31481,915,2009,4/12/2022,Paucek Inc
-115,46,708011,6 Barby Place,01383,907,2012,1/21/2022,"Crooks, Hane and Lindgren"
-116,62,823181,0187 Cottonwood Plaza,15564,431,2004,9/14/2021,"Heaney, Upton and Ferry"
-117,41,770273,0042 Prairieview Way,54382,302,1995,5/8/2021,Zieme-Denesik
-118,66,880633,91 Derek Junction,0,345,2005,12/30/2021,Morar and Sons
-119,61,773214,831 Crest Line Trail,24928,704,2008,12/28/2021,"Crooks, Hane and Lindgren"
-120,48,691118,2300 Lillian Parkway,1,454,2008,3/26/2022,Conroy-Lemke
-121,69,563954,0 Mitchell Alley,9307,194,2006,5/12/2021,Rohan-Brakus
-122,81,659310,78 Oakridge Pass,118,773,1988,8/22/2021,Emard-Rohan
-123,51,293380,1285 Mendota Pass,99729,15,2004,12/17/2021,"Schinner, Schneider and Runolfsson"
-124,43,332913,70627 Walton Place,437,76,1999,8/8/2021,Morar and Sons
-125,86,654200,9 Stoughton Drive,3675,116,2010,10/10/2021,"Rohan, Gleason and Treutel"
-126,95,606148,959 Fordem Junction,1,472,1996,11/28/2021,Kshlerin Inc
-127,57,900407,4474 Muir Place,652,494,1996,1/26/2022,"Shanahan, Gleason and Hahn"
-128,47,212562,1919 Tomscot Road,3,311,2012,2/6/2022,Herzog-Senger
-129,86,273550,4 Dawn Center,863,447,2007,7/12/2021,"Crooks, Hane and Lindgren"
-130,72,727140,97606 Mandrake Place,4,370,1996,5/4/2022,Morar and Sons
-131,85,280103,3775 Rusk Trail,4,227,1992,5/3/2022,Kshlerin Inc
-132,54,260112,19011 Oriole Parkway,17738,977,2008,9/30/2021,Emard-Rohan
-133,46,966809,888 Tennyson Hill,90258,684,2004,4/11/2022,Conroy-Lemke
-134,78,453769,1 Stoughton Parkway,9442,626,2004,12/3/2021,Rohan-Brakus
-135,93,986200,05 Laurel Way,7569,881,2005,7/25/2021,Herzog-Senger
-136,59,348056,6804 Hoepker Road,3,254,2006,2/22/2022,Kshlerin Inc
-137,98,236700,78 Jana Road,1,466,1987,4/5/2022,"Fahey, Ledner and Dooley"
-138,95,331041,68157 Meadow Vale Terrace,89,243,1994,3/30/2022,"Koch, Morar and Kuhn"
-139,42,362754,484 Novick Parkway,39685,282,2003,2/26/2022,O'Conner Group
-140,78,455926,271 Clyde Gallagher Street,60168,638,1992,7/13/2021,Kunze Inc
-141,99,523251,18708 Ilene Court,4770,892,1986,10/14/2021,"Koch, Morar and Kuhn"
-142,41,512620,78483 Loftsgordon Circle,052,822,1996,7/7/2021,Kunze Inc
-143,41,343959,5003 Walton Parkway,4,947,2009,8/18/2021,"Shanahan, Gleason and Hahn"
-144,59,873572,3327 Pennsylvania Plaza,701,453,1999,10/21/2021,Kunze Inc
-145,51,956026,7787 Chinook Circle,3684,71,2009,1/18/2022,"Collier, Zulauf and Stamm"
-146,60,359447,9 Amoth Drive,913,297,2011,5/22/2021,Kunze Inc
-147,86,344636,218 Almo Plaza,20198,711,2007,1/21/2022,"Crooks, Hane and Lindgren"
-148,74,936278,131 Summit Place,079,927,2002,10/16/2021,Morar and Sons
-149,78,559373,4 Ohio Parkway,92457,245,1994,7/28/2021,"Dickinson, Toy and Trantow"
-150,67,869824,853 Redwing Way,909,582,1992,1/20/2022,"Rohan, Gleason and Treutel"
-151,47,347392,2 Namekagon Lane,49145,148,1995,11/25/2021,Conroy-Lemke
-152,84,798451,6 Derek Junction,8488,601,1997,3/6/2022,Kunze Inc
-153,87,826039,1442 Vidon Hill,74282,623,1995,4/12/2022,Kshlerin Inc
-154,85,401812,78 Main Trail,1,663,1995,6/20/2021,Gorczany LLC
-155,63,290204,9697 Stone Corner Street,64706,799,2009,7/11/2021,Kunze Inc
-156,45,444578,872 School Trail,56895,256,1992,11/27/2021,"Collier, Zulauf and Stamm"
-157,66,523585,48479 Mifflin Crossing,7,396,2006,4/15/2022,"Lesch, Kihn and Barrows"
-158,68,367626,3 Hooker Pass,85472,772,1989,4/11/2022,Gorczany LLC
-159,62,325428,34 Schiller Avenue,53647,368,1998,10/6/2021,Keeling and Sons
-160,44,713857,82 Eliot Plaza,41,224,2006,8/26/2021,Keeling and Sons
-161,96,875626,6481 Bunting Alley,112,172,2005,9/17/2021,O'Hara-Wilkinson
-162,50,906949,35 Logan Avenue,4825,439,2011,10/25/2021,Keeling and Sons
-163,64,717364,368 Harper Plaza,1,870,1994,4/21/2022,Rohan-Brakus
-164,91,261089,09 Utah Parkway,23637,157,2008,8/31/2021,"Langworth, Murphy and Balistreri"
-165,82,977467,9589 Hallows Parkway,5596,758,2007,3/12/2022,"Schinner, Schneider and Runolfsson"
-166,52,313235,85597 Division Court,32,886,2006,12/15/2021,Paucek Inc
-167,48,247182,2290 Grasskamp Lane,03599,187,1996,3/14/2022,Morar and Sons
-168,87,821614,23 Kennedy Junction,7,294,1995,12/23/2021,"Dickinson, Toy and Trantow"
-169,87,458199,63 Garrison Avenue,1,985,1994,5/12/2021,"Treutel, Senger and Murphy"
-170,60,717465,01 Waywood Circle,1412,771,1993,7/18/2021,"Dickinson, Toy and Trantow"
-171,47,266011,3 Melvin Point,20447,409,1992,5/19/2021,"Schinner, Schneider and Runolfsson"
-172,63,820624,0 Laurel Parkway,9897,332,1995,10/15/2021,"Koch, Morar and Kuhn"
-173,76,513183,51 Katie Hill,9,458,1992,1/28/2022,Rohan-Brakus
-174,94,264582,306 Oriole Place,81,1,2001,9/11/2021,"Collier, Zulauf and Stamm"
-175,73,995509,8762 South Point,89,975,2010,10/4/2021,O'Conner Group
-176,63,782616,9360 Maple Wood Terrace,4112,807,2001,7/4/2021,"Crooks, Hane and Lindgren"
-177,44,363345,88141 Basil Junction,29087,748,2012,11/5/2021,"Fahey, Ledner and Dooley"
-178,77,788223,88 Kenwood Junction,662,672,1994,2/4/2022,"Lesch, Kihn and Barrows"
-179,65,733858,6 Golf View Place,7,407,2005,12/7/2021,Herzog-Senger
-180,76,694380,7 Packers Place,461,399,1994,10/20/2021,Emard-Rohan
-181,87,579444,65652 Novick Plaza,84920,537,1992,11/22/2021,Emard-Rohan
-182,86,642832,79981 Dwight Plaza,56,855,1992,12/4/2021,Gorczany LLC
-183,52,296712,26 Farragut Plaza,69,931,1994,5/15/2021,"Heaney, Upton and Ferry"
-184,62,787885,562 Sunbrook Road,4,579,1970,10/8/2021,"Collier, Zulauf and Stamm"
-185,98,768293,78 Russell Crossing,055,548,2005,10/9/2021,"Collier, Zulauf and Stamm"
-186,44,247082,613 Fulton Junction,49273,334,1996,8/28/2021,Mueller Group
-187,90,620776,1 Jenifer Park,6882,598,2000,10/8/2021,Wisozk Group
-188,64,460524,12 Riverside Hill,92930,682,2003,7/31/2021,O'Hara-Wilkinson
-189,94,482367,4046 Sutherland Place,54094,528,2004,4/1/2022,"Koch, Morar and Kuhn"
-190,57,977681,614 Hagan Street,45065,718,2007,3/26/2022,"Fahey, Ledner and Dooley"
-191,71,327405,0484 Blackbird Drive,5,767,2011,3/15/2022,Herzog-Senger
-192,72,523855,21004 Mockingbird Street,1,344,1993,11/26/2021,Gerlach Group
-193,71,211094,85582 Claremont Street,3,337,2010,5/9/2021,"Koch, Morar and Kuhn"
-194,75,245574,48258 Bellgrove Junction,2096,465,1994,1/19/2022,Morar and Sons
-195,69,820339,9381 Claremont Place,72,153,2001,3/7/2022,"Schinner, Schneider and Runolfsson"
-196,82,384915,51921 Hintze Center,5157,959,1999,5/12/2021,"Fahey, Ledner and Dooley"
-197,86,579558,3206 Little Fleur Drive,2330,39,2005,8/17/2021,Emard-Rohan
-198,77,999359,8 Loeprich Point,42,736,2010,6/22/2021,Conroy-Lemke
-199,81,435486,987 Menomonie Trail,5,583,2007,1/25/2022,O'Hara-Wilkinson
-200,97,294877,2862 Johnson Center,5984,120,2005,4/6/2022,"Schinner, Schneider and Runolfsson"
-201,70,353623,30 East Center,09661,165,2012,6/28/2021,Paucek Inc
-202,52,405160,3953 Melrose Point,82,614,2005,10/29/2021,Emard-Rohan
-203,53,965435,094 Clarendon Point,2,373,2002,11/14/2021,Keeling and Sons
-204,41,908490,19062 Gulseth Way,63741,338,1994,4/3/2022,"Dickinson, Toy and Trantow"
-205,55,617354,98635 Loeprich Hill,8485,358,2006,2/16/2022,"Lesch, Kihn and Barrows"
-206,90,942873,056 South Court,34673,499,2007,9/8/2021,Mueller Group
-207,61,862722,8089 Victoria Avenue,63,441,1965,6/19/2021,Gerlach Group
-208,47,493661,56212 Truax Place,34722,953,2010,12/6/2021,Abernathy-Quitzon
-209,48,924681,31 Merchant Parkway,6,869,2001,9/9/2021,"Koch, Morar and Kuhn"
-210,93,586779,5 Trailsway Trail,44,159,2008,4/26/2022,"Koch, Morar and Kuhn"
-211,96,264983,17 Miller Lane,08210,298,2003,4/14/2022,O'Conner Group
-212,52,873819,3 Montana Street,72,33,1998,2/2/2022,Paucek Inc
-213,69,428788,245 Marquette Street,43,916,2005,9/6/2021,Schoen Inc
-214,63,654466,044 Bay Way,8228,644,2000,9/10/2021,"Koch, Morar and Kuhn"
-215,68,636477,803 Harper Point,02,515,2011,12/6/2021,Kunze Inc
-216,90,739567,6531 Green Circle,487,897,2004,11/1/2021,Herzog-Senger
-217,82,334468,60 Garrison Street,46,156,2003,5/13/2021,Gerlach Group
-218,64,680997,22249 Hanson Street,9,244,1999,12/1/2021,"Shanahan, Gleason and Hahn"
-219,96,321143,22 Main Trail,03606,490,2006,12/24/2021,Kunze Inc
-220,84,354039,3 Oriole Lane,3448,571,1995,4/24/2022,"Dickinson, Toy and Trantow"
-221,46,433144,5150 Dahle Lane,8,882,2005,2/11/2022,"Koch, Morar and Kuhn"
-222,91,644936,45585 Helena Circle,20,247,2009,1/25/2022,"Rohan, Gleason and Treutel"
-223,83,403723,8252 Waubesa Park,115,973,2008,5/2/2022,Herzog-Senger
-224,58,522986,075 Anthes Pass,21502,201,2005,2/1/2022,Abernathy-Quitzon
-225,52,582446,0 Cherokee Point,487,719,2012,6/7/2021,Rohan-Brakus
-226,91,393123,5011 Aberg Alley,71,251,1989,7/4/2021,Conroy-Lemke
-227,100,766228,82980 Northport Street,0889,971,1984,3/24/2022,O'Conner Group
-228,66,395618,9128 Nancy Parkway,61137,210,1999,7/21/2021,Mueller Group
-229,66,989383,2 Browning Alley,0947,142,2004,6/23/2021,Herzog-Senger
-230,72,782703,7 Merchant Court,57,848,1985,6/8/2021,Gorczany LLC
-231,94,876968,625 Hooker Junction,880,371,2005,5/12/2021,Gorczany LLC
-232,46,801837,80321 Kingsford Place,896,51,2008,9/2/2021,"Lesch, Kihn and Barrows"
-233,69,490798,364 Waubesa Plaza,4,354,1996,9/30/2021,Gorczany LLC
-234,84,718633,0572 Dapin Way,8048,430,2004,9/29/2021,O'Hara-Wilkinson
-235,79,846408,5315 Ludington Crossing,8,385,1993,5/28/2021,Kunze Inc
-236,81,480520,7204 Shasta Parkway,35,125,2006,6/28/2021,"Dickinson, Toy and Trantow"
-237,41,682286,900 Valley Edge Hill,0042,275,2000,8/7/2021,"Dickinson, Toy and Trantow"
-238,87,727392,591 Westend Lane,7955,749,1986,9/22/2021,Emard-Rohan
-239,96,882960,9 Raven Hill,2103,535,2006,4/25/2022,O'Conner Group
-240,80,745872,0 Roth Way,488,610,2009,8/26/2021,Wisozk Group
-241,70,514692,6892 Park Meadow Hill,86,549,2010,1/20/2022,"Langworth, Murphy and Balistreri"
-242,88,266202,4021 Ronald Regan Avenue,149,131,2002,11/23/2021,"Fahey, Ledner and Dooley"
-243,91,308094,94314 Monterey Alley,00165,284,2007,3/19/2022,"Treutel, Senger and Murphy"
-244,62,838169,2 Stoughton Way,5,804,1990,8/16/2021,"Collier, Zulauf and Stamm"
-245,46,945120,6545 Old Gate Parkway,84,774,2000,6/1/2021,Mueller Group
-246,98,758628,85318 Pawling Street,0,779,1999,9/5/2021,"Fahey, Ledner and Dooley"
-247,100,681345,5444 Springview Trail,6,529,1983,1/28/2022,Abernathy-Quitzon
-248,98,362136,24709 Atwood Avenue,241,122,1992,8/16/2021,Wisozk Group
-249,97,909049,11525 Anhalt Hill,90,286,1977,2/13/2022,Abernathy-Quitzon
-250,65,269351,214 Westport Road,1904,355,1986,9/10/2021,Gorczany LLC
-251,96,264343,40541 Darwin Road,34276,516,1996,9/19/2021,Wisozk Group
-252,70,441654,4 Dapin Center,1954,728,1989,2/7/2022,O'Hara-Wilkinson
-253,50,693094,6278 Grim Pass,954,455,2008,10/9/2021,Morar and Sons
-254,95,476540,45478 Rowland Avenue,31,629,1986,9/17/2021,"Langworth, Murphy and Balistreri"
-255,45,725684,4580 Sheridan Road,024,821,1997,10/9/2021,Emard-Rohan
-256,51,971539,4 Ilene Road,3,369,2012,3/16/2022,Paucek Inc
-257,42,868288,64 Summerview Pass,61,676,2011,3/16/2022,"Rohan, Gleason and Treutel"
-258,82,813834,1 Leroy Street,329,67,2007,4/7/2022,Abernathy-Quitzon
-259,90,616683,062 Arizona Terrace,92,750,2009,7/6/2021,"Heaney, Upton and Ferry"
-260,87,567886,4962 Memorial Way,9405,30,1984,1/8/2022,Kshlerin Inc
-261,98,409088,08 Sundown Junction,181,84,2005,1/18/2022,Schoen Inc
-262,74,377211,5499 Clarendon Street,79345,412,1993,4/2/2022,Keeling and Sons
-263,96,984275,4 Farwell Way,95972,324,1991,10/8/2021,Emard-Rohan
-264,68,735801,3000 Ludington Point,8558,642,2010,5/19/2021,"Rohan, Gleason and Treutel"
-265,79,314343,879 Monterey Pass,3,946,2005,6/3/2021,Conroy-Lemke
-266,53,280932,76 High Crossing Junction,085,288,2000,5/6/2021,"Heaney, Upton and Ferry"
-267,59,485132,966 Cardinal Way,3,567,2007,12/2/2021,"Fahey, Ledner and Dooley"
-268,90,695202,74 Service Hill,2,994,1990,5/22/2021,Wisozk Group
-269,87,358240,4 Forest Run Pass,22199,814,2000,7/21/2021,Morar and Sons
-270,71,589183,045 Loeprich Trail,07,203,1999,7/13/2021,Kshlerin Inc
-271,94,509125,43 Bay Point,4,16,1990,7/1/2021,Rohan-Brakus
-272,66,239853,8450 Moulton Junction,8,596,2001,10/14/2021,Mueller Group
-273,84,771370,991 Sunbrook Circle,80134,9,1995,10/21/2021,Abernathy-Quitzon
-274,70,375590,0 Lyons Lane,656,128,2002,9/27/2021,Wisozk Group
-275,95,401407,1083 Jackson Drive,16,686,1987,10/19/2021,Keeling and Sons
-276,60,355484,08298 Crowley Park,93130,576,1992,4/19/2022,Morar and Sons
-277,44,759936,2998 Stone Corner Trail,2208,105,1993,3/22/2022,"Rohan, Gleason and Treutel"
-278,82,268228,30953 Hanover Pass,91,766,2009,1/17/2022,"Treutel, Senger and Murphy"
-279,54,702824,81 Pawling Court,16,411,1978,3/16/2022,Kunze Inc
-280,76,841139,13892 Sage Alley,544,435,1998,3/5/2022,Schoen Inc
-281,48,254069,722 Crescent Oaks Place,0,843,1992,10/25/2021,"Shanahan, Gleason and Hahn"
-282,84,516838,074 Scofield Junction,45513,665,2009,9/2/2021,"Collier, Zulauf and Stamm"
-283,48,672237,35882 Schiller Parkway,53016,523,2002,5/20/2021,Paucek Inc
-284,78,251419,5 Garrison Court,2,966,2007,6/12/2021,Schoen Inc
-285,46,672940,2847 Saint Paul Road,87809,650,1999,4/10/2022,"Fahey, Ledner and Dooley"
-286,95,664418,47744 Fair Oaks Center,0112,646,2008,2/19/2022,Abernathy-Quitzon
-287,86,443442,91391 Homewood Way,41849,761,2009,12/24/2021,Conroy-Lemke
-288,86,620757,62 Linden Lane,32369,25,2007,6/29/2021,"Dickinson, Toy and Trantow"
-289,66,389800,44228 Claremont Court,2140,658,2004,1/25/2022,Mueller Group
-290,84,256354,3 Kenwood Crossing,3,944,2006,12/10/2021,Emard-Rohan
-291,82,974923,4 Nobel Way,4,850,2011,12/23/2021,Kshlerin Inc
-292,66,898761,91 Artisan Point,85129,101,2012,12/11/2021,Kshlerin Inc
-293,49,731477,8684 Colorado Alley,2562,864,2012,8/12/2021,Zieme-Denesik
-294,91,604474,6929 Graedel Point,7480,590,1994,4/10/2022,Keeling and Sons
-295,56,679329,990 Golf Course Hill,6,193,2004,4/25/2022,Abernathy-Quitzon
-296,86,310427,80867 Everett Way,43,269,1997,1/5/2022,Kunze Inc
-297,76,415354,1001 Gerald Place,3,232,2002,1/23/2022,Kunze Inc
-298,42,820320,337 Mayfield Park,2590,290,2008,10/30/2021,Conroy-Lemke
-299,60,499620,34583 Nelson Circle,1,32,2012,2/27/2022,Paucek Inc
-300,67,307613,9545 Hovde Drive,901,27,2006,12/14/2021,Emard-Rohan
-301,44,640169,047 Morningstar Park,07,314,1969,7/2/2021,"Heaney, Upton and Ferry"
-302,60,911589,018 Debs Court,847,34,1992,11/22/2021,Herzog-Senger
-303,66,761278,758 Sutteridge Park,6240,238,2010,4/27/2022,Kshlerin Inc
-304,85,712993,4261 Bellgrove Pass,513,418,2003,8/4/2021,Herzog-Senger
-305,84,425810,094 Declaration Alley,398,969,1987,4/25/2022,Abernathy-Quitzon
-306,93,948334,07 Jay Plaza,2345,798,2011,12/11/2021,"Shanahan, Gleason and Hahn"
-307,74,281731,49338 Glendale Circle,73,641,2000,4/14/2022,"Rohan, Gleason and Treutel"
-308,89,203447,92 Eagan Junction,5129,593,2011,3/28/2022,Emard-Rohan
-309,51,851179,2 Meadow Ridge Circle,46,143,2007,12/1/2021,"Langworth, Murphy and Balistreri"
-310,90,568545,19 Di Loreto Alley,52,654,2000,11/1/2021,Gorczany LLC
-311,61,779274,77 Northland Circle,556,661,1998,1/1/2022,Rohan-Brakus
-312,56,776281,06589 Dovetail Circle,4,362,2003,8/28/2021,"Crooks, Hane and Lindgren"
-313,50,302841,606 Coleman Junction,4,656,2011,4/11/2022,"Treutel, Senger and Murphy"
-314,48,373794,7 Anthes Drive,1652,176,2008,5/15/2021,"Langworth, Murphy and Balistreri"
-315,73,437981,6 Longview Junction,202,322,1999,4/5/2022,Rohan-Brakus
-316,66,995004,78062 Continental Junction,21471,617,2009,3/19/2022,Mueller Group
-317,45,580296,8645 Scott Drive,24355,98,2008,8/5/2021,Conroy-Lemke
-318,46,641230,926 Namekagon Circle,01674,713,2011,7/24/2021,Emard-Rohan
-319,68,793890,47687 Tennyson Circle,0599,173,2004,3/29/2022,"Rohan, Gleason and Treutel"
-320,41,949386,03 Northport Drive,32,423,2010,4/16/2022,Wisozk Group
-321,49,354666,95 Rigney Drive,8636,179,1994,10/22/2021,Wisozk Group
-322,82,562535,167 Fremont Way,501,742,2008,10/1/2021,Rohan-Brakus
-323,83,609670,2388 Saint Paul Junction,1159,696,1999,10/19/2021,"Langworth, Murphy and Balistreri"
-324,51,706490,19 Merrick Crossing,682,348,1992,10/14/2021,O'Conner Group
-325,96,887700,733 Magdeline Trail,972,573,2003,1/10/2022,Paucek Inc
-326,92,952283,7585 Troy Hill,51,400,2005,6/14/2021,"Langworth, Murphy and Balistreri"
-327,95,332502,027 Loomis Junction,6,648,2006,3/20/2022,"Rohan, Gleason and Treutel"
-328,46,407054,292 Green Alley,61599,492,2007,1/2/2022,Herzog-Senger
-329,58,990458,33 Ohio Alley,55672,97,2005,7/17/2021,Keeling and Sons
-330,56,881341,51 Lyons Crossing,3817,285,2008,1/23/2022,Schoen Inc
-331,68,306746,88513 Meadow Ridge Terrace,05508,981,1992,11/9/2021,Keeling and Sons
-332,59,353551,64 Bunting Drive,8307,249,1991,9/5/2021,Herzog-Senger
-333,48,735888,8160 Westerfield Hill,6169,198,2005,7/12/2021,"Koch, Morar and Kuhn"
-334,73,781603,9 Dayton Drive,0,857,1996,8/6/2021,"Langworth, Murphy and Balistreri"
-335,85,286316,7245 Cordelia Road,82767,762,1992,7/12/2021,Schoen Inc
-336,75,269116,4196 Huxley Place,43,979,1992,11/28/2021,Mueller Group
-337,43,931116,47 Vahlen Street,81760,883,2000,10/19/2021,Herzog-Senger
-338,66,623951,10 Scoville Court,83,437,2007,11/18/2021,Gorczany LLC
-339,40,433077,34146 Sachtjen Junction,332,877,1995,10/16/2021,"Lesch, Kihn and Barrows"
-340,79,872788,487 Transport Crossing,946,677,1993,4/6/2022,"Dickinson, Toy and Trantow"
-341,94,386251,5523 West Trail,8159,729,2008,12/26/2021,Abernathy-Quitzon
-342,50,946625,7225 Kennedy Road,2,825,1992,4/8/2022,"Fahey, Ledner and Dooley"
-343,44,433310,2678 Schmedeman Junction,90,365,2007,6/24/2021,Schoen Inc
-344,52,320651,96 Hudson Street,13819,168,1966,12/7/2021,Gorczany LLC
-345,100,855469,7968 Jackson Center,0206,847,1987,12/19/2021,Schoen Inc
-346,69,848843,34171 School Lane,8,184,2005,5/8/2021,Mueller Group
-347,70,833406,6 Havey Lane,770,328,1983,2/6/2022,Emard-Rohan
-348,60,933030,8240 Fuller Alley,490,837,2001,8/3/2021,"Shanahan, Gleason and Hahn"
-349,40,499858,574 Sage Street,5725,343,2012,8/22/2021,Schoen Inc
-350,78,862642,21731 Lighthouse Bay Drive,81756,841,1967,11/26/2021,"Fahey, Ledner and Dooley"
-351,60,635471,0 Golden Leaf Junction,6,840,2004,7/22/2021,Kshlerin Inc
-352,61,610328,5 Fordem Pass,867,63,1996,8/6/2021,"Collier, Zulauf and Stamm"
-353,40,243629,029 Loeprich Center,969,357,1992,7/6/2021,Paucek Inc
-354,90,828351,50 Maple Pass,6,885,1992,9/21/2021,Zieme-Denesik
-355,81,778400,076 Atwood Center,44005,220,2008,2/10/2022,Zieme-Denesik
-356,98,848631,70403 Ridgeway Street,240,849,2005,4/17/2022,Gerlach Group
-357,54,383555,990 Fairview Place,47,622,1989,8/4/2021,"Schinner, Schneider and Runolfsson"
-358,69,845751,6 Pawling Road,39188,536,2004,5/3/2022,Gerlach Group
-359,63,783985,77516 Schlimgen Hill,744,599,1992,9/2/2021,Schoen Inc
-360,69,932233,152 Graedel Street,81280,467,1998,7/17/2021,"Treutel, Senger and Murphy"
-361,58,831377,61892 Texas Center,0972,803,1966,8/20/2021,"Crooks, Hane and Lindgren"
-362,82,444560,9506 Orin Drive,12055,903,2007,1/6/2022,"Rohan, Gleason and Treutel"
-363,73,677686,157 Declaration Lane,469,38,2012,2/5/2022,"Koch, Morar and Kuhn"
-364,56,654657,07728 Messerschmidt Junction,292,792,1989,8/7/2021,Paucek Inc
-365,94,361282,194 Evergreen Trail,4034,685,1992,12/25/2021,"Langworth, Murphy and Balistreri"
-366,82,951255,6 Forest Run Park,51,702,1988,12/28/2021,Gorczany LLC
-367,82,744965,07297 Manley Road,66,318,2009,5/4/2022,"Dickinson, Toy and Trantow"
-368,52,493259,569 Mosinee Junction,345,110,2001,5/1/2022,Gorczany LLC
-369,82,579043,64311 Lillian Crossing,797,496,2000,9/8/2021,Wisozk Group
-370,73,843531,64466 Fieldstone Junction,62,78,2012,9/29/2021,Abernathy-Quitzon
-371,40,210463,17174 Kenwood Court,9,61,2003,6/9/2021,Emard-Rohan
-372,42,974591,180 Buena Vista Crossing,5,664,2001,3/20/2022,Conroy-Lemke
-373,62,563671,0160 Waubesa Terrace,6,287,2009,6/21/2021,"Treutel, Senger and Murphy"
-374,46,625494,1 Macpherson Crossing,8,65,1995,11/2/2021,"Heaney, Upton and Ferry"
-375,42,521890,9646 Straubel Place,556,518,1998,5/22/2021,Herzog-Senger
-376,42,586866,44 Westridge Plaza,2,261,1993,4/21/2022,"Crooks, Hane and Lindgren"
-377,98,889898,5 Muir Circle,554,129,1999,7/28/2021,Wisozk Group
-378,53,851962,21 Butternut Drive,80839,89,1995,5/14/2021,"Crooks, Hane and Lindgren"
-379,62,743638,27 Nova Parkway,557,35,2008,6/20/2021,O'Hara-Wilkinson
-380,80,988919,7 High Crossing Center,0827,48,2002,1/30/2022,O'Conner Group
-381,48,916821,39 Forest Run Avenue,5,768,2005,6/14/2021,Rohan-Brakus
-382,43,582506,49 Loftsgordon Court,457,151,2011,7/9/2021,Morar and Sons
-383,62,749521,6 Calypso Terrace,878,403,2008,1/11/2022,Mueller Group
-384,43,681085,71043 Dryden Avenue,3318,922,2000,5/12/2021,"Langworth, Murphy and Balistreri"
-385,88,887334,665 Monterey Crossing,11,83,2012,12/17/2021,Kshlerin Inc
-386,83,855279,1701 Del Mar Hill,3,259,1998,6/14/2021,"Lesch, Kihn and Barrows"
-387,76,684678,24 Green Ridge Road,4238,72,1992,7/25/2021,Gorczany LLC
-388,42,449088,6 Victoria Hill,5,164,2006,2/11/2022,Kunze Inc
-389,51,972098,50 Evergreen Trail,4864,764,2008,11/11/2021,Mueller Group
-390,51,375726,4338 Debs Circle,11239,482,2008,8/30/2021,Conroy-Lemke
-391,74,665932,3 3rd Way,4795,794,1992,5/8/2021,Schoen Inc
-392,58,940176,394 Superior Avenue,68098,630,1990,12/25/2021,Abernathy-Quitzon
-393,76,667495,49538 Starling Hill,5561,194,2009,1/30/2022,Conroy-Lemke
-394,99,443229,96 Morningstar Drive,90778,103,1997,11/9/2021,"Langworth, Murphy and Balistreri"
-395,72,350873,45400 Helena Street,20711,811,2006,9/23/2021,"Shanahan, Gleason and Hahn"
-396,93,486444,4525 Nancy Road,8161,239,2007,5/16/2021,Schoen Inc
-397,67,716175,5974 Linden Hill,69,266,1997,5/30/2021,Morar and Sons
-398,91,843259,047 Melby Terrace,163,588,2004,2/3/2022,Paucek Inc
-399,97,237020,8041 Londonderry Parkway,820,209,1989,5/25/2021,Emard-Rohan
-400,95,344417,13229 Golden Leaf Junction,7,30,2004,8/17/2021,Schoen Inc
-401,87,203484,2 Roxbury Alley,0,578,2002,6/19/2021,Gorczany LLC
-402,54,310101,60 Clove Park,2,213,2005,5/4/2022,"Koch, Morar and Kuhn"
-403,81,851848,652 Elgar Plaza,93,619,1995,4/15/2022,O'Hara-Wilkinson
-404,49,576703,07814 Welch Drive,5069,921,2012,12/5/2021,Gorczany LLC
-405,98,966011,560 Lien Drive,70,305,1994,9/22/2021,Mueller Group
-406,93,742233,9382 Bobwhite Circle,88,965,1998,7/14/2021,"Koch, Morar and Kuhn"
-407,83,203863,4923 Shasta Terrace,1235,688,1967,12/11/2021,"Schinner, Schneider and Runolfsson"
-408,46,741261,067 Gerald Point,20,182,2012,3/3/2022,Gorczany LLC
-409,55,790587,455 Pine View Street,1531,414,2006,9/2/2021,"Koch, Morar and Kuhn"
-410,84,755706,8 Scoville Drive,126,172,1992,3/17/2022,Zieme-Denesik
-411,93,803242,306 Gateway Court,302,678,2012,9/24/2021,Conroy-Lemke
-412,80,801540,97683 Pierstorff Pass,9668,993,2005,1/19/2022,Gerlach Group
-413,70,531569,24699 Bartillon Terrace,874,59,2004,5/8/2021,Emard-Rohan
-414,55,689762,036 Grover Terrace,27,348,2009,6/22/2021,"Heaney, Upton and Ferry"
-415,71,780687,201 Artisan Avenue,878,423,2004,9/14/2021,"Langworth, Murphy and Balistreri"
-416,72,492446,3105 Arapahoe Parkway,659,997,1995,6/25/2021,Kunze Inc
-417,78,492729,68 Thierer Trail,414,335,2009,1/20/2022,Zieme-Denesik
-418,98,845799,71 Union Trail,6620,870,2004,11/1/2021,"Crooks, Hane and Lindgren"
-419,84,362594,805 Marquette Court,0,589,2000,12/19/2021,Herzog-Senger
-420,92,699725,59 Golf Course Court,82,153,1996,12/9/2021,"Crooks, Hane and Lindgren"
-421,69,960101,02713 Fordem Park,66001,300,2009,4/14/2022,"Rohan, Gleason and Treutel"
-422,80,201642,41 Manitowish Way,90,219,1991,1/12/2022,Rohan-Brakus
-423,67,244292,2 Vahlen Road,8,126,2012,6/9/2021,Herzog-Senger
-424,100,354229,67 Center Avenue,7,477,2000,7/7/2021,Keeling and Sons
-425,56,304434,2523 Elmside Avenue,0,246,1994,1/2/2022,"Crooks, Hane and Lindgren"
-426,53,272374,691 Westend Center,238,401,2012,7/7/2021,"Treutel, Senger and Murphy"
-427,99,683851,28 Northport Terrace,522,428,2001,9/11/2021,"Koch, Morar and Kuhn"
-428,53,286412,7305 Blackbird Center,48,130,2000,11/10/2021,Wisozk Group
-429,44,887116,4269 Crest Line Center,25159,1,1984,7/29/2021,Conroy-Lemke
-430,100,393486,0 Katie Hill,1371,151,1996,1/18/2022,Kshlerin Inc
-431,95,816140,42 Haas Crossing,62,673,2011,5/9/2021,Wisozk Group
-432,88,505325,1276 Sherman Circle,97,983,1998,11/27/2021,"Collier, Zulauf and Stamm"
-433,48,527621,7 Del Sol Circle,50,471,2002,9/9/2021,"Treutel, Senger and Murphy"
-434,82,330600,569 Butternut Trail,47457,804,2009,7/2/2021,Mueller Group
-435,72,580977,0964 Warner Way,8,13,2002,11/4/2021,Kshlerin Inc
-436,99,596736,53 Northland Road,09,165,2008,3/9/2022,"Heaney, Upton and Ferry"
-437,100,503451,1 Stoughton Drive,40,634,1996,11/20/2021,Zieme-Denesik
-438,86,455449,2588 Myrtle Parkway,470,911,1994,7/25/2021,Emard-Rohan
-439,52,801192,96 International Place,9087,797,2008,6/23/2021,"Lesch, Kihn and Barrows"
-440,94,684336,97799 Erie Street,7,174,2008,10/5/2021,Abernathy-Quitzon
-441,45,288523,3167 Ilene Junction,63,554,2004,10/16/2021,"Schinner, Schneider and Runolfsson"
-442,55,941935,20 Elka Point,74574,690,1965,7/24/2021,"Heaney, Upton and Ferry"
-443,40,458648,2 Oneill Avenue,58550,183,2003,11/15/2021,Herzog-Senger
-444,88,232389,7 Cardinal Point,5200,403,1999,9/21/2021,Paucek Inc
-445,94,728448,83838 Red Cloud Crossing,8531,480,2011,5/22/2021,Conroy-Lemke
-446,64,932610,73 3rd Court,4,28,2010,8/21/2021,"Schinner, Schneider and Runolfsson"
-447,67,313765,66837 Elmside Trail,53008,256,1986,1/24/2022,Mueller Group
-448,95,307450,92561 Valley Edge Hill,22283,530,1994,12/5/2021,"Lesch, Kihn and Barrows"
-449,52,655182,168 Gulseth Place,9,891,2007,3/20/2022,"Lesch, Kihn and Barrows"
-450,55,313812,34 Kim Pass,5486,682,2000,3/9/2022,Schoen Inc
-451,72,418318,197 Calypso Road,36862,654,1968,10/5/2021,Herzog-Senger
-452,98,787763,692 Superior Park,11671,492,2010,3/25/2022,Herzog-Senger
-453,57,586122,539 Schiller Junction,9,657,2009,11/25/2021,Mueller Group
-454,41,956616,8 Dixon Center,0497,360,2006,11/29/2021,Gerlach Group
-455,90,559162,90 Columbus Point,798,562,2000,11/28/2021,"Rohan, Gleason and Treutel"
-456,45,714312,15 Vidon Avenue,78,656,1996,4/18/2022,Rohan-Brakus
-457,77,581012,58 Buell Court,4854,610,1988,11/4/2021,"Dickinson, Toy and Trantow"
-458,57,351248,3215 Steensland Court,3,277,2002,9/8/2021,O'Conner Group
-459,41,384552,88 Erie Trail,2967,766,1997,3/25/2022,Morar and Sons
-460,98,404327,6 Grayhawk Point,7255,444,2007,12/7/2021,Gorczany LLC
-461,42,501996,05 Beilfuss Junction,7,51,1992,10/24/2021,"Schinner, Schneider and Runolfsson"
-462,61,773414,1 Northridge Court,943,572,1999,5/10/2021,Mueller Group
-463,76,918511,33310 Nelson Crossing,41401,186,1998,10/5/2021,Gorczany LLC
-464,40,674809,447 Di Loreto Street,4,859,1992,11/26/2021,"Koch, Morar and Kuhn"
-465,91,370391,720 Mcguire Court,72,148,1994,12/25/2021,Keeling and Sons
-466,53,515794,68082 Reindahl Hill,29,624,2005,2/25/2022,Morar and Sons
-467,62,208089,5 Spohn Trail,482,226,2011,7/12/2021,"Lesch, Kihn and Barrows"
-468,75,628771,62059 Clarendon Trail,023,397,2000,6/5/2021,"Treutel, Senger and Murphy"
-469,68,439899,4358 Burning Wood Place,94,162,1993,1/25/2022,Wisozk Group
-470,93,875668,7411 Sage Hill,51207,201,2006,2/12/2022,O'Conner Group
-471,51,453608,53 Bonner Point,47579,571,2012,11/15/2021,Abernathy-Quitzon
-472,85,504481,0976 Shopko Parkway,003,118,1993,11/16/2021,Paucek Inc
-473,72,451674,0344 Moose Drive,08,972,1995,11/4/2021,O'Conner Group
-474,56,222729,37598 Talmadge Parkway,8803,533,2008,1/8/2022,"Lesch, Kihn and Barrows"
-475,44,753320,5 Wayridge Way,0268,371,2009,4/27/2022,Morar and Sons
-476,78,235417,324 Loftsgordon Junction,15208,760,2010,3/24/2022,Mueller Group
-477,98,402244,952 Saint Paul Crossing,7192,97,1992,9/17/2021,"Fahey, Ledner and Dooley"
-478,85,879562,0904 Arizona Street,12,189,2011,2/27/2022,Herzog-Senger
-479,77,791361,85449 Carey Street,6474,66,2004,11/7/2021,"Crooks, Hane and Lindgren"
-480,91,942039,81 Village Parkway,084,443,1993,10/2/2021,Abernathy-Quitzon
-481,95,279313,3776 School Avenue,5201,316,1992,4/10/2022,Gerlach Group
-482,94,532858,31 Reinke Park,4294,80,2004,12/1/2021,"Langworth, Murphy and Balistreri"
-483,76,931932,0245 Jay Crossing,683,635,1993,12/16/2021,Paucek Inc
-484,78,922014,36853 Melvin Alley,04,380,2000,4/29/2022,Paucek Inc
-485,75,473217,71 Vermont Drive,619,736,1994,2/8/2022,Kshlerin Inc
-486,48,797274,134 Schiller Parkway,69,452,1986,5/28/2021,"Heaney, Upton and Ferry"
-487,76,396950,98 Carey Place,20,198,1993,1/25/2022,Zieme-Denesik
-488,77,712573,0 Armistice Point,0507,495,2006,8/8/2021,Wisozk Group
-489,56,374437,88 Merchant Park,2,18,2008,11/5/2021,"Dickinson, Toy and Trantow"
-490,64,406760,88056 Autumn Leaf Junction,25,846,2010,12/14/2021,Paucek Inc
-491,43,861112,3868 Wayridge Place,468,591,2011,7/8/2021,Gerlach Group
-492,57,295837,02 Burrows Pass,03,365,2011,4/29/2022,Kunze Inc
-493,57,744587,6057 Goodland Circle,66456,341,2002,10/26/2021,"Koch, Morar and Kuhn"
-494,77,791208,67 Goodland Avenue,0807,131,2004,1/13/2022,"Langworth, Murphy and Balistreri"
-495,47,339804,91 Porter Terrace,680,114,1995,6/10/2021,Zieme-Denesik
-496,41,367998,105 Autumn Leaf Plaza,3622,727,2000,5/19/2021,Gerlach Group
-497,49,757091,7 Elka Court,475,37,2011,7/6/2021,Keeling and Sons
-498,62,776448,366 Buhler Place,88,138,2008,11/26/2021,Paucek Inc
-499,96,414697,78 Morning Park,0,537,2001,3/10/2022,Keeling and Sons
-500,53,561636,4 Duke Point,38491,511,2011,8/20/2021,"Treutel, Senger and Murphy"
-501,57,584150,0384 South Hill,91,120,1999,7/21/2021,Abernathy-Quitzon
-502,85,211958,80 Myrtle Crossing,66140,924,2012,7/15/2021,Kshlerin Inc
-503,60,292517,6 Melby Road,50,116,1972,4/10/2022,"Lesch, Kihn and Barrows"
-504,79,573475,51 Hayes Circle,652,244,1993,12/5/2021,"Collier, Zulauf and Stamm"
-505,68,878313,73704 Gale Parkway,402,472,2012,5/8/2021,"Rohan, Gleason and Treutel"
-506,42,252012,4 Sullivan Avenue,726,958,2002,3/13/2022,Morar and Sons
-507,69,871790,1 Fallview Way,154,573,1986,10/1/2021,O'Hara-Wilkinson
-508,97,468218,91 Pierstorff Hill,12190,778,1985,12/24/2021,"Lesch, Kihn and Barrows"
-509,65,966752,1 Weeping Birch Street,454,925,2008,8/17/2021,"Treutel, Senger and Murphy"
-510,42,782512,63 Lillian Avenue,3091,521,1993,8/19/2021,Paucek Inc
-511,90,842614,4093 Acker Avenue,66,263,2010,12/19/2021,"Collier, Zulauf and Stamm"
-512,96,597785,309 Sachtjen Court,8,202,2010,7/7/2021,Conroy-Lemke
-513,41,722885,50333 Everett Court,0849,561,2003,7/8/2021,Rohan-Brakus
-514,87,973225,048 Porter Circle,957,100,1996,6/7/2021,O'Hara-Wilkinson
-515,77,313492,906 Thackeray Street,4,262,1996,12/31/2021,Emard-Rohan
-516,81,951684,6698 Orin Alley,703,11,1995,6/9/2021,Morar and Sons
-517,93,928239,4 Moland Avenue,3,94,2013,11/13/2021,"Rohan, Gleason and Treutel"
-518,85,977589,45307 Westridge Avenue,44434,62,2010,3/17/2022,"Koch, Morar and Kuhn"
-519,95,676088,9497 2nd Lane,95,545,2012,4/20/2022,Gerlach Group
-520,57,754803,340 Iowa Lane,30,640,2002,10/23/2021,Keeling and Sons
-521,85,936673,17 Hazelcrest Circle,7104,593,1992,4/8/2022,Morar and Sons
-522,61,351299,939 High Crossing Place,6,427,1987,8/3/2021,Gerlach Group
-523,51,750582,0 Straubel Drive,1393,771,2005,4/15/2022,Emard-Rohan
-524,41,642609,209 Sheridan Street,0316,665,1997,11/18/2021,"Rohan, Gleason and Treutel"
-525,70,523027,08 Maple Wood Street,9000,63,1992,12/16/2021,Rohan-Brakus
-526,99,526307,1915 Warrior Pass,9,395,2007,8/1/2021,Kunze Inc
-527,47,243039,4972 Toban Court,3847,92,2012,6/21/2021,Kshlerin Inc
-528,61,327844,616 Talmadge Terrace,301,381,1998,2/10/2022,Emard-Rohan
-529,73,912653,11231 Porter Road,1,456,1994,9/18/2021,"Lesch, Kihn and Barrows"
-530,76,415587,5350 Gulseth Street,6364,285,1994,12/10/2021,O'Hara-Wilkinson
-531,84,667977,5 Derek Road,00198,683,1997,5/12/2021,Rohan-Brakus
-532,88,656415,17891 Dryden Park,0,668,1994,11/21/2021,"Shanahan, Gleason and Hahn"
-533,51,955328,289 Luster Court,26774,469,1995,7/30/2021,"Heaney, Upton and Ferry"
-534,87,327684,62 Forest Run Street,07,282,1997,7/26/2021,"Koch, Morar and Kuhn"
-535,95,723003,0423 Forest Dale Terrace,38,602,2007,5/8/2021,O'Conner Group
-536,84,532475,5 Manley Pass,2,910,1995,12/7/2021,Schoen Inc
-537,72,946136,5329 Stone Corner Plaza,180,19,2000,11/29/2021,Kshlerin Inc
-538,54,239615,57 Del Sol Crossing,68,862,1986,6/24/2021,Gorczany LLC
-539,70,783003,628 Hollow Ridge Way,23695,608,1986,10/2/2021,Gorczany LLC
-540,82,626401,485 Cardinal Circle,0084,540,2009,2/9/2022,Kshlerin Inc
-541,63,370212,22 Tony Crossing,3908,802,1994,3/15/2022,"Crooks, Hane and Lindgren"
-542,46,525725,295 Birchwood Junction,269,805,1998,7/14/2021,"Shanahan, Gleason and Hahn"
-543,81,611814,793 Truax Road,438,129,1992,4/14/2022,Paucek Inc
-544,58,821525,8 Starling Parkway,742,576,1991,2/28/2022,Gorczany LLC
-545,52,664809,99202 Swallow Point,5,141,2013,4/10/2022,"Fahey, Ledner and Dooley"
-546,68,687649,0795 Northview Crossing,6981,479,2002,9/6/2021,"Rohan, Gleason and Treutel"
-547,59,670226,4 Golden Leaf Junction,3,31,2006,1/3/2022,"Lesch, Kihn and Barrows"
-548,95,536271,5 Troy Lane,3,842,1984,9/8/2021,"Koch, Morar and Kuhn"
-549,67,931319,260 Becker Lane,4,388,1986,11/17/2021,Wisozk Group
-550,71,316301,50 Pepper Wood Plaza,897,389,1998,1/28/2022,Keeling and Sons
-551,69,983087,974 Welch Terrace,4872,135,1989,10/12/2021,"Koch, Morar and Kuhn"
-552,43,912825,2261 Fairview Drive,4,787,2007,10/16/2021,Morar and Sons
-553,53,927952,45702 Meadow Valley Plaza,991,655,1993,12/14/2021,"Lesch, Kihn and Barrows"
-554,63,531212,2 Red Cloud Lane,37013,447,1996,10/3/2021,Herzog-Senger
-555,73,225026,30 2nd Plaza,86,287,1997,1/13/2022,Kunze Inc
-556,62,336794,2314 Lotheville Pass,01778,605,1978,7/15/2021,Zieme-Denesik
-557,70,682286,3265 Ramsey Pass,3317,687,2004,3/24/2022,"Shanahan, Gleason and Hahn"
-558,42,657274,15413 Fieldstone Drive,9,906,2000,3/3/2022,Mueller Group
-559,82,503339,53885 Ludington Crossing,4693,276,2008,1/30/2022,"Lesch, Kihn and Barrows"
-560,72,956233,8 Kennedy Court,33,413,1966,4/23/2022,Gorczany LLC
-561,47,561789,295 Vahlen Drive,9377,446,1996,8/7/2021,Gorczany LLC
-562,94,805823,78639 Spenser Trail,4,874,1993,8/1/2021,"Collier, Zulauf and Stamm"
-563,77,481175,8 Tony Alley,3,985,2007,4/7/2022,O'Conner Group
-564,76,818152,6 Hollow Ridge Junction,7,763,1999,4/20/2022,"Koch, Morar and Kuhn"
-565,44,964499,6955 Tennessee Circle,1,567,1992,12/6/2021,"Crooks, Hane and Lindgren"
-566,82,658138,628 Colorado Alley,18,140,2000,1/6/2022,"Treutel, Senger and Murphy"
-567,55,964398,2 Arrowood Plaza,5387,224,2012,3/24/2022,Keeling and Sons
-568,50,994053,7940 5th Point,4,716,2011,11/28/2021,Kunze Inc
-569,72,474430,0138 Novick Circle,7306,306,2004,11/7/2021,"Crooks, Hane and Lindgren"
-570,85,990521,3 Charing Cross Drive,34530,245,2011,1/18/2022,O'Hara-Wilkinson
-571,48,778454,0484 8th Circle,475,810,1998,11/23/2021,Paucek Inc
-572,86,749959,12698 Sunfield Circle,4399,57,2012,4/9/2022,"Langworth, Murphy and Balistreri"
-573,57,685791,0958 Michigan Court,1,488,1987,12/25/2021,"Rohan, Gleason and Treutel"
-574,99,449578,55 Sunnyside Circle,6,89,2007,6/28/2021,"Shanahan, Gleason and Hahn"
-575,45,425485,384 Stang Point,6527,81,1996,10/9/2021,Morar and Sons
-576,61,919752,07 Sycamore Street,31,406,1994,4/20/2022,"Koch, Morar and Kuhn"
-577,71,964268,37 Sauthoff Pass,97650,145,1985,4/25/2022,"Koch, Morar and Kuhn"
-578,96,589472,3352 Susan Place,00,834,1993,7/31/2021,Schoen Inc
-579,47,467874,3 Spenser Crossing,6513,190,2011,6/12/2021,Abernathy-Quitzon
-580,53,607459,5880 Bowman Place,4,437,2008,5/13/2021,Schoen Inc
-581,82,204104,19 Golf Course Plaza,47,968,2007,5/31/2021,Paucek Inc
-582,100,971822,93377 Oak Place,33333,340,1993,5/8/2021,Rohan-Brakus
-583,96,302400,7467 Marquette Park,11,575,2001,10/20/2021,Conroy-Lemke
-584,80,692116,4 Luster Pass,3,464,1996,2/17/2022,O'Hara-Wilkinson
-585,89,318817,58 Parkside Circle,9679,438,2002,8/4/2021,Kunze Inc
-586,58,836139,08701 Ridge Oak Hill,2,887,2009,12/20/2021,"Lesch, Kihn and Barrows"
-587,91,608564,49 Thackeray Point,09192,485,1997,2/25/2022,Conroy-Lemke
-588,63,241926,192 Grover Pass,1168,302,2003,8/5/2021,Keeling and Sons
-589,76,235275,5 Farwell Road,5260,289,2001,5/2/2022,Herzog-Senger
-590,79,372062,93 Ridge Oak Park,4469,512,1996,11/1/2021,"Collier, Zulauf and Stamm"
-591,82,358960,8 Paget Road,95,398,1994,3/12/2022,O'Hara-Wilkinson
-592,54,207478,988 Merry Lane,7936,548,2007,4/9/2022,Conroy-Lemke
-593,59,840895,94 Alpine Road,07903,84,2005,3/7/2022,"Collier, Zulauf and Stamm"
-594,91,324239,4 Pond Alley,91,281,1992,11/1/2021,Paucek Inc
-595,78,777040,50 Lindbergh Hill,42022,163,2012,6/25/2021,Gorczany LLC
-596,55,286463,809 Browning Point,9034,466,2012,1/19/2022,"Shanahan, Gleason and Hahn"
-597,42,249396,362 Golf View Parkway,97,915,2007,4/28/2022,Herzog-Senger
-598,86,498029,2744 Coolidge Terrace,48800,735,1996,1/22/2022,Emard-Rohan
-599,79,843422,3 2nd Park,97,178,2000,1/25/2022,Kunze Inc
-600,91,469635,49777 Coolidge Terrace,58416,91,1998,2/9/2022,"Heaney, Upton and Ferry"
-601,60,577462,44932 Clarendon Alley,0,824,2006,11/16/2021,Kunze Inc
-602,44,755217,4759 Paget Alley,6,366,2012,10/6/2021,"Shanahan, Gleason and Hahn"
-603,49,207984,6089 Drewry Alley,62688,353,2001,5/14/2021,"Rohan, Gleason and Treutel"
-604,98,240645,20 Briar Crest Court,821,641,1999,10/11/2021,Mueller Group
-605,48,523315,8232 Almo Alley,9,872,2010,1/28/2022,Paucek Inc
-606,94,849154,6 Hanover Terrace,66541,604,2011,10/10/2021,"Shanahan, Gleason and Hahn"
-607,83,339071,13247 Village Way,77010,556,1992,1/16/2022,Gorczany LLC
-608,48,917729,3 Kings Street,1783,989,1996,1/17/2022,Gorczany LLC
-609,45,760868,892 Calypso Circle,23,912,1997,10/19/2021,"Langworth, Murphy and Balistreri"
-610,56,827247,262 Stoughton Street,7130,768,2007,9/14/2021,"Koch, Morar and Kuhn"
-611,92,255267,360 Schiller Plaza,997,950,1993,4/19/2022,"Schinner, Schneider and Runolfsson"
-612,74,631370,7473 Corben Alley,715,953,2003,10/4/2021,"Dickinson, Toy and Trantow"
-613,89,687382,18854 North Court,421,330,1994,9/28/2021,Paucek Inc
-614,82,987824,58695 Shasta Park,10025,278,1988,7/7/2021,Rohan-Brakus
-615,66,543402,19 Boyd Crossing,753,866,1992,4/2/2022,Conroy-Lemke
-616,91,636045,26929 Crest Line Center,37794,670,1994,7/19/2021,Mueller Group
-617,62,746273,4 Eastlawn Pass,84,169,2009,11/22/2021,"Rohan, Gleason and Treutel"
-618,52,839643,884 Bayside Avenue,7,994,1992,8/3/2021,Keeling and Sons
-619,83,726106,805 Dovetail Circle,300,33,2002,3/26/2022,Gorczany LLC
-620,71,927763,816 Johnson Alley,558,852,2012,3/31/2022,Morar and Sons
-621,46,789162,0334 Gerald Lane,452,251,1995,12/19/2021,Kshlerin Inc
-622,64,790023,17 Surrey Place,14,73,1998,3/1/2022,"Dickinson, Toy and Trantow"
-623,50,553698,54 Waywood Street,75374,720,2009,8/15/2021,"Heaney, Upton and Ferry"
-624,74,372701,76751 Wayridge Drive,86555,758,2010,11/4/2021,Kshlerin Inc
-625,57,388250,9556 Mifflin Road,3643,933,2001,3/26/2022,Abernathy-Quitzon
-626,56,861744,90 David Trail,0644,217,2012,3/30/2022,Rohan-Brakus
-627,54,997851,46 Claremont Alley,77,166,2005,8/6/2021,"Koch, Morar and Kuhn"
-628,78,215723,1 Maywood Lane,92966,38,1994,4/23/2022,Kunze Inc
-629,82,822295,25686 Utah Road,992,93,1984,6/6/2021,Keeling and Sons
-630,89,956108,52377 Di Loreto Pass,7457,877,1995,6/20/2021,"Langworth, Murphy and Balistreri"
-631,42,566524,11459 Red Cloud Plaza,19,918,1955,9/26/2021,Abernathy-Quitzon
-632,65,573636,019 Kipling Drive,0590,722,1999,12/17/2021,Herzog-Senger
-633,46,469528,8 Mariners Cove Street,9132,181,1992,9/30/2021,"Lesch, Kihn and Barrows"
-634,63,606351,4996 Browning Terrace,63464,869,1992,4/28/2022,Kunze Inc
-635,47,400706,9858 Golf Circle,713,725,1994,6/2/2021,"Collier, Zulauf and Stamm"
-636,58,611571,4114 Sutteridge Court,2,152,2011,5/22/2021,"Rohan, Gleason and Treutel"
-637,82,911116,64060 Prairie Rose Junction,1,917,2000,7/1/2021,Herzog-Senger
-638,51,920539,6 Rieder Street,80,308,2010,8/20/2021,"Crooks, Hane and Lindgren"
-639,58,629974,3 Express Pass,8,498,2004,2/21/2022,"Crooks, Hane and Lindgren"
-640,43,576083,747 Dovetail Hill,3,902,2000,9/5/2021,"Schinner, Schneider and Runolfsson"
-641,62,920929,3995 Mosinee Pass,30,383,1992,2/3/2022,O'Hara-Wilkinson
-642,100,715269,86 Sunbrook Terrace,574,489,1996,8/26/2021,"Heaney, Upton and Ferry"
-643,41,711847,546 Twin Pines Street,7366,541,1997,12/15/2021,Rohan-Brakus
-644,51,320540,67461 Grasskamp Lane,7,249,2006,7/4/2021,Rohan-Brakus
-645,43,313608,9 Sloan Place,36392,946,1999,8/10/2021,Keeling and Sons
-646,43,260931,21 Stoughton Lane,52,884,2009,12/20/2021,Mueller Group
-647,45,859594,5 Mitchell Place,854,711,2005,11/21/2021,"Treutel, Senger and Murphy"
-648,41,307389,7 Troy Street,053,621,2010,1/17/2022,Rohan-Brakus
-649,76,687298,65075 Blackbird Hill,68,956,1994,8/19/2021,Conroy-Lemke
-650,65,368419,28110 Texas Lane,8,799,1992,12/28/2021,"Shanahan, Gleason and Hahn"
-651,95,339727,813 Sommers Point,98,15,2006,11/22/2021,Schoen Inc
-652,49,803873,13136 Arapahoe Hill,15,945,2013,10/20/2021,Gerlach Group
-653,80,879051,48 Tony Crossing,0,5,1995,4/9/2022,Wisozk Group
-654,56,618331,6053 Glendale Way,863,529,1992,5/12/2021,Rohan-Brakus
-655,93,223850,7 Pine View Parkway,2674,14,1985,2/13/2022,O'Hara-Wilkinson
-656,84,642219,193 Eagle Crest Park,4,101,2011,4/21/2022,Morar and Sons
-657,87,874500,3 Bay Junction,2200,503,2001,6/27/2021,Keeling and Sons
-658,59,755565,2 Becker Drive,67802,698,1997,1/15/2022,Zieme-Denesik
-659,81,443707,7871 Fallview Lane,1,786,1988,2/5/2022,Mueller Group
-660,67,603125,346 Maple Crossing,55290,154,1988,3/20/2022,"Shanahan, Gleason and Hahn"
-661,82,622335,71248 Donald Point,57,16,1997,4/11/2022,"Heaney, Upton and Ferry"
-662,61,859611,7 Graedel Road,585,88,2001,3/5/2022,"Koch, Morar and Kuhn"
-663,69,880348,6193 Fordem Park,9054,951,2004,10/9/2021,"Lesch, Kihn and Barrows"
-664,67,210461,9 Dorton Terrace,610,864,1998,7/20/2021,Rohan-Brakus
-665,88,552659,2026 Briar Crest Drive,9478,812,1996,5/31/2021,Emard-Rohan
-666,64,991526,6 Messerschmidt Pass,8638,649,1988,11/6/2021,"Langworth, Murphy and Balistreri"
-667,100,282396,73 Sycamore Terrace,8,419,2009,5/31/2021,Paucek Inc
-668,77,669158,67 Rigney Drive,27,484,2008,8/21/2021,"Collier, Zulauf and Stamm"
-669,75,963326,25 Hanover Junction,8011,363,1995,7/14/2021,"Heaney, Upton and Ferry"
-670,49,922806,61 Kim Trail,04526,370,1995,1/10/2022,Emard-Rohan
-671,74,836455,7474 Oxford Point,1,453,1992,1/29/2022,"Heaney, Upton and Ferry"
-672,63,774738,5 Ridgeview Alley,28380,435,2003,4/26/2022,Conroy-Lemke
-673,63,656188,4 Gateway Park,9,320,1999,8/18/2021,"Shanahan, Gleason and Hahn"
-674,56,363352,74 Glacier Hill Court,75466,313,2001,8/22/2021,Schoen Inc
-675,66,705080,9 Dixon Road,2487,49,2009,4/24/2022,"Shanahan, Gleason and Hahn"
-676,67,470517,4549 Merchant Crossing,540,858,2004,4/1/2022,"Lesch, Kihn and Barrows"
-677,79,415698,10 Summer Ridge Junction,31,584,2005,12/23/2021,"Langworth, Murphy and Balistreri"
-678,42,376445,3803 Spohn Lane,0,822,2012,9/10/2021,Kunze Inc
-679,64,512171,48273 Mitchell Crossing,609,856,2002,1/8/2022,"Crooks, Hane and Lindgren"
-680,77,517619,14 Judy Alley,8,433,2004,8/14/2021,"Heaney, Upton and Ferry"
-681,86,417170,11458 Raven Court,7,455,2000,1/28/2022,"Schinner, Schneider and Runolfsson"
-682,84,486450,31 Fordem Trail,33472,708,2011,2/4/2022,"Crooks, Hane and Lindgren"
-683,48,648890,463 Oak Valley Plaza,40,487,1999,12/14/2021,O'Hara-Wilkinson
-684,85,501651,31769 Texas Crossing,80,420,2008,1/17/2022,"Schinner, Schneider and Runolfsson"
-685,78,803837,3 Gina Parkway,978,54,1992,9/25/2021,"Shanahan, Gleason and Hahn"
-686,66,686394,99 Graceland Circle,0,563,1992,2/5/2022,"Crooks, Hane and Lindgren"
-687,93,614611,250 Reindahl Alley,99,237,2009,10/13/2021,"Collier, Zulauf and Stamm"
-688,77,454736,00218 Lawn Hill,2534,200,2005,4/26/2022,O'Conner Group
-689,58,670330,5793 International Junction,922,259,1995,9/26/2021,Abernathy-Quitzon
-690,91,359852,58093 Arrowood Junction,03,955,1999,7/17/2021,"Fahey, Ledner and Dooley"
-691,61,472144,0 Pleasure Court,6629,793,2001,11/30/2021,Emard-Rohan
-692,85,404118,14 Redwing Place,447,334,2004,10/13/2021,"Rohan, Gleason and Treutel"
-693,47,498429,930 Russell Trail,0,539,2010,1/4/2022,Zieme-Denesik
-694,82,789248,9 Burrows Street,50,207,1988,2/4/2022,"Heaney, Upton and Ferry"
-695,96,986463,2109 Sutteridge Road,3,628,2012,7/16/2021,Herzog-Senger
-696,97,654606,34 Hoffman Alley,1036,594,1996,8/19/2021,Zieme-Denesik
-697,94,733492,0546 Holmberg Trail,2,333,2007,3/30/2022,"Koch, Morar and Kuhn"
-698,81,998752,400 Reinke Court,87,919,2009,1/31/2022,O'Hara-Wilkinson
-699,64,760632,1 Randy Point,392,328,2011,1/29/2022,"Heaney, Upton and Ferry"
-700,63,382705,45780 Derek Place,24273,490,2006,10/9/2021,Rohan-Brakus
-701,55,524606,4070 Merchant Parkway,7357,248,2008,10/3/2021,Keeling and Sons
-702,64,388179,2547 Mcbride Place,55415,971,2005,6/20/2021,Wisozk Group
-703,93,322084,2552 Banding Pass,44255,457,2002,12/9/2021,"Shanahan, Gleason and Hahn"
-704,40,790338,40 Kinsman Parkway,82282,422,2002,10/30/2021,"Schinner, Schneider and Runolfsson"
-705,61,671801,1 Northview Trail,779,418,1992,4/15/2022,"Rohan, Gleason and Treutel"
-706,67,319555,8770 Warner Park,7966,432,2000,10/7/2021,Conroy-Lemke
-707,71,773911,2 Maple Wood Way,63288,440,2013,11/13/2021,"Heaney, Upton and Ferry"
-708,59,553984,3993 Jenifer Point,769,815,2006,1/11/2022,Emard-Rohan
-709,92,529602,21 Golf Course Plaza,9,468,2001,9/9/2021,"Treutel, Senger and Murphy"
-710,88,379348,8373 Sommers Circle,207,523,2010,8/19/2021,"Koch, Morar and Kuhn"
-711,60,564587,422 Commercial Road,9,803,1990,8/12/2021,"Rohan, Gleason and Treutel"
-712,54,724158,50656 Laurel Parkway,7,387,2006,8/10/2021,Keeling and Sons
-713,92,587420,56 Jay Drive,6633,204,2009,7/6/2021,Conroy-Lemke
-714,51,713848,97932 Commercial Road,04,408,1992,3/10/2022,Gorczany LLC
-715,97,232346,012 Corben Place,5,557,2009,5/18/2021,Zieme-Denesik
-716,43,748530,4 Stang Drive,92518,679,2006,5/10/2021,"Rohan, Gleason and Treutel"
-717,40,269089,65 Bunker Hill Avenue,83688,386,1991,8/13/2021,Conroy-Lemke
-718,65,830246,5921 Ludington Court,3,532,2000,10/28/2021,Wisozk Group
-719,90,554048,54363 Westport Terrace,39,873,2002,3/2/2022,Schoen Inc
-720,95,581649,5038 Washington Trail,33,903,2002,4/24/2022,O'Hara-Wilkinson
-721,84,496234,6 Atwood Hill,50862,652,2002,4/27/2022,Emard-Rohan
-722,99,816872,688 Corry Alley,69,326,1996,7/25/2021,Keeling and Sons
-723,51,877324,662 Marquette Center,218,342,1991,2/3/2022,"Fahey, Ledner and Dooley"
-724,54,244936,6 Ilene Lane,8,458,1993,3/23/2022,Herzog-Senger
-725,89,990401,67 Valley Edge Drive,79881,728,1988,9/6/2021,"Fahey, Ledner and Dooley"
-726,45,703337,895 Elmside Hill,549,848,2002,9/7/2021,"Crooks, Hane and Lindgren"
-727,43,349160,91 Continental Plaza,0,355,1995,8/14/2021,"Heaney, Upton and Ferry"
-728,94,412287,588 Roth Pass,736,20,1984,9/17/2021,Zieme-Denesik
-729,51,935249,195 Mifflin Lane,4667,40,1978,7/3/2021,O'Hara-Wilkinson
-730,64,353419,84 Mockingbird Drive,33806,67,1995,6/26/2021,"Crooks, Hane and Lindgren"
-731,74,515808,4127 Melrose Trail,6915,536,2006,1/25/2022,Mueller Group
-732,42,717930,7519 Prairie Rose Plaza,049,191,2009,11/13/2021,"Treutel, Senger and Murphy"
-733,40,874661,83039 Trailsway Hill,701,954,1994,9/26/2021,Emard-Rohan
-734,61,825845,47646 Briar Crest Drive,1719,559,1988,7/18/2021,"Dickinson, Toy and Trantow"
-735,99,424182,052 Spohn Pass,9,642,2005,1/1/2022,O'Hara-Wilkinson
-736,75,437732,9786 Westport Hill,546,894,1998,9/12/2021,"Shanahan, Gleason and Hahn"
-737,86,568760,8013 Sycamore Plaza,78,845,2009,9/29/2021,Wisozk Group
-738,68,898627,077 Grasskamp Trail,334,966,1988,4/16/2022,O'Conner Group
-739,72,316980,23 Old Gate Pass,9794,928,2010,2/26/2022,O'Hara-Wilkinson
-740,54,665871,90 Rutledge Point,83497,459,2006,11/4/2021,"Rohan, Gleason and Treutel"
-741,50,408027,09388 Warrior Trail,2,180,1997,5/22/2021,"Dickinson, Toy and Trantow"
-742,40,263848,431 Forest Run Pass,49,429,2010,1/18/2022,"Shanahan, Gleason and Hahn"
-743,40,646671,9835 Summerview Lane,25,298,1999,2/1/2022,Gerlach Group
-744,93,469497,410 Tomscot Parkway,161,849,1987,12/20/2021,"Crooks, Hane and Lindgren"
-745,59,287992,6 Oak Center,831,345,2012,7/22/2021,Morar and Sons
-746,52,523429,0339 Vidon Junction,5,133,2003,9/8/2021,Kunze Inc
-747,69,842080,46430 Morrow Parkway,9,454,1993,2/16/2022,Mueller Group
-748,84,948092,552 Johnson Parkway,7,854,2000,8/17/2021,Rohan-Brakus
-749,41,265431,42 Mockingbird Hill,86523,987,2009,1/2/2022,Mueller Group
-750,79,757730,016 Charing Cross Avenue,0,750,2009,11/28/2021,Schoen Inc
-751,81,648817,0 New Castle Alley,0,934,2004,1/20/2022,Gerlach Group
-752,51,517686,0195 Porter Lane,8607,150,1976,11/9/2021,"Heaney, Upton and Ferry"
-753,46,430414,96 Rusk Place,811,500,1991,2/10/2022,Wisozk Group
-754,45,749994,96 Sheridan Drive,3354,522,1987,6/12/2021,"Treutel, Senger and Murphy"
-755,79,467508,53 Kensington Road,25349,581,2012,7/21/2021,Abernathy-Quitzon
-756,72,395315,52 School Hill,3,445,2009,4/5/2022,"Heaney, Upton and Ferry"
-757,94,260126,3938 Beilfuss Plaza,912,70,2006,9/20/2021,Paucek Inc
-758,55,819544,9618 Declaration Circle,6,508,1999,4/26/2022,Wisozk Group
-759,75,363369,786 Hanover Parkway,7,179,1988,3/29/2022,Gerlach Group
-760,68,917003,488 Mccormick Crossing,4,286,2006,10/20/2021,"Crooks, Hane and Lindgren"
-761,62,705246,0079 Schurz Trail,645,299,1996,3/9/2022,Keeling and Sons
-762,58,836212,0 Miller Avenue,7862,596,2001,8/5/2021,"Heaney, Upton and Ferry"
-763,80,633004,4871 Moose Trail,6113,611,2006,12/8/2021,O'Hara-Wilkinson
-764,54,695867,41 Blaine Pass,82492,839,1984,8/30/2021,Paucek Inc
-765,87,295144,5 Gina Terrace,76,272,1989,5/10/2021,Schoen Inc
-766,89,858996,0 Crownhardt Place,81,769,1996,10/11/2021,Gerlach Group
-767,74,610416,2240 Crownhardt Center,90718,636,2013,2/25/2022,"Collier, Zulauf and Stamm"
-768,68,766822,5 Becker Street,48,977,1999,9/10/2021,Abernathy-Quitzon
-769,59,624787,4584 Paget Trail,52,75,2003,1/17/2022,"Rohan, Gleason and Treutel"
-770,73,607990,033 Stephen Road,88841,46,1990,6/4/2021,Keeling and Sons
-771,59,815279,1693 Waywood Place,4123,45,2012,3/18/2022,"Dickinson, Toy and Trantow"
-772,48,920686,4 Oakridge Junction,610,689,2003,10/8/2021,Morar and Sons
-773,73,388307,6 Novick Circle,8239,203,2012,6/16/2021,"Schinner, Schneider and Runolfsson"
-774,85,986649,47 Dwight Avenue,7842,603,2010,4/1/2022,"Dickinson, Toy and Trantow"
-775,96,678213,569 Rockefeller Street,971,274,2008,4/23/2022,Kunze Inc
-776,41,241644,55 Heffernan Center,4405,607,2005,11/4/2021,"Dickinson, Toy and Trantow"
-777,93,825619,22002 Coolidge Terrace,513,664,1994,12/18/2021,Keeling and Sons
-778,65,419999,0091 Kensington Parkway,08,157,2003,7/16/2021,O'Hara-Wilkinson
-779,47,204354,84533 Barnett Street,8397,450,2011,4/26/2022,"Langworth, Murphy and Balistreri"
-780,54,661563,642 Roxbury Place,1,519,1994,9/28/2021,"Treutel, Senger and Murphy"
-781,69,460646,26 Shopko Alley,9197,773,2006,1/30/2022,"Crooks, Hane and Lindgren"
-782,70,322870,539 Longview Parkway,71672,885,1996,3/5/2022,"Lesch, Kihn and Barrows"
-783,72,306465,6399 Westridge Junction,241,123,2006,1/3/2022,Morar and Sons
-784,54,373859,3173 Towne Trail,508,173,1976,7/1/2021,Herzog-Senger
-785,85,443516,681 Northport Pass,97,931,1996,11/17/2021,"Collier, Zulauf and Stamm"
-786,43,861925,41163 Debra Point,6,109,1986,8/2/2021,Abernathy-Quitzon
-787,97,932217,18952 Hoepker Center,20857,712,2011,8/29/2021,Zieme-Denesik
-788,41,461187,6438 Westridge Circle,606,743,1983,11/17/2021,"Treutel, Senger and Murphy"
-789,94,709264,46 Boyd Trail,5255,58,2009,11/26/2021,"Koch, Morar and Kuhn"
-790,56,333110,5 Norway Maple Court,032,759,1998,2/23/2022,O'Hara-Wilkinson
-791,47,910248,56084 Bashford Junction,626,976,2003,11/13/2021,"Shanahan, Gleason and Hahn"
-792,54,281381,0 Pond Hill,94,173,2002,9/20/2021,Paucek Inc
-793,51,889135,8388 Mesta Pass,6,445,2007,3/16/2022,Gerlach Group
-794,41,432741,46996 Pleasure Center,543,110,1990,2/17/2022,"Heaney, Upton and Ferry"
-795,42,425111,952 Towne Alley,028,335,2007,9/20/2021,Gorczany LLC
-796,54,831019,3933 Steensland Drive,61,291,1997,7/8/2021,Rohan-Brakus
-797,57,549888,23 International Terrace,6523,34,1986,3/22/2022,"Treutel, Senger and Murphy"
-798,72,475581,90530 Armistice Avenue,32298,88,2010,11/3/2021,O'Conner Group
-799,40,232697,50167 Erie Place,750,350,1992,9/26/2021,"Heaney, Upton and Ferry"
-800,83,277211,4 Dayton Drive,0805,123,2010,10/12/2021,Gorczany LLC
-801,81,988868,63 Holmberg Terrace,47466,618,1998,7/23/2021,"Shanahan, Gleason and Hahn"
-802,55,253018,60 Westport Street,8,233,2000,8/10/2021,O'Conner Group
-803,41,646125,715 Armistice Circle,79,705,2007,10/31/2021,"Collier, Zulauf and Stamm"
-804,81,417852,730 Gateway Court,4,538,1989,7/19/2021,"Shanahan, Gleason and Hahn"
-805,97,590052,7825 North Trail,014,316,1993,11/11/2021,"Dickinson, Toy and Trantow"
-806,45,400833,4 Melvin Trail,59307,182,2013,2/5/2022,"Schinner, Schneider and Runolfsson"
-807,81,513091,7198 Beilfuss Lane,2616,471,1999,10/16/2021,Gerlach Group
-808,81,697701,0551 Pennsylvania Parkway,8,588,2005,10/26/2021,"Dickinson, Toy and Trantow"
-809,65,240769,5992 Pawling Hill,43,707,2003,2/14/2022,"Langworth, Murphy and Balistreri"
-810,91,589372,90 Mesta Point,8248,322,1989,8/3/2021,O'Hara-Wilkinson
-811,59,994545,60951 Clemons Court,13,710,2003,8/29/2021,Zieme-Denesik
-812,94,370067,3312 Service Way,41,945,1995,2/6/2022,"Treutel, Senger and Murphy"
-813,95,365216,96 Swallow Lane,6263,900,2007,4/5/2022,Schoen Inc
-814,50,911611,28 Manufacturers Road,2,725,2008,7/7/2021,Kshlerin Inc
-815,88,982100,6449 Weeping Birch Point,65,272,2011,6/22/2021,"Fahey, Ledner and Dooley"
-816,55,638688,661 Jackson Court,99046,973,1998,1/2/2022,"Crooks, Hane and Lindgren"
-817,68,782174,7728 Algoma Parkway,463,420,1995,1/10/2022,O'Conner Group
-818,98,527612,59 Nevada Place,76,687,1994,8/18/2021,"Schinner, Schneider and Runolfsson"
-819,88,528098,5 Fuller Park,4130,822,1993,12/29/2021,Conroy-Lemke
-820,51,274589,543 Londonderry Parkway,03368,279,1995,12/2/2021,Gorczany LLC
-821,74,390105,89738 Badeau Drive,0,40,2005,3/15/2022,O'Conner Group
-822,71,288280,4 Calypso Point,94642,667,2010,7/7/2021,"Dickinson, Toy and Trantow"
-823,76,429326,602 Rockefeller Avenue,8,192,2003,1/17/2022,Paucek Inc
-824,73,705156,400 Gale Crossing,01881,109,2009,10/27/2021,"Crooks, Hane and Lindgren"
-825,91,292856,7 Becker Place,9,63,1999,1/25/2022,Herzog-Senger
-826,93,320560,01212 Havey Trail,185,780,2008,2/2/2022,"Fahey, Ledner and Dooley"
-827,71,235100,7602 Chive Center,4,62,1999,2/9/2022,"Koch, Morar and Kuhn"
-828,86,337653,0 Melby Point,19,683,2002,10/31/2021,Herzog-Senger
-829,97,588756,5 Jenna Trail,4,257,1994,10/18/2021,Keeling and Sons
-830,99,950693,05771 Forster Crossing,658,441,1992,5/7/2021,Conroy-Lemke
-831,88,436904,229 Sutteridge Point,202,413,1983,4/6/2022,Abernathy-Quitzon
-832,43,354480,337 Harper Parkway,04871,796,2007,1/14/2022,Morar and Sons
-833,78,221590,8 Moose Center,463,551,2010,7/5/2021,"Crooks, Hane and Lindgren"
-834,64,964396,67 South Pass,6433,614,2003,2/14/2022,O'Conner Group
-835,47,659576,3 Sutherland Junction,74,14,2000,2/22/2022,Morar and Sons
-836,48,464896,9119 Monica Trail,913,981,2004,5/21/2021,O'Conner Group
-837,83,860192,9 Eagan Crossing,1891,646,2005,7/29/2021,Herzog-Senger
-838,64,246200,414 Lillian Park,99,421,2008,4/18/2022,Keeling and Sons
-839,66,741240,316 Forest Parkway,0,483,2008,11/6/2021,Schoen Inc
-840,70,622629,980 Warrior Point,3,326,2005,4/22/2022,Gerlach Group
-841,99,652015,61 Mendota Parkway,0,59,2009,5/25/2021,"Koch, Morar and Kuhn"
-842,74,641421,355 Surrey Parkway,28505,49,1994,1/22/2022,"Rohan, Gleason and Treutel"
-843,56,316663,47496 Merry Lane,43,777,1997,3/22/2022,"Schinner, Schneider and Runolfsson"
-844,53,942562,185 7th Park,0614,568,2011,7/29/2021,Kunze Inc
-845,78,371104,5 Esch Way,889,160,2000,12/16/2021,"Shanahan, Gleason and Hahn"
-846,67,653513,37594 Petterle Pass,8,741,2005,10/7/2021,Abernathy-Quitzon
-847,71,203786,4 Vernon Road,45454,905,2007,4/30/2022,"Heaney, Upton and Ferry"
-848,70,902941,7 Dryden Lane,07,476,2005,8/9/2021,"Crooks, Hane and Lindgren"
-849,79,240700,62641 Kim Circle,66,919,2007,4/22/2022,"Heaney, Upton and Ferry"
-850,76,649167,5 Main Crossing,57,87,2009,7/14/2021,Kunze Inc
-851,73,652591,03 Fisk Drive,634,653,1996,6/12/2021,"Collier, Zulauf and Stamm"
-852,46,779418,3 Anniversary Point,127,921,1993,9/21/2021,"Lesch, Kihn and Barrows"
-853,86,833307,37 Coolidge Pass,8,944,2006,6/7/2021,Gerlach Group
-854,96,812842,54 Eagan Trail,6,166,1992,1/25/2022,Schoen Inc
-855,62,698340,59770 Manley Junction,6,815,1992,10/26/2021,Conroy-Lemke
-856,50,843359,52 Schurz Road,159,168,2010,4/16/2022,Gerlach Group
-857,81,334580,1 Kennedy Alley,7290,845,2010,10/24/2021,Mueller Group
-858,92,700878,324 Brickson Park Center,39,93,2000,12/1/2021,"Collier, Zulauf and Stamm"
-859,99,583195,16174 Hooker Center,34,128,1993,9/3/2021,"Collier, Zulauf and Stamm"
-860,49,323830,8161 Acker Alley,1731,982,2009,12/25/2021,"Langworth, Murphy and Balistreri"
-861,74,399515,47 Rigney Parkway,538,456,1994,5/18/2021,Kshlerin Inc
-862,48,411228,1733 Truax Way,18,804,2000,11/13/2021,Conroy-Lemke
-863,72,723311,7 Schmedeman Hill,4864,255,2011,8/25/2021,Conroy-Lemke
-864,80,558454,7950 Monterey Crossing,65717,373,2001,6/8/2021,"Schinner, Schneider and Runolfsson"
-865,43,207484,6 Sloan Crossing,5350,43,2011,6/7/2021,Kshlerin Inc
-866,69,259078,8 Pleasure Court,5879,494,2012,3/10/2022,Wisozk Group
-867,55,606932,148 Shasta Parkway,6454,83,2002,1/8/2022,"Heaney, Upton and Ferry"
-868,56,313966,487 Bellgrove Lane,8500,64,2006,5/14/2021,Morar and Sons
-869,80,869588,444 Algoma Hill,4443,270,2011,1/26/2022,Herzog-Senger
-870,88,878681,0 Artisan Point,3288,1,1999,9/21/2021,Gorczany LLC
-871,98,683206,980 Moose Center,6,838,2006,6/19/2021,Herzog-Senger
-872,84,303923,422 Warrior Avenue,8,400,2003,1/30/2022,Conroy-Lemke
-873,55,827773,64207 Service Trail,703,148,2004,2/26/2022,Conroy-Lemke
-874,80,645024,0 Riverside Drive,6,793,1998,5/27/2021,"Collier, Zulauf and Stamm"
-875,79,360103,43620 Kingsford Junction,3,241,1987,8/30/2021,Gerlach Group
-876,70,666737,79 International Center,93,645,1999,2/6/2022,Mueller Group
-877,69,441073,87163 Bayside Way,0,101,2003,5/22/2021,Conroy-Lemke
-878,69,703503,911 Meadow Vale Avenue,277,384,2012,11/13/2021,Kunze Inc
-879,64,552525,299 Northwestern Park,53,202,2008,7/28/2021,Kunze Inc
-880,53,909288,526 Rieder Lane,727,827,2003,1/13/2022,Kshlerin Inc
-881,45,222953,14396 Mariners Cove Place,72223,530,1998,2/16/2022,O'Hara-Wilkinson
-882,93,486667,12 3rd Junction,52,504,2012,7/17/2021,"Rohan, Gleason and Treutel"
-883,54,243205,432 Morrow Lane,411,583,2007,1/24/2022,"Koch, Morar and Kuhn"
-884,48,519817,04469 Blackbird Terrace,5,507,2002,6/10/2021,Emard-Rohan
-885,53,204534,91223 Ruskin Point,43297,97,1987,10/31/2021,"Collier, Zulauf and Stamm"
-886,91,854975,6 David Hill,37,946,2004,3/26/2022,"Schinner, Schneider and Runolfsson"
-887,60,398118,5123 Oriole Street,8310,484,1992,9/7/2021,Kunze Inc
-888,48,351433,58 Dovetail Plaza,00,816,1991,1/27/2022,O'Conner Group
-889,40,635683,702 Surrey Junction,14,333,2011,5/9/2021,Mueller Group
-890,56,284769,475 Sundown Place,6,837,2012,7/25/2021,"Collier, Zulauf and Stamm"
-891,75,696664,9949 West Trail,4,792,2000,7/1/2021,Paucek Inc
-892,41,214141,6 Drewry Plaza,4,215,2007,4/9/2022,Abernathy-Quitzon
-893,65,736300,064 Oneill Road,11175,377,2007,4/15/2022,Morar and Sons
-894,90,246232,28 Center Crossing,48,363,2008,2/16/2022,Gorczany LLC
-895,79,605823,94389 Kings Place,736,129,1992,7/21/2021,"Fahey, Ledner and Dooley"
-896,99,659860,3 David Trail,0,752,1996,1/5/2022,Abernathy-Quitzon
-897,99,460584,00678 Springview Way,14,17,2012,9/30/2021,O'Conner Group
-898,60,711489,06 Bunker Hill Place,2624,840,2001,6/2/2021,Gerlach Group
-899,88,289665,6742 Manitowish Avenue,361,657,2009,4/1/2022,Schoen Inc
-900,53,460757,4808 Bashford Plaza,946,892,2001,8/1/2021,Emard-Rohan
-901,66,926867,6 Montana Point,82670,367,2008,11/30/2021,"Lesch, Kihn and Barrows"
-902,71,578473,8883 Mandrake Hill,36,217,2000,5/24/2021,Keeling and Sons
-903,45,953166,42 Hintze Drive,3971,584,1989,2/5/2022,"Rohan, Gleason and Treutel"
-904,92,762070,1 Crowley Avenue,7789,378,2002,7/12/2021,Gerlach Group
-905,51,785623,433 Sommers Lane,40,675,2008,3/14/2022,Kshlerin Inc
-906,62,536203,63 Old Shore Junction,3896,301,2008,6/17/2021,"Crooks, Hane and Lindgren"
-907,60,752791,6 Troy Place,2664,761,2007,11/19/2021,Wisozk Group
-908,50,555092,3123 Melby Street,29618,317,1995,8/18/2021,Gorczany LLC
-909,72,659214,437 Mesta Terrace,220,967,1992,1/22/2022,"Collier, Zulauf and Stamm"
-910,86,433265,0990 Superior Park,23238,290,2007,3/9/2022,"Dickinson, Toy and Trantow"
-911,69,240870,8729 Hansons Terrace,711,200,1998,4/3/2022,Herzog-Senger
-912,58,560097,978 Fulton Court,357,66,2012,1/27/2022,Paucek Inc
-913,61,852716,0 Sunnyside Street,671,692,2001,8/15/2021,"Koch, Morar and Kuhn"
-914,48,355519,88558 Fair Oaks Avenue,1211,787,2012,10/12/2021,Gerlach Group
-915,71,767907,7 Lighthouse Bay Hill,1520,207,2009,9/10/2021,Schoen Inc
-916,79,686340,060 Independence Trail,71,36,2007,3/1/2022,"Collier, Zulauf and Stamm"
-917,88,386330,65 Graceland Road,43821,371,1986,12/3/2021,"Crooks, Hane and Lindgren"
-918,62,926754,71837 Declaration Way,75473,855,1998,4/1/2022,Gorczany LLC
-919,44,719636,87 Surrey Drive,9112,457,2003,5/29/2021,"Heaney, Upton and Ferry"
-920,85,638675,49054 Nancy Way,28496,990,2005,12/19/2021,Rohan-Brakus
-921,42,246486,4 Homewood Park,142,641,1992,4/6/2022,"Heaney, Upton and Ferry"
-922,78,525558,09 Coolidge Street,2289,963,1990,1/1/2022,"Treutel, Senger and Murphy"
-923,60,929089,89284 Darwin Avenue,7,293,1984,4/8/2022,Rohan-Brakus
-924,42,614217,9531 Vernon Street,7,533,1992,9/26/2021,"Schinner, Schneider and Runolfsson"
-925,89,551152,94891 Cody Drive,0,648,2009,1/21/2022,"Crooks, Hane and Lindgren"
-926,47,641508,1309 Eliot Circle,19,423,2007,7/27/2021,Keeling and Sons
-927,73,733970,45220 Chive Road,0,765,2012,5/18/2021,Conroy-Lemke
-928,68,211476,74 Saint Paul Street,1,150,1984,10/16/2021,"Treutel, Senger and Murphy"
-929,84,844527,8376 Eastlawn Point,8392,927,2002,5/25/2021,Schoen Inc
-930,47,489559,5 Almo Avenue,84,345,2004,5/5/2022,"Treutel, Senger and Murphy"
-931,61,471107,4 School Hill,07,95,1990,9/11/2021,Gorczany LLC
-932,96,265080,205 Texas Center,074,306,1977,4/4/2022,"Heaney, Upton and Ferry"
-933,90,701056,90 Butternut Street,16558,65,2006,11/10/2021,O'Conner Group
-934,98,461540,46127 Canary Trail,4973,557,2012,3/20/2022,Kunze Inc
-935,50,755444,636 Hauk Junction,8665,540,2013,3/7/2022,"Dickinson, Toy and Trantow"
-936,65,678125,5 Eagan Center,715,724,2009,8/22/2021,"Rohan, Gleason and Treutel"
-937,96,543709,37739 Sutherland Hill,450,836,1987,6/30/2021,"Crooks, Hane and Lindgren"
-938,98,753555,0006 Dahle Way,24818,660,1997,9/25/2021,Paucek Inc
-939,54,729991,892 Schmedeman Parkway,592,57,1992,12/30/2021,"Heaney, Upton and Ferry"
-940,45,728554,35992 Lawn Trail,1,936,2007,7/18/2021,Gerlach Group
-941,86,996437,176 Memorial Terrace,928,633,1993,10/2/2021,"Dickinson, Toy and Trantow"
-942,73,703819,5703 Scofield Plaza,02040,955,2006,5/13/2021,Gorczany LLC
-943,89,996479,724 Schurz Park,9353,716,1996,4/18/2022,"Koch, Morar and Kuhn"
-944,42,910688,7851 Prairie Rose Junction,8,635,2000,7/1/2021,Wisozk Group
-945,89,244704,62255 Rockefeller Trail,05,983,1998,11/4/2021,Kunze Inc
-946,53,257383,56134 Hallows Point,60705,893,1988,3/1/2022,"Schinner, Schneider and Runolfsson"
-947,58,902682,0139 Arrowood Trail,86,576,1991,11/11/2021,"Langworth, Murphy and Balistreri"
-948,97,773108,836 Harbort Junction,87171,799,2003,4/14/2022,Emard-Rohan
-949,43,469771,70723 Mendota Avenue,5438,631,2008,6/22/2021,Conroy-Lemke
-950,72,395206,35 Dexter Terrace,397,303,1996,1/19/2022,Herzog-Senger
-951,42,890551,0458 Fairview Avenue,7447,455,2008,7/7/2021,Emard-Rohan
-952,86,327077,4780 Moulton Crossing,411,206,1996,2/12/2022,"Collier, Zulauf and Stamm"
-953,50,714002,6137 Starling Place,26,511,2005,10/29/2021,Gerlach Group
-954,75,274342,849 Morningstar Way,72,396,1996,11/23/2021,Kshlerin Inc
-955,93,903155,1 Dayton Drive,4710,571,2005,6/19/2021,"Crooks, Hane and Lindgren"
-956,70,516733,194 Logan Street,40,221,1995,11/14/2021,Abernathy-Quitzon
-957,44,784196,449 Packers Circle,1911,104,1993,12/31/2021,"Crooks, Hane and Lindgren"
-958,88,281564,3316 Canary Park,801,818,1993,4/1/2022,Conroy-Lemke
-959,50,804088,60 Green Ridge Hill,6,715,1992,11/23/2021,"Fahey, Ledner and Dooley"
-960,68,586535,4625 Towne Street,5106,592,2005,10/5/2021,Abernathy-Quitzon
-961,83,967776,8116 Hermina Terrace,13,746,1995,9/22/2021,Mueller Group
-962,78,339113,68 Marquette Avenue,5,597,2008,10/23/2021,"Schinner, Schneider and Runolfsson"
-963,72,717287,73296 Spaight Court,824,628,2000,11/3/2021,"Rohan, Gleason and Treutel"
-964,42,731841,8 School Crossing,7,760,1998,10/7/2021,"Crooks, Hane and Lindgren"
-965,93,898915,85 Eagle Crest Trail,9,639,1994,3/8/2022,Wisozk Group
-966,54,832738,298 Goodland Junction,409,320,2006,7/24/2021,"Collier, Zulauf and Stamm"
-967,74,423627,5 Katie Lane,30,719,1999,7/31/2021,Kunze Inc
-968,55,376371,9575 Petterle Pass,53235,632,1997,12/2/2021,O'Hara-Wilkinson
-969,87,689937,6 Gerald Avenue,90527,813,1996,11/27/2021,Herzog-Senger
-970,97,706928,25 Heffernan Trail,4542,712,2000,6/19/2021,O'Hara-Wilkinson
-971,41,535838,06 Holy Cross Center,96,644,1999,7/30/2021,Herzog-Senger
-972,46,242681,6225 Sugar Terrace,498,357,2009,2/6/2022,"Lesch, Kihn and Barrows"
-973,73,466678,1 Thierer Parkway,420,125,2008,6/23/2021,"Shanahan, Gleason and Hahn"
-974,43,648128,7 Chinook Trail,214,432,2008,4/23/2022,"Fahey, Ledner and Dooley"
-975,69,322423,159 Westport Road,28,857,1994,3/11/2022,Herzog-Senger
-976,92,958419,8 Stoughton Avenue,2,669,1999,10/2/2021,Wisozk Group
-977,53,441800,9060 Victoria Park,35,473,1995,11/18/2021,O'Conner Group
-978,91,869111,23725 Elgar Trail,9,102,2008,2/24/2022,"Heaney, Upton and Ferry"
-979,69,751979,976 Heath Center,96,47,1997,6/14/2021,Zieme-Denesik
-980,45,597179,9688 Porter Junction,5833,720,2008,11/29/2021,"Shanahan, Gleason and Hahn"
-981,74,701592,4 Thackeray Junction,763,153,2003,9/16/2021,Gorczany LLC
-982,72,207181,9 Knutson Trail,08421,856,2011,10/8/2021,O'Conner Group
-983,91,836912,53746 Gerald Lane,16,425,1985,3/9/2022,Emard-Rohan
-984,68,898236,35 Sachs Park,72062,763,2009,4/13/2022,"Crooks, Hane and Lindgren"
-985,100,829896,11 Bay Street,480,658,2007,3/10/2022,"Rohan, Gleason and Treutel"
-986,90,752846,0 Gulseth Parkway,8610,430,2002,12/4/2021,"Schinner, Schneider and Runolfsson"
-987,48,255051,4 Butterfield Trail,4,731,1997,8/31/2021,"Crooks, Hane and Lindgren"
-988,66,227555,750 Lotheville Way,81128,250,2002,6/17/2021,Wisozk Group
-989,50,785730,70080 Canary Road,5145,655,1994,2/7/2022,Mueller Group
-990,60,765493,76181 Russell Way,96,437,2006,4/19/2022,Gorczany LLC
-991,40,471989,32481 Di Loreto Crossing,5,489,2010,10/19/2021,"Langworth, Murphy and Balistreri"
-992,76,732880,2 Service Pass,99,227,2001,4/7/2022,O'Hara-Wilkinson
-993,46,343276,7 Montana Terrace,95841,798,2011,7/28/2021,"Collier, Zulauf and Stamm"
-994,44,458788,73 Vidon Avenue,14,351,2008,4/3/2022,Schoen Inc
-995,61,800031,548 Linden Plaza,39250,52,1992,11/5/2021,"Heaney, Upton and Ferry"
-996,47,501540,306 Walton Circle,9,656,2010,7/17/2021,"Langworth, Murphy and Balistreri"
-997,46,591427,52474 Jenna Circle,27051,201,2003,10/31/2021,O'Hara-Wilkinson
-998,63,283450,81287 Drewry Road,361,439,1995,12/4/2021,Abernathy-Quitzon
-999,75,417218,2 Ludington Hill,50,846,2005,4/9/2022,"Dickinson, Toy and Trantow"
-1000,48,464848,1727 Bowman Drive,13245,399,1993,1/29/2022,Gorczany LLC
+id,velikost,cena,ulica,hisna_stevilka,postna_stevilka,leto_izgradnje,kupuje_agencija
+1,67,640747,8982 Utah Place,5514,843,2003,20
+2,97,561289,2242 5th Way,355,893,2003,16
+3,52,931381,82 Gina Parkway,92,663,1989,27
+4,62,899633,5617 Linden Crossing,28,673,2008,25
+5,99,346436,87002 Elmside Place,19634,918,1990,8
+6,42,328774,20 Melrose Pass,251,225,2005,9
+7,86,954458,361 Parkside Pass,65,528,2012,29
+8,62,529103,07 Laurel Circle,29,881,2006,10
+9,100,382332,987 Golf Course Trail,4132,294,2003,2
+10,87,451886,3551 Morrow Avenue,23460,681,2011,3
+11,87,535907,218 Lakewood Court,5840,56,1998,24
+12,96,827997,7 Melvin Junction,7,596,2005,15
+13,53,405706,8800 High Crossing Circle,0941,938,2000,3
+14,81,622774,132 Wayridge Pass,0728,358,1984,4
+15,89,760257,2 Ridge Oak Drive,2,32,2008,21
+16,67,356020,68 Mcbride Point,78,59,2012,1
+17,98,776169,3 Acker Way,429,413,1998,23
+18,47,959891,3 Northview Circle,397,349,2003,13
+19,88,848837,2 Pawling Alley,10,421,1993,2
+20,71,521694,75358 Fairfield Trail,87223,973,2000,23
+21,86,291372,09647 Onsgard Trail,57144,608,2012,25
+22,93,744466,6 Johnson Circle,7,29,2006,6
+23,99,691213,4232 Farmco Plaza,9,499,1999,3
+24,78,788001,95286 Meadow Ridge Street,3,393,1998,17
+25,80,414940,37132 Duke Road,60,802,2007,1
+26,67,755727,71 Algoma Alley,372,408,2011,19
+27,91,287187,2627 Scofield Park,15752,326,2012,26
+28,43,463957,150 Rutledge Hill,3,378,2010,6
+29,62,444849,3310 Porter Way,40,273,1988,4
+30,50,963657,6519 Vidon Hill,7703,176,1989,16
+31,63,672451,9094 Darwin Circle,978,168,2003,22
+32,45,703735,3 Menomonie Crossing,0,99,2010,10
+33,58,718608,1028 Lillian Terrace,88071,904,2006,15
+34,73,719204,36649 Ludington Place,738,447,1996,20
+35,100,662878,8503 Gerald Park,8,968,2012,5
+36,67,202637,7854 4th Crossing,339,978,1998,20
+37,84,274899,943 Algoma Plaza,13892,49,2011,23
+38,50,569394,38 Westerfield Terrace,99612,600,2006,26
+39,70,533288,19 Redwing Road,30,934,2009,14
+40,93,459402,854 Golf Avenue,091,831,2005,20
+41,50,471811,5 Mitchell Avenue,2,44,2000,29
+42,72,333776,8 Caliangt Plaza,48126,540,2012,21
+43,53,942985,6 Mandrake Point,14162,785,2002,19
+44,79,395841,41563 Sundown Junction,46263,387,1990,27
+45,43,887648,13780 Corben Terrace,67,790,1998,3
+46,90,455412,1048 Corry Plaza,00014,719,2011,15
+47,70,299193,47 Moland Street,2096,181,2008,5
+48,48,887588,629 Bayside Avenue,109,232,1998,3
+49,52,801940,6732 Schlimgen Plaza,108,24,2003,3
+50,92,749546,2 Manitowish Place,1,388,1994,14
+51,63,300626,31931 Briar Crest Alley,898,855,1999,25
+52,74,509173,41 Toban Alley,23849,498,2008,24
+53,79,594163,242 Memorial Terrace,788,121,2010,27
+54,74,996586,1 3rd Park,9,488,1998,26
+55,99,621020,0 Bartelt Court,38545,870,1990,29
+56,56,203428,304 Prairieview Pass,7,439,2002,11
+57,55,300158,376 Gina Plaza,62679,633,2012,24
+58,40,636377,067 Stone Corner Avenue,0,68,1967,25
+59,99,639718,6435 Old Gate Terrace,0898,753,1999,4
+60,60,698072,8 Melody Park,4380,586,2003,17
+61,69,937502,5 Orin Center,12,309,1969,21
+62,79,412166,69 Morningstar Avenue,41025,22,2011,8
+63,53,813538,4 Sycamore Junction,830,332,1984,2
+64,64,487780,76767 Vera Trail,8862,493,1998,21
+65,99,443562,91 Chinook Court,3,943,2001,10
+66,64,484209,360 Manley Street,42223,917,1991,30
+67,40,960550,7665 New Castle Trail,30851,196,2009,22
+68,52,854494,5 Menomonie Street,56434,300,2011,1
+69,100,419062,6209 Meadow Vale Point,322,477,2002,24
+70,47,421624,79 Graedel Alley,32,996,1995,26
+71,44,235093,683 Badeau Center,9414,589,2010,17
+72,68,367014,3 Duke Way,2230,451,2008,3
+73,88,792217,5552 Boyd Way,374,315,1992,26
+74,93,927424,70946 Ridgeview Road,453,653,1997,19
+75,60,934004,3 Eliot Plaza,84389,910,2008,4
+76,84,394490,482 Johnson Street,86199,565,2005,29
+77,72,951946,55113 American Terrace,966,903,2012,7
+78,42,371316,65 Alpine Pass,91,562,2000,11
+79,48,230404,18536 Twin Pines Terrace,987,10,2000,7
+80,87,548428,7384 Stephen Junction,53141,161,1990,29
+81,79,852554,31 Crest Line Parkway,61,39,1999,13
+82,49,273633,75170 Havey Alley,73,567,2011,21
+83,52,394873,39076 Truax Plaza,83,156,2005,27
+84,55,321501,425 Memorial Plaza,4185,758,1985,14
+85,46,452639,07 Golden Leaf Place,6,236,2003,19
+86,50,805356,67813 Menomonie Point,872,262,1992,9
+87,59,934027,82 Dayton Road,01277,798,2008,16
+88,52,532119,319 Mesta Terrace,116,583,1993,17
+89,59,786566,20829 Main Court,74369,48,2007,29
+90,75,360233,1 Dennis Avenue,197,129,2006,16
+91,86,422634,71 Birchwood Crossing,83674,194,1995,23
+92,72,734671,552 Kenwood Point,4,618,1996,20
+93,50,478430,4 Surrey Center,74,960,2012,4
+94,50,522157,236 Del Sol Place,9,35,2011,24
+95,65,419763,9 Katie Lane,69807,128,2002,4
+96,69,346049,6566 Independence Terrace,61838,791,1989,2
+97,57,705966,2904 Old Gate Park,7,130,2010,8
+98,62,671853,95550 Portage Alley,3,9,2006,16
+99,100,898636,74 Banding Point,23,773,1995,15
+100,76,876697,8 Union Road,2,953,1991,29
+101,97,592432,660 Corben Point,6,765,2000,10
+102,54,980542,3 Banding Street,95,107,2012,24
+103,79,370220,76 Tennyson Crossing,41,878,1997,29
+104,47,699220,534 Mifflin Way,0,202,1995,12
+105,95,668400,8 Riverside Alley,5,11,2003,8
+106,53,786842,2 Green Lane,0,53,2001,25
+107,75,350528,58 Farwell Junction,28437,465,1985,20
+108,60,675608,445 Tomscot Court,0696,195,1995,2
+109,69,796418,776 Londonderry Road,6794,371,1962,9
+110,55,443770,0514 Merry Center,8,937,1992,19
+111,52,437580,90 Golf Pass,0,890,1998,11
+112,67,431511,5 Goodland Circle,227,391,2004,21
+113,87,304275,5 Goodland Pass,4583,946,2010,22
+114,87,789830,5 7th Avenue,78747,454,1989,4
+115,77,256360,38 East Parkway,7701,281,1966,11
+116,99,676590,125 Maple Wood Pass,4,310,1989,30
+117,73,916429,66 Memorial Drive,6,674,2003,1
+118,42,409966,270 Dayton Alley,45,747,2010,24
+119,85,987046,63017 Moland Plaza,03,338,2001,11
+120,50,327339,5 Old Gate Parkway,09,182,1986,10
+121,58,215218,788 Mariners Cove Center,1747,665,1998,17
+122,92,816935,2690 Alpine Center,8166,347,2007,12
+123,75,539275,66 Bayside Place,40,203,2000,19
+124,47,273037,72995 American Pass,900,854,1986,12
+125,92,300690,9053 Dorton Point,681,660,1989,22
+126,60,501171,4231 Ronald Regan Circle,73936,601,1996,19
+127,48,888727,408 Browning Junction,164,846,1996,30
+128,84,362097,549 Main Street,47293,709,2008,28
+129,85,766397,2874 Arkansas Court,5891,803,2002,14
+130,60,853797,7876 Pond Crossing,4573,667,2004,21
+131,59,553046,293 Fremont Trail,18071,913,2006,2
+132,58,974085,455 International Lane,492,47,2002,4
+133,52,720831,4535 Towne Lane,7889,593,1994,24
+134,53,291969,72 Eggendart Plaza,0,975,2012,25
+135,98,833838,93002 Dexter Court,72,782,2011,25
+136,40,878800,26 Di Loreto Junction,1,609,2012,8
+137,69,550297,44 Jana Street,69,455,1989,13
+138,43,809512,17 Eastlawn Road,13104,248,1995,16
+139,49,466465,7 Cody Point,8312,359,1993,25
+140,87,215652,4 Dexter Court,402,523,1966,23
+141,50,747306,4736 Helena Point,108,205,2002,9
+142,77,250587,87 Meadow Valley Junction,5039,698,2004,5
+143,51,350702,98 Bultman Lane,44849,915,1990,28
+144,95,935886,3 Springview Place,16153,171,2001,20
+145,93,336150,47 Cambridge Junction,5287,394,1994,25
+146,93,405013,93 Menomonie Center,6636,482,2012,6
+147,82,940273,85 Lillian Center,978,432,1999,27
+148,97,548897,378 Jana Plaza,97,104,1993,8
+149,76,836762,4 Katie Court,6,641,1989,18
+150,68,436885,0984 Dixon Hill,4333,729,1994,23
+151,85,734064,39047 Ridgeway Street,8184,813,1996,4
+152,80,916737,437 Porter Pass,944,812,1993,24
+153,40,701052,298 Union Alley,41548,827,2004,22
+154,94,465369,77 Amoth Place,7,480,1996,29
+155,52,566209,2871 Nova Avenue,9,286,2008,8
+156,94,513640,44 Garrison Point,77744,478,2001,2
+157,94,594110,61 Rowland Terrace,763,635,1993,8
+158,40,799582,1 Park Meadow Center,10,916,2000,23
+159,97,935884,58974 Vermont Court,16,632,2005,9
+160,85,807770,41 Beilfuss Park,9,277,2009,22
+161,58,852753,601 Bluestem Court,0730,826,1965,28
+162,69,262596,4033 Independence Trail,8483,210,2005,25
+163,93,622067,349 Buena Vista Plaza,9336,238,2006,23
+164,100,494511,21300 Golf View Terrace,3,901,2006,29
+165,63,739898,991 Longview Way,3,921,2000,1
+166,100,356960,4 Shasta Court,5,279,2007,19
+167,46,287365,39249 Sundown Hill,7858,145,2010,20
+168,73,318841,91 Lakeland Alley,6909,661,2011,20
+169,97,523540,96 Farmco Drive,2172,525,1977,27
+170,71,279889,58 Marquette Crossing,5,337,2010,19
+171,66,414323,4911 Waywood Street,4,764,2009,13
+172,82,988559,52654 Graceland Circle,920,283,1987,27
+173,46,683685,436 3rd Plaza,1606,535,2001,2
+174,79,690859,035 Cascade Parkway,258,463,2010,13
+175,85,917856,161 Buell Avenue,90848,532,1992,27
+176,55,308342,6 Elmside Pass,06,654,2004,11
+177,94,268520,8 Graceland Point,781,895,1995,12
+178,75,616755,206 Macpherson Alley,96943,604,1984,1
+179,95,954923,30721 Algoma Pass,01849,839,1998,2
+180,45,600221,9 Village Point,38,602,2003,28
+181,65,663225,0 Forest Run Avenue,35,541,2003,19
+182,65,372240,54956 Thackeray Terrace,25,420,2003,22
+183,73,492553,3 Thierer Pass,93257,536,2013,24
+184,47,563694,343 American Ash Junction,4,619,2008,17
+185,52,289906,1 Anzinger Pass,8681,580,1999,16
+186,81,827856,2 Forster Alley,18,873,2002,10
+187,94,343956,2817 Di Loreto Hill,3,517,1995,3
+188,74,531631,771 La Follette Lane,3445,800,1992,8
+189,48,458842,7 Fremont Drive,0954,656,2007,18
+190,76,284294,1456 Macpherson Alley,3,980,1988,25
+191,89,303304,08143 Transport Street,3718,256,1999,26
+192,43,436771,04 Jenifer Pass,8930,832,1974,3
+193,88,850987,74 Reinke Road,43590,30,2006,5
+194,80,804779,1 Mifflin Trail,64,20,1993,2
+195,75,984632,6878 3rd Park,567,875,2002,1
+196,63,399652,2307 Steensland Pass,91223,133,2002,4
+197,50,643865,70466 Moose Terrace,3,509,1997,15
+198,60,505976,1798 Mandrake Trail,1,458,1999,29
+199,42,670506,85720 Straubel Court,720,616,1986,1
+200,97,351012,888 Esch Court,920,689,2000,30
+201,77,224747,356 Rowland Junction,91,896,1999,27
+202,46,215569,465 Vermont Point,865,861,2011,6
+203,53,941726,73355 Kennedy Park,8,375,2004,28
+204,97,522112,49 Westend Way,8217,157,2009,25
+205,76,606045,57534 Pierstorff Center,36341,481,1986,6
+206,43,872100,94919 Main Terrace,3,266,1987,7
+207,44,389668,5 Scoville Avenue,36,106,2003,9
+208,95,596675,4274 Lakewood Park,913,333,1992,3
+209,72,360970,704 Shelley Pass,55410,422,2009,7
+210,100,294775,81233 8th Circle,597,229,1991,21
+211,61,266707,9 Waubesa Hill,348,102,1999,1
+212,98,973401,1079 Vermont Trail,5642,690,1997,18
+213,69,433169,0671 Fulton Point,31110,587,1974,6
+214,99,865826,024 Muir Park,7286,594,1996,19
+215,47,759193,4909 Hintze Plaza,1,414,2001,1
+216,95,329931,49 Surrey Road,2,705,2011,27
+217,86,435386,608 Eastwood Alley,2799,722,1992,12
+218,72,442732,5844 Onsgard Pass,291,745,1993,12
+219,52,683850,3838 Ludington Court,8488,164,1985,5
+220,45,604019,150 Nobel Center,0,70,2009,7
+221,85,521170,225 Hintze Parkway,12,530,1996,3
+222,56,705748,34 Merchant Plaza,3470,354,1993,9
+223,100,540841,258 Russell Circle,83340,34,2000,30
+224,43,247490,3551 Division Trail,09624,725,1997,29
+225,82,328289,7 Laurel Plaza,98074,862,2013,6
+226,50,708705,3612 Stang Hill,44491,75,2011,19
+227,76,368782,4 Ridge Oak Drive,0170,417,1999,3
+228,57,710169,29490 Maple Hill,30183,617,2011,13
+229,64,523686,86403 Kim Junction,0068,872,1997,8
+230,63,464709,92240 Blackbird Road,37801,16,1990,24
+231,42,248285,5 Monument Street,0,33,2004,5
+232,87,926050,01 Carey Place,88,522,2002,28
+233,41,790542,5465 Clemons Drive,825,443,1999,9
+234,77,819252,7 Sundown Junction,440,733,1981,26
+235,95,656448,249 Cody Circle,2632,850,1992,8
+236,82,976739,6548 Havey Pass,1625,187,2012,19
+237,64,243470,426 Ridgeview Point,75,555,2001,24
+238,58,816406,5 Crescent Oaks Hill,85,989,2004,5
+239,64,274183,609 Ronald Regan Plaza,42,429,1995,28
+240,44,853145,7 Westridge Drive,7977,193,1998,15
+241,74,814663,44782 Red Cloud Alley,95,50,2004,30
+242,90,845892,50589 Stephen Road,9530,223,2000,2
+243,57,822931,0 Lake View Trail,5562,755,1997,19
+244,71,708157,4382 Dakota Terrace,5,109,1996,13
+245,60,659911,16238 Hollow Ridge Park,1031,76,1988,3
+246,42,917038,953 Hansons Junction,0013,676,2006,24
+247,100,871880,59 Erie Place,700,607,2005,4
+248,85,371245,186 Loeprich Circle,04,365,2010,11
+249,65,774359,27 Welch Road,5,865,2012,11
+250,86,922151,18 Weeping Birch Plaza,46536,293,2012,1
+251,73,723839,6 Center Street,074,506,2005,6
+252,75,373286,917 Carioca Place,01,622,2005,16
+253,74,593455,015 Buena Vista Lane,0,651,2009,7
+254,75,216034,57 Lawn Center,52697,373,2010,21
+255,40,791753,087 Prairieview Terrace,305,307,1989,27
+256,47,823709,9 Starling Parkway,3,584,2010,22
+257,64,291621,0 Monica Avenue,7125,840,2010,26
+258,83,377615,17616 Trailsway Alley,16,847,1977,14
+259,86,309830,242 Maywood Avenue,657,762,1997,19
+260,49,955603,93860 Eastwood Way,570,927,2004,16
+261,98,880333,1 Darwin Avenue,63661,270,1985,13
+262,85,385861,95 Beilfuss Plaza,01980,668,1987,19
+263,76,723135,92 Sycamore Place,2,214,2012,28
+264,73,339538,24 Gulseth Circle,9,553,2000,1
+265,97,417820,0783 Eagan Center,54029,406,2008,21
+266,79,347949,1 Kensington Point,03,548,1998,13
+267,84,397809,09 Lotheville Lane,20101,693,1992,21
+268,50,258298,36725 Basil Terrace,57,545,2002,30
+269,70,359520,15 Melby Trail,806,564,1993,26
+270,70,658731,1414 Oakridge Center,1809,900,1995,3
+271,42,352068,1 Northfield Court,6679,119,1998,26
+272,83,891777,21065 South Pass,02706,842,2012,16
+273,62,802619,7 Kim Terrace,94943,118,1999,17
+274,81,634119,4258 Eastwood Point,4871,599,2012,17
+275,93,512310,49837 Macpherson Place,40,131,1994,14
+276,47,526698,12 Redwing Lane,4130,212,2012,9
+277,75,227680,33350 Pleasure Street,468,932,1985,18
+278,80,336420,418 Sunfield Junction,061,132,1984,25
+279,97,276722,5 Lakewood Gardens Trail,88424,190,2010,5
+280,95,422304,978 Loeprich Hill,4093,963,1991,30
+281,92,317266,420 Bobwhite Place,521,325,1990,1
+282,48,869460,9 Vera Terrace,16304,614,1993,22
+283,68,757234,3 Armistice Center,04,757,2000,15
+284,59,711550,712 Pleasure Junction,851,829,1993,14
+285,62,720375,63116 Hanover Terrace,03,339,2002,29
+286,100,743414,68742 Carioca Drive,409,52,1994,3
+287,97,905408,1540 Hooker Court,63,717,2007,6
+288,44,270176,919 Lakeland Point,39,424,1999,4
+289,88,305041,49 High Crossing Pass,25729,475,1995,29
+290,60,871062,64 Hoffman Trail,73948,61,2003,19
+291,55,573000,0849 Lawn Way,0,224,1983,28
+292,40,784157,49 Lindbergh Place,940,880,1994,6
+293,78,386979,7121 Katie Plaza,851,732,1996,5
+294,83,529725,4 Oak Valley Crossing,66528,402,2012,25
+295,54,350455,59804 Forest Street,14617,750,2012,3
+296,85,290911,2 Heath Plaza,67271,100,1986,20
+297,48,817064,4957 Sullivan Circle,2729,821,1999,2
+298,74,737099,934 Mallard Place,5,476,2000,9
+299,67,972693,05 Almo Court,2396,720,2013,20
+300,80,919407,6 Petterle Center,060,276,1998,28
+301,70,845495,2571 Magdeline Circle,0,142,2007,1
+302,63,888125,809 Hermina Place,2,928,2011,27
+303,88,803883,9 Truax Alley,6016,45,1991,5
+304,55,348908,1749 Rigney Hill,575,291,1993,20
+305,84,559919,29 Mallard Lane,02,781,1999,6
+306,69,770341,4 Spenser Circle,5,519,2003,30
+307,69,665900,168 Towne Trail,72953,93,2006,17
+308,77,976351,5 Cardinal Way,8,521,1987,16
+309,61,991797,7886 Goodland Plaza,5,884,2010,17
+310,58,950470,6801 Westport Lane,6,486,1978,19
+311,80,259470,3601 Butternut Trail,11985,986,2011,4
+312,51,418403,92 Ronald Regan Road,74791,208,2002,27
+313,50,560342,45819 Derek Parkway,2461,976,2008,11
+314,91,442550,97581 Butternut Avenue,74651,438,1993,22
+315,40,920832,65984 Fairfield Park,42,786,2013,23
+316,80,380198,87 Daystar Circle,1,174,1995,11
+317,48,432557,4509 Northport Pass,582,990,1993,6
+318,87,737123,00 Veith Place,351,961,1998,18
+319,40,728406,348 7th Alley,61,716,1995,26
+320,50,438289,5153 Merchant Trail,124,398,1992,11
+321,53,205958,975 Sunbrook Street,69551,703,1999,26
+322,97,990403,229 Bunting Court,96,751,2001,10
+323,84,780820,4639 Lakewood Road,95611,191,2009,25
+324,91,801879,13 Tony Trail,80223,169,1957,21
+325,79,420361,13757 Fisk Hill,5495,485,1993,4
+326,76,343734,55 Towne Hill,1060,423,2008,12
+327,64,279104,09 Anniversary Junction,43,448,2004,14
+328,99,804142,002 Scott Lane,2,314,2007,30
+329,79,517004,487 Luster Place,13,882,1995,20
+330,73,329209,1 International Drive,3,328,1986,9
+331,69,411557,9254 Chinook Trail,63706,96,2003,22
+332,73,359309,4 Dunning Street,074,275,1967,18
+333,54,442868,1 Straubel Point,10,428,2009,30
+334,98,568942,6402 Village Green Avenue,52,221,2008,1
+335,92,889420,2752 Jay Plaza,0,491,1998,6
+336,73,508464,29 Golf Course Court,824,259,2011,24
+337,54,520241,3115 Farwell Trail,214,634,2003,21
+338,100,312155,8 Ridgeway Hill,48528,771,1994,27
+339,80,383204,76369 Buena Vista Trail,34,714,1998,1
+340,50,256657,48 Del Sol Court,7,117,2009,6
+341,94,740384,23 Eagan Junction,93952,954,1994,1
+342,73,251922,52826 Graceland Alley,31577,811,2007,9
+343,92,620955,8165 Petterle Center,310,959,1990,8
+344,71,563054,380 Pawling Crossing,6,14,1987,19
+345,44,880432,1 Maywood Place,53044,510,1996,23
+346,50,213283,77506 Sommers Crossing,34,851,1980,6
+347,65,715649,237 Mallard Park,273,215,2010,29
+348,77,518689,678 Muir Way,08363,666,1994,12
+349,94,476884,9 Eastwood Parkway,74,597,2005,6
+350,86,444592,05 Mccormick Parkway,6,940,2005,2
+351,99,840084,03 Arkansas Trail,99910,162,2010,22
+352,49,378332,85422 Lakewood Gardens Junction,2,648,2012,12
+353,40,638760,64 Westend Avenue,9,327,1992,22
+354,100,732747,6938 Goodland Court,8,213,2003,25
+355,61,215154,38 Nancy Place,69,730,1981,7
+356,55,642993,6362 Hudson Park,19,83,1996,16
+357,84,944404,4890 Autumn Leaf Park,359,407,1996,12
+358,47,837494,95954 Eagan Drive,4135,198,2001,17
+359,49,373720,95 Moulton Plaza,7,985,1992,1
+360,46,430605,40 Gina Trail,3,726,2008,11
+361,66,760823,385 Ilene Avenue,639,363,1994,28
+362,45,429887,8963 Service Terrace,0,471,2005,8
+363,70,500357,6322 Village Green Parkway,60619,892,2000,17
+364,98,711408,6 Sunnyside Way,9,926,1999,9
+365,95,921901,2873 Warner Avenue,52328,163,1985,23
+366,64,309568,471 Forest Circle,6,376,2012,29
+367,86,901303,82 Cordelia Place,8,342,1997,25
+368,64,386202,341 Gateway Circle,70,126,2011,18
+369,43,218644,137 Transport Pass,4299,433,1987,8
+370,79,659455,129 La Follette Parkway,936,767,2003,20
+371,56,402528,0275 Kings Pass,65,982,2005,15
+372,76,540446,05 Northport Place,8,25,2006,12
+373,40,473725,05 Reindahl Hill,14,711,1997,7
+374,98,490185,47 Prentice Lane,7,452,2005,15
+375,73,454101,902 Holmberg Parkway,4906,60,2003,27
+376,84,872748,1 Sunfield Court,8997,808,1996,24
+377,87,605538,4 Clyde Gallagher Avenue,061,158,2011,23
+378,72,885982,545 Spaight Circle,900,795,2001,23
+379,57,384769,145 Loeprich Terrace,65442,110,2009,7
+380,91,329584,29 Continental Place,12,526,1998,23
+381,98,569435,18 Dovetail Trail,04148,824,1993,8
+382,100,478317,827 Oakridge Place,05,748,1993,10
+383,66,759613,108 Esker Parkway,2710,512,2009,1
+384,48,715344,38 Norway Maple Place,5381,298,1988,26
+385,50,292376,5 Ridgeway Lane,2463,899,1989,26
+386,56,230625,3 Fordem Park,349,615,2000,26
+387,80,242498,73 Ridgeway Point,818,620,2012,29
+388,76,257506,45900 Bashford Hill,13594,684,1998,7
+389,83,859232,68 Randy Plaza,68,217,1991,2
+390,54,814823,97 Lerdahl Place,23,3,2007,21
+391,40,944938,6611 Huxley Avenue,03220,2,1984,2
+392,71,878284,52 Stang Circle,31276,177,1984,22
+393,87,240028,949 Northport Point,139,405,1995,12
+394,56,481523,34582 Lakeland Alley,75031,822,2013,5
+395,91,438443,954 Sommers Hill,56,508,2011,1
+396,72,741580,3216 Dakota Road,4126,527,2000,18
+397,40,603682,41995 Commercial Avenue,3895,251,2011,24
+398,78,684939,76 Sage Court,7,415,2010,11
+399,46,812274,9 Donald Trail,3,501,2004,26
+400,67,228744,11 Glendale Circle,93020,305,2006,29
+401,69,462851,0615 Jana Junction,702,287,1985,22
+402,58,948025,6 New Castle Court,8,189,1998,27
+403,56,229801,01621 Novick Court,0999,63,2012,30
+404,90,665472,373 Milwaukee Center,52778,449,2009,14
+405,57,362842,2459 Karstens Point,03,252,1995,28
+406,71,352065,0 Erie Pass,981,646,2000,17
+407,82,297139,74308 Gerald Avenue,174,601,1993,14
+408,91,361293,52751 Maple Trail,42,498,2002,18
+409,85,806939,0 Stone Corner Avenue,5,282,2002,9
+410,76,202413,34 Dixon Junction,894,817,1993,25
+411,52,898561,746 Esker Circle,0790,881,2012,1
+412,85,276910,9789 Grasskamp Drive,7853,872,1993,22
+413,47,790763,352 Knutson Crossing,62737,724,2007,27
+414,69,246543,609 Lien Trail,5975,325,2002,4
+415,47,794856,75040 Anderson Point,04558,396,2006,21
+416,95,802483,36 Forest Park,92831,86,2007,8
+417,77,958354,8 Dayton Street,68169,700,2000,22
+418,60,374639,106 Iowa Alley,3889,856,2009,8
+419,72,273142,1400 Nelson Circle,552,994,1966,23
+420,71,441122,311 Russell Parkway,84,569,2002,1
+421,68,326658,6779 Aberg Junction,894,311,2003,18
+422,72,534173,19 Ronald Regan Parkway,5,399,2012,23
+423,66,835357,44 Fisk Alley,4,99,2009,4
+424,86,476635,441 Warrior Road,1,97,2012,20
+425,55,628465,110 Algoma Center,05546,777,2011,21
+426,82,318162,05 Marquette Lane,4229,612,2005,6
+427,87,538099,1119 Sullivan Street,3128,345,2007,26
+428,72,364858,1 Vernon Road,39,77,2007,6
+429,97,375546,5526 Graedel Avenue,75,64,1995,14
+430,52,451996,17 Ryan Crossing,385,381,1987,9
+431,78,927085,63402 Golf Course Park,851,517,2006,25
+432,43,371918,7717 East Avenue,50156,554,1998,28
+433,46,527990,6 Butterfield Point,08,790,1979,4
+434,80,216124,7 2nd Trail,31657,215,1995,7
+435,61,637403,0 Stang Junction,8449,52,1995,22
+436,47,225890,66671 Michigan Terrace,64784,457,2004,21
+437,53,912522,32409 Monica Parkway,650,944,1985,25
+438,86,276679,67390 Golf Course Pass,55,779,1993,1
+439,61,962455,63 Gerald Way,892,559,2000,14
+440,94,846842,114 Eagle Crest Court,7298,153,2011,5
+441,54,793008,31 Arapahoe Alley,8,478,1992,2
+442,57,727503,8 Sundown Center,2,98,2000,29
+443,71,826182,065 Schiller Hill,5691,623,2003,27
+444,70,550244,724 Surrey Center,25,577,1993,13
+445,44,465535,88 Hoepker Road,1,655,2011,13
+446,49,836213,892 8th Lane,58388,743,1992,21
+447,86,937042,716 Tony Park,757,821,2009,20
+448,82,251324,81859 Eggendart Point,6,305,2012,9
+449,42,939847,6 Clemons Center,17,723,1998,10
+450,44,557029,6110 Melrose Court,51,14,2007,16
+451,54,985557,400 Talisman Avenue,0451,208,2007,24
+452,52,272956,7817 Reindahl Trail,1956,78,1985,7
+453,80,554428,18774 Sachtjen Avenue,289,182,2009,11
+454,63,751489,20085 Corry Court,520,970,2008,11
+455,62,474726,5 Lotheville Hill,5,299,1994,4
+456,77,736292,07834 Aberg Crossing,430,375,2001,14
+457,43,899665,3 Kenwood Parkway,105,720,2008,26
+458,86,945874,69414 Pine View Street,958,550,2010,27
+459,94,436842,55 Susan Circle,974,836,1996,2
+460,47,223044,060 Vermont Park,72,710,2010,15
+461,95,760695,6 Westport Avenue,14,754,1994,22
+462,40,850860,3872 Cardinal Place,5678,727,2011,2
+463,72,736674,17550 Hoffman Alley,22,93,1994,2
+464,76,498927,8 Schlimgen Hill,56285,238,1986,25
+465,49,387047,50 David Street,595,9,2005,22
+466,68,756170,0 Daystar Place,2,42,1995,15
+467,64,949055,292 Thackeray Plaza,4221,135,2004,28
+468,59,268861,0034 Anderson Avenue,0301,17,2008,26
+469,99,441241,579 Mesta Park,69722,333,1992,25
+470,89,682198,483 Village Green Street,653,866,2008,20
+471,67,626806,848 Ilene Circle,64,892,2012,17
+472,88,752593,583 Bonner Circle,78864,535,1992,29
+473,54,205698,15 Sloan Hill,99100,492,2011,17
+474,81,877190,27 Troy Parkway,9,811,2003,8
+475,50,759424,732 Annamark Alley,04,410,2002,13
+476,91,583096,30 Sugar Circle,91541,247,2012,26
+477,59,254698,5 Northfield Court,69276,574,2010,17
+478,89,248984,016 Clarendon Road,640,830,2006,10
+479,53,777032,0 Bellgrove Road,86,497,2004,25
+480,75,627523,8 Springs Way,3,619,1992,10
+481,70,633526,757 Texas Junction,65,270,1985,23
+482,62,511097,70 Mendota Point,2,137,1997,18
+483,44,741095,201 Ilene Center,1,10,2001,27
+484,46,602119,7 Fairview Trail,99,615,1991,25
+485,81,694817,11786 Bowman Avenue,17,795,2005,10
+486,100,391410,5612 Onsgard Lane,4689,617,2005,20
+487,76,818584,8 Valley Edge Place,8,824,2002,20
+488,42,900589,5 Crownhardt Park,41,380,1998,28
+489,53,425517,42 Manitowish Terrace,0,740,1976,10
+490,76,664714,4081 Lakeland Lane,4236,908,2013,22
+491,65,328908,5768 Schlimgen Park,34,5,1995,6
+492,78,274109,6 Morningstar Crossing,2,899,1994,21
+493,84,388265,7974 Golf View Alley,07,977,2000,23
+494,65,377771,08236 Hallows Junction,6359,442,2012,12
+495,84,941581,837 Shelley Court,936,998,2004,5
+496,53,690761,89012 Waywood Junction,8,906,2004,3
+497,58,263649,7 Jay Court,0,963,1991,6
+498,86,236961,5316 Parkside Crossing,96453,164,1994,24
+499,88,773546,58528 Stephen Center,6063,661,2012,8
+500,40,888390,5259 Columbus Avenue,6033,667,2008,2
+501,96,340158,991 Scoville Pass,335,45,1994,25
+502,69,774888,11403 Sachs Lane,83749,320,2006,27
+503,81,313828,729 Bonner Hill,4,849,2000,21
+504,58,825591,2486 Texas Pass,9913,251,2008,18
+505,94,887061,8010 Lerdahl Court,5940,236,1993,23
+506,72,318831,979 Main Place,324,839,1986,23
+507,95,847243,982 Gateway Way,8679,322,1994,7
+508,78,903276,6868 Forster Drive,422,694,2006,8
+509,79,437831,7 Westport Drive,14,232,2004,29
+510,73,532800,3 Summerview Lane,76246,199,2005,13
+511,54,682974,1 Havey Pass,5762,545,1994,9
+512,42,336425,09367 Welch Road,420,4,2003,21
+513,71,986988,0 Browning Junction,0089,223,1999,12
+514,66,623953,57 Lakeland Road,4068,440,1998,29
+515,55,900884,617 3rd Park,74,94,2004,11
+516,64,349555,43 Tennyson Street,7,121,1996,23
+517,77,908378,83980 Lillian Way,07944,880,1988,10
+518,65,793921,622 Brickson Park Plaza,3,480,2011,27
+519,79,773975,099 2nd Junction,85,100,1996,18
+520,82,505368,2 Utah Parkway,1,317,2008,8
+521,88,629687,41 Morningstar Avenue,9893,170,2008,26
+522,54,539212,691 Bowman Avenue,8850,411,1988,25
+523,59,241166,38 Surrey Pass,29508,557,1989,29
+524,62,560451,1 Waywood Park,65923,648,1993,27
+525,99,868375,70746 Bluestem Parkway,290,597,2001,10
+526,92,802206,4861 Thompson Center,6864,455,1992,21
+527,99,835512,3 Golden Leaf Parkway,1710,939,2001,15
+528,62,978744,921 Butterfield Alley,44,845,2008,9
+529,83,861390,9568 Redwing Avenue,21,802,1993,19
+530,69,301930,38738 Tomscot Avenue,0,57,1995,20
+531,45,857455,139 Farwell Hill,634,909,1985,20
+532,93,908345,119 Texas Hill,7818,697,2000,25
+533,72,567525,62 Holmberg Point,221,513,2000,11
+534,59,263979,6 Johnson Way,8981,695,1986,6
+535,89,867182,2 Knutson Trail,1785,656,2007,5
+536,43,489552,0 Dovetail Court,49,858,2007,12
+537,49,306134,6 Lakewood Pass,13235,774,1994,9
+538,92,234532,98 Monterey Avenue,3,212,1998,8
+539,87,406860,69 Springview Trail,166,563,1991,21
+540,48,668425,5 Spaight Center,36174,204,2011,7
+541,49,844447,8799 Anthes Circle,4,519,1994,5
+542,63,346079,1241 Old Shore Center,49224,205,1994,26
+543,93,513443,245 Reindahl Way,4,745,1992,24
+544,71,548450,22 Milwaukee Road,5876,552,1984,12
+545,60,962036,1 Ilene Street,8433,636,2008,5
+546,52,848557,502 Hoffman Park,0597,613,2004,18
+547,95,373825,0464 Jenifer Way,9143,79,2008,5
+548,82,260211,251 Commercial Way,717,21,2005,3
+549,89,416821,67799 Emmet Crossing,9591,594,2001,14
+550,90,991086,990 Del Mar Court,50,211,1994,20
+551,91,818593,9 4th Circle,82,635,2007,24
+552,92,458438,61557 Mcbride Alley,6158,878,1992,25
+553,46,595191,35745 Shelley Avenue,4373,431,2004,23
+554,56,774157,6 Commercial Road,8,943,1983,2
+555,45,738952,12502 Lerdahl Place,3913,490,1995,30
+556,63,355922,82715 Grover Point,37,763,2009,10
+557,78,985667,808 Anderson Court,15409,657,1997,10
+558,68,301557,7 Mcguire Parkway,9,864,1991,5
+559,60,813496,48767 Mitchell Alley,04730,222,2006,20
+560,71,803012,29 Swallow Circle,177,122,1996,19
+561,76,575469,004 Miller Hill,36,954,2009,3
+562,67,704826,5 Oriole Plaza,954,588,1992,19
+563,78,715477,68 Division Way,3,421,1995,25
+564,70,929582,1116 Hintze Hill,2903,74,2009,26
+565,80,874773,3288 Randy Circle,84387,920,2010,7
+566,45,404504,072 1st Point,0,809,2005,26
+567,59,275565,6 Crownhardt Way,343,985,2010,15
+568,77,345203,73 Merry Park,9,679,2007,27
+569,58,728750,959 Stoughton Court,882,268,1999,7
+570,53,482925,23 Memorial Lane,6,143,2011,3
+571,98,729642,55201 Northridge Plaza,3793,291,1993,5
+572,95,290171,31 Bashford Drive,11256,756,2006,21
+573,92,368194,0 Prairieview Way,41,508,2009,16
+574,75,951021,7158 Sunfield Place,018,201,2009,25
+575,76,477210,61201 Kedzie Point,53265,759,2007,22
+576,74,419332,7469 Lyons Pass,09,198,1985,19
+577,44,474676,3059 Mosinee Lane,98226,368,2008,15
+578,40,588726,63812 Dryden Street,423,669,1997,9
+579,87,570830,90486 Tomscot Center,18195,927,2011,5
+580,43,630308,6 Riverside Plaza,87,123,1991,20
+581,58,777416,406 Eagle Crest Lane,83,29,1993,3
+582,67,478122,22 Butterfield Place,44283,560,2007,23
+583,92,206818,5 Forest Center,3,179,2008,8
+584,95,313289,4370 Mccormick Center,025,586,2008,16
+585,79,329058,5 Meadow Ridge Place,71,571,2007,16
+586,88,631539,73 Ohio Lane,72,822,2003,12
+587,63,757630,1 Tennessee Court,885,614,2007,9
+588,76,209075,7354 Meadow Ridge Parkway,3,787,2003,9
+589,51,423174,66 Merchant Alley,6,329,1995,22
+590,54,250645,96094 5th Place,59,649,2011,10
+591,55,924312,9 Scott Avenue,506,76,2007,11
+592,80,238948,55 Westridge Hill,6368,231,2011,12
+593,43,303130,24 Sage Street,07,438,1993,21
+594,49,992512,133 Dwight Terrace,48603,114,2005,15
+595,91,397641,35 Kropf Hill,5571,863,2001,10
+596,48,509638,778 Rieder Point,265,144,2002,29
+597,81,861346,90 Maple Wood Avenue,0563,386,2009,10
+598,97,749209,50977 Ramsey Alley,5661,23,2011,4
+599,54,491150,0342 Hansons Street,49188,468,2004,29
+600,57,694522,925 Tennessee Court,418,405,1985,6
+601,42,433672,85 Hayes Place,59656,310,1991,16
+602,63,581175,54669 Westerfield Street,381,931,2007,5
+603,74,377952,0940 Sunfield Pass,5935,191,2002,27
+604,77,468030,0478 Pine View Drive,28,172,2007,7
+605,65,778730,36 Anthes Center,7,472,2008,29
+606,74,304292,3 Pleasure Court,061,919,2000,6
+607,74,602183,0990 Carberry Way,8,942,2010,5
+608,51,629941,062 Ronald Regan Trail,48,62,2002,29
+609,42,911567,8490 Spenser Center,45,330,2000,29
+610,53,525941,80888 Southridge Pass,89,981,2007,2
+611,64,609886,695 Marcy Point,29,392,2007,18
+612,88,637727,4027 Farwell Parkway,76580,19,1987,19
+613,41,827596,708 Coleman Trail,61,653,2009,28
+614,94,782136,39 Comanche Circle,45505,567,2006,5
+615,74,770275,17882 Hanover Park,8,775,1995,30
+616,40,552828,6710 Tennessee Park,282,768,1995,22
+617,84,345271,73 Redwing Junction,78434,11,2002,17
+618,63,398138,429 Arizona Place,56404,889,1993,13
+619,47,349243,43988 Annamark Pass,65464,53,2008,23
+620,56,792769,32692 Lunder Way,74313,55,1991,8
+621,61,878858,923 7th Plaza,24,394,2012,23
+622,62,655004,2 Coolidge Parkway,295,369,2008,25
+623,55,786711,491 East Crossing,8,769,2000,4
+624,85,866399,804 Anhalt Center,572,44,1997,23
+625,95,958676,0338 Goodland Street,86732,888,2006,6
+626,77,800743,26 South Pass,804,659,1998,9
+627,97,900050,780 Golf Course Circle,647,857,1989,29
+628,71,305762,41643 Mallory Point,66,739,2007,20
+629,90,843193,4708 Northport Trail,11,150,2012,17
+630,47,921468,395 Monterey Street,8292,575,2000,3
+631,94,416542,961 Forest Lane,71108,988,2012,15
+632,59,810716,46503 High Crossing Court,5,644,2002,14
+633,56,684231,56330 Packers Way,8,378,1997,6
+634,66,899170,11114 Mallard Center,2,467,1988,16
+635,73,232970,0 Granby Court,5,726,2008,1
+636,52,776973,5774 Hanson Place,40,189,2002,13
+637,74,810896,36162 Fuller Circle,34,163,2009,14
+638,48,502860,03622 Miller Drive,0144,709,2012,10
+639,83,485473,1 Jana Junction,2,352,1994,15
+640,98,217267,42455 Gateway Junction,150,917,2010,26
+641,69,908160,392 Welch Road,3,460,2011,27
+642,51,252893,8 Grayhawk Junction,86,360,2003,16
+643,75,650212,325 Main Point,3877,391,1994,22
+644,71,772103,146 Prairieview Avenue,38724,539,1999,24
+645,49,823639,2287 Grim Pass,0286,85,1993,28
+646,58,761047,36379 Sachtjen Road,53,119,2012,15
+647,79,701762,56012 Del Sol Place,5450,791,1996,27
+648,54,237404,6061 Burrows Avenue,8034,838,1993,21
+649,41,553345,38 Gerald Circle,960,312,2010,30
+650,45,523825,09951 International Crossing,41,365,1984,23
+651,86,838221,9807 Fuller Crossing,277,128,1996,7
+652,66,202214,983 Ramsey Way,1,806,1997,2
+653,53,895522,30248 Kings Alley,05071,109,2001,18
+654,80,725590,961 Chive Point,51170,340,1996,13
+655,99,989643,4897 Spaight Drive,51314,901,2000,12
+656,45,221827,84392 Jenifer Alley,64,242,1995,12
+657,90,425237,1880 Calypso Circle,734,374,2008,27
+658,92,428465,57365 Goodland Alley,2344,220,1967,23
+659,64,318248,6 Stephen Center,57,995,2005,20
+660,97,729021,15 Hoard Drive,163,789,1999,7
+661,43,840667,45 Jackson Trail,14502,359,1994,16
+662,46,295497,45546 Autumn Leaf Park,97,877,1993,14
+663,57,569052,29094 Schmedeman Street,49446,80,2007,20
+664,71,653704,12613 Dayton Place,828,324,2001,29
+665,88,855335,69447 Cambridge Alley,603,770,1996,4
+666,74,388161,5 Nobel Park,14879,506,1992,22
+667,68,222838,78479 Ruskin Court,4743,662,1997,29
+668,94,247273,7 Grim Pass,1820,841,2007,16
+669,59,819603,112 Washington Trail,2971,353,2004,9
+670,75,906421,4867 Sachtjen Place,81338,286,2011,30
+671,68,989684,28939 Crownhardt Hill,99,412,2008,4
+672,86,601817,757 Coleman Plaza,754,111,2010,27
+673,63,668159,7639 Bellgrove Point,6542,848,2002,7
+674,97,390228,3 Melby Road,67,900,2011,3
+675,97,586659,3984 Judy Terrace,160,6,2012,20
+676,91,334002,06949 Dennis Avenue,6,262,2005,19
+677,48,863829,809 Merry Terrace,030,630,1999,12
+678,42,209678,60843 Sachs Avenue,2,758,1999,18
+679,54,346054,67701 Bayside Crossing,259,600,2010,15
+680,60,571164,4 Clyde Gallagher Center,4774,837,1987,17
+681,87,836085,36 Hanson Lane,4615,244,1990,20
+682,64,849191,9821 Kropf Point,6,309,2010,1
+683,49,458567,34313 Birchwood Park,40,663,2006,18
+684,59,446326,519 Huxley Avenue,3,488,2006,29
+685,94,275043,66836 Moulton Lane,8004,718,1926,9
+686,77,491381,486 Golf View Road,2,218,1999,5
+687,87,275865,3492 Washington Street,07403,328,1995,23
+688,61,296888,17536 Kensington Trail,2,486,1998,2
+689,76,661516,6 Crowley Hill,7861,746,2000,8
+690,52,502916,0 Melrose Center,558,266,2009,27
+691,65,452132,85631 Pearson Terrace,5,237,1994,25
+692,47,575066,1 Lakeland Point,159,265,2002,3
+693,67,854730,49 Eastlawn Terrace,41814,494,1995,19
+694,82,748687,894 Corry Circle,1271,683,1993,27
+695,79,354537,23 Hanover Lane,579,846,2004,14
+696,56,211650,72516 Sunnyside Park,7,583,2012,16
+697,59,392805,42 Saint Paul Street,799,290,2012,25
+698,72,284208,36192 Golden Leaf Park,51,314,2011,24
+699,88,830106,5 Surrey Court,78,35,1993,20
+700,71,956873,56 Buena Vista Trail,53,812,2001,30
+701,85,730020,47664 Portage Terrace,16826,658,2002,21
+702,61,653121,24 Green Ridge Crossing,3934,439,2010,10
+703,81,844595,83 Birchwood Hill,43,393,1990,8
+704,69,263817,2 Waywood Lane,66751,18,2000,5
+705,53,582896,74 Crescent Oaks Court,69831,16,1999,15
+706,48,348979,90551 Talisman Trail,6,194,1990,21
+707,85,344860,5 Monica Plaza,797,344,2005,4
+708,43,673165,7338 Hazelcrest Lane,262,633,2002,10
+709,99,779438,05 Northridge Pass,00,887,2006,7
+710,99,843934,548 Declaration Road,0573,355,1997,19
+711,48,290802,48 Ramsey Parkway,4820,387,1991,23
+712,44,699976,431 Ryan Road,15343,38,1990,21
+713,78,702335,1084 Bluejay Hill,02,650,1995,18
+714,83,736020,22726 Clyde Gallagher Circle,52829,620,1987,28
+715,60,767504,4 Hooker Terrace,18,142,2002,16
+716,54,675719,9 Melby Trail,8,973,2009,9
+717,80,371876,13386 Golden Leaf Alley,2189,627,1989,2
+718,97,404272,1119 1st Road,3,171,2001,8
+719,89,370706,3949 Quincy Pass,85,426,2008,23
+720,88,380028,67803 Linden Terrace,779,302,2003,13
+721,55,387760,66455 Bunker Hill Lane,9538,485,1996,25
+722,65,995008,31478 Everett Trail,1,350,2006,13
+723,71,390838,012 Havey Crossing,2,816,2000,27
+724,96,635922,752 Dunning Drive,954,503,2001,2
+725,54,686703,39520 Hayes Avenue,19,88,1994,30
+726,76,493947,0186 Holmberg Trail,7,512,2010,5
+727,89,809635,1985 Forest Run Way,3,750,1990,15
+728,57,830000,10197 Melvin Crossing,70,604,2001,13
+729,93,637328,8182 Lakewood Gardens Road,317,258,1993,8
+730,92,205545,416 Longview Parkway,142,501,1988,3
+731,92,426948,3 Oakridge Way,57,929,2005,5
+732,74,981256,43 Clyde Gallagher Hill,85,152,1986,19
+733,62,457364,5 Red Cloud Trail,99,753,1994,12
+734,94,335254,561 Bayside Drive,8,459,2009,11
+735,89,995635,4 Summerview Way,0,435,2011,26
+736,53,354960,26783 Orin Junction,30,781,2000,30
+737,66,340071,7148 Utah Court,420,300,1993,15
+738,65,902322,48790 Monica Pass,721,752,1997,11
+739,96,697093,87 Kennedy Center,51,825,1998,8
+740,47,916003,07 Meadow Valley Alley,2413,941,2010,29
+741,77,234800,3 Melby Alley,317,450,1994,3
+742,52,479810,64 Oriole Point,5688,895,1995,15
+743,74,825163,370 Twin Pines Place,22,26,1992,27
+744,77,851105,254 Meadow Vale Hill,7313,241,1992,4
+745,72,215798,64 Fuller Center,0,532,2003,27
+746,99,430710,7994 Butternut Junction,4,686,1988,18
+747,42,283485,1602 Schmedeman Crossing,65,956,2012,4
+748,73,922464,912 Arizona Lane,72,323,2009,30
+749,56,898440,36000 Hudson Alley,656,95,1985,7
+750,56,270939,88283 Havey Alley,23604,646,1999,1
+751,67,746765,88713 Susan Crossing,68628,273,2004,19
+752,82,681920,01769 Lawn Center,2,884,2003,2
+753,68,270826,0206 Dunning Park,81,188,1999,9
+754,43,961364,107 Susan Street,0,955,1986,12
+755,63,580765,9628 Kipling Park,01,500,2012,13
+756,78,961967,7303 Raven Way,897,744,1991,27
+757,88,770184,0 Messerschmidt Alley,45484,947,2000,5
+758,91,821547,44142 Northland Pass,7,90,2005,10
+759,100,393683,294 Schlimgen Street,70464,40,2004,10
+760,48,302284,36 Steensland Court,5130,239,2012,25
+761,40,713664,06024 Milwaukee Street,01,773,1992,27
+762,45,217027,46 Bartelt Way,492,156,2007,20
+763,85,657322,38 Farwell Pass,039,398,2007,22
+764,58,550969,313 Lakewood Gardens Point,13908,698,1993,23
+765,77,215663,148 Duke Park,1,102,1989,5
+766,96,688163,7456 Buell Plaza,2,766,2007,29
+767,56,375777,495 Sunbrook Pass,82,479,1997,14
+768,61,577039,9462 Cascade Terrace,1,971,2011,16
+769,62,215083,98 Almo Center,1847,584,1996,20
+770,56,331865,5 Larry Junction,94,983,2001,29
+771,89,239397,03 Bartillon Road,1,582,1995,26
+772,62,572619,8118 Hollow Ridge Terrace,324,514,1997,15
+773,57,870369,2096 Randy Avenue,66,272,1994,10
+774,69,453575,38 Emmet Road,6499,515,2012,3
+775,49,849919,92 Crowley Place,2,632,2010,17
+776,56,409257,725 Straubel Road,9,22,2003,29
+777,40,597797,9 Nobel Circle,40868,672,2003,13
+778,75,211955,98734 2nd Avenue,2,828,2005,2
+779,85,233962,897 Moland Place,25711,728,1994,17
+780,57,554935,7869 Sutteridge Terrace,7,831,1991,29
+781,64,650069,01 Vernon Avenue,7624,274,2003,15
+782,99,854059,756 Starling Pass,02,967,2000,7
+783,95,917173,3984 Loeprich Place,8789,471,2007,1
+784,67,980161,41 Muir Drive,948,104,1985,6
+785,46,509878,3635 Waxwing Center,49037,974,2009,27
+786,94,384123,42547 Buell Crossing,6,883,2013,13
+787,75,695788,4 Monterey Crossing,4405,383,2006,8
+788,83,414267,785 Red Cloud Avenue,34,126,2008,2
+789,49,289086,7 Oriole Trail,47,139,2011,5
+790,94,836327,46933 Garrison Circle,06226,68,2006,2
+791,61,715271,0335 Coolidge Street,22,206,2005,20
+792,80,375672,466 Moose Trail,0,610,1994,18
+793,75,244049,703 Bartillon Court,78296,377,1999,13
+794,96,830646,5503 Union Point,43806,278,2006,12
+795,98,895855,8172 Claremont Plaza,233,568,2002,6
+796,98,462607,20 Hansons Parkway,3021,296,2005,13
+797,42,361209,49 Mayer Trail,295,81,2003,29
+798,47,289999,35 Ronald Regan Plaza,5975,406,1997,12
+799,41,685808,143 Brentwood Center,75297,51,2002,29
+800,44,833824,889 Meadow Valley Street,5,859,1994,2
+801,50,720477,749 Fairfield Road,61199,367,2005,10
+802,71,991391,3356 Haas Lane,51400,935,2004,9
+803,66,721900,4 Main Street,997,996,1988,14
+804,86,200030,4352 Vermont Parkway,4182,910,1993,11
+805,74,813780,277 Fulton Way,61,425,1994,27
+806,48,680605,45535 Shopko Way,9206,602,2007,27
+807,82,556797,8046 Sachs Alley,9,363,1997,26
+808,51,719675,205 Emmet Point,636,531,2000,26
+809,83,520577,707 Scott Road,66,240,1999,15
+810,63,251840,279 Clemons Center,467,546,1986,11
+811,52,594792,09 Nobel Trail,645,833,1995,25
+812,51,430690,1056 Meadow Vale Terrace,19,407,2004,30
+813,83,631791,3 Main Parkway,56053,720,2003,26
+814,95,930016,7862 Emmet Pass,12675,124,2003,29
+815,40,373493,807 Manufacturers Drive,36,116,2006,10
+816,82,973553,3 Holy Cross Circle,44286,98,1996,13
+817,92,789521,2308 Judy Terrace,0,506,2009,2
+818,89,478270,74 Stoughton Avenue,54,715,2007,13
+819,93,929257,8 Muir Drive,566,494,1996,16
+820,65,359415,2 Kim Park,3729,672,2010,9
+821,53,210661,761 Autumn Leaf Terrace,7,153,1993,15
+822,82,626063,744 Meadow Ridge Terrace,03232,300,1989,10
+823,67,890214,500 Rowland Way,25982,785,2009,27
+824,84,577153,52234 3rd Junction,62872,657,1992,17
+825,100,580559,6 Fieldstone Way,562,852,1999,20
+826,83,232383,088 Forest Dale Center,23,557,1989,12
+827,65,454974,2524 Sunnyside Circle,70872,22,2008,29
+828,65,576081,6 Weeping Birch Plaza,7098,359,2001,25
+829,44,719471,619 Beilfuss Lane,27,246,2005,22
+830,70,640537,154 Monument Center,5839,578,1982,26
+831,80,748417,74 Ronald Regan Drive,0374,778,2006,4
+832,62,425778,67112 Kings Drive,15,558,1993,17
+833,71,877646,1972 Montana Junction,37505,110,2009,28
+834,79,526669,52931 Bartelt Plaza,50871,303,2009,15
+835,45,781957,7 Twin Pines Road,17088,365,2010,19
+836,64,990542,25994 Morrow Crossing,71227,47,1985,21
+837,72,455463,784 Corscot Alley,11,517,1993,29
+838,81,618831,7841 Spaight Park,14,439,2006,21
+839,95,321183,1 Dakota Trail,841,658,1987,12
+840,82,284709,8 Logan Street,001,575,1989,19
+841,51,981600,58925 Paget Court,40790,263,2011,18
+842,78,758138,968 Larry Place,424,348,2004,11
+843,99,813021,01141 Linden Terrace,5,292,2005,1
+844,68,333788,8808 Gina Crossing,88,33,2006,27
+845,46,746237,16983 Helena Drive,8,973,2001,24
+846,90,488558,66520 Jana Hill,426,765,1998,29
+847,49,845585,9 Park Meadow Drive,12,667,2000,28
+848,63,774632,9156 Hermina Lane,12,898,1993,4
+849,63,872700,62 Westridge Terrace,175,436,1999,27
+850,42,657471,4852 Erie Park,5,984,1993,20
+851,51,297889,66392 Anhalt Lane,742,434,2008,9
+852,79,398944,5 Debra Lane,644,172,2012,26
+853,45,255196,2 South Terrace,45,992,2004,6
+854,75,612024,0 Mariners Cove Alley,57285,37,2008,5
+855,52,795290,7 Lakewood Gardens Alley,85823,349,1991,15
+856,86,845839,95 School Terrace,1403,28,1989,4
+857,94,555887,86325 Messerschmidt Road,4,562,1997,11
+858,87,848811,3621 Mccormick Pass,9509,746,2010,30
+859,95,429373,72 Jenna Pass,5471,866,2003,28
+860,45,878407,9 Starling Plaza,3511,526,2001,6
+861,58,492829,46797 Mockingbird Plaza,89206,784,2007,21
+862,65,836641,5 Northport Hill,4945,540,1995,5
+863,74,234024,61 Stephen Center,129,507,1958,8
+864,51,294902,6 Mallard Trail,0494,5,2011,1
+865,92,860062,338 Hoepker Place,6,644,2000,14
+866,95,829340,147 Tony Way,18036,990,2002,28
+867,72,773018,475 Cordelia Hill,60742,71,2003,1
+868,83,424385,241 Delaware Drive,028,290,2009,23
+869,80,604180,6 Mayfield Trail,05,170,1997,8
+870,69,955673,1 Merchant Court,38721,36,2000,27
+871,71,649161,0 Scott Center,2259,789,2008,24
+872,77,315614,5618 Summerview Lane,77,967,1997,22
+873,51,634981,5897 Morning Junction,557,899,1989,30
+874,40,876381,400 Browning Plaza,5,239,1992,2
+875,58,631581,055 Sugar Point,6,181,2005,22
+876,43,520342,28 Susan Crossing,0,459,1967,17
+877,68,986395,8 Scott Road,2,758,1995,13
+878,85,597842,2 Pierstorff Crossing,2908,454,1988,3
+879,76,954488,18 Shasta Road,9400,398,1994,27
+880,76,807064,407 Packers Road,6,179,1992,30
+881,73,558990,35719 Towne Junction,2172,958,2011,3
+882,84,240887,2 3rd Road,71432,629,2012,14
+883,94,877201,663 Arrowood Parkway,013,205,2009,2
+884,45,761010,1 Judy Trail,99,283,1999,27
+885,44,880651,1727 Vermont Court,33,298,2007,8
+886,50,477271,3766 Bobwhite Terrace,6,186,1992,12
+887,52,506971,22 Kedzie Street,0559,182,1992,21
+888,61,436333,40759 Charing Cross Crossing,76,548,1993,4
+889,54,361833,95 Jana Trail,128,128,2002,21
+890,71,832234,787 Thierer Court,39,80,1997,9
+891,53,210445,3 Bonner Terrace,73018,509,1994,3
+892,69,684671,83 Raven Terrace,79388,735,2006,22
+893,49,559619,00 Loeprich Plaza,1,89,2007,21
+894,41,338774,85 Summerview Hill,032,272,1998,9
+895,50,689425,04 Anthes Point,9413,626,2002,28
+896,48,683112,2985 Morning Junction,44,838,2001,24
+897,55,594813,09746 Del Mar Street,180,611,2003,13
+898,87,567502,9 Sunbrook Alley,52,207,1994,21
+899,43,906418,16804 Little Fleur Court,48178,930,2002,3
+900,42,675280,734 Dexter Trail,991,257,2010,28
+901,86,996935,52 Farwell Alley,138,103,2001,5
+902,50,817908,583 Corry Way,750,185,1992,27
+903,91,778624,729 Warrior Crossing,49,849,2003,30
+904,81,901815,956 Clove Crossing,8519,156,2007,11
+905,90,945080,74173 Esker Center,5843,854,2011,21
+906,48,384887,90759 Continental Street,30225,811,1993,21
+907,89,291956,42 Schurz Court,625,282,2013,19
+908,89,790096,43 Cottonwood Alley,22,392,2005,19
+909,99,858516,3005 Shopko Center,31529,541,2006,15
+910,82,206298,180 Becker Hill,727,11,2001,12
+911,88,741797,73122 Comanche Crossing,545,894,1991,19
+912,73,464164,0 Union Road,87889,350,2010,11
+913,87,575221,721 Harbort Circle,6,295,1993,25
+914,46,655423,360 Colorado Parkway,3,700,1989,1
+915,64,626858,68 Hanson Road,1,360,1999,21
+916,63,854203,52813 Westend Junction,494,215,1997,20
+917,58,719780,825 Surrey Terrace,4,286,1967,9
+918,75,662835,992 Scoville Junction,9768,197,2009,11
+919,93,219648,0 Erie Hill,866,76,1986,1
+920,51,980813,2213 Dwight Lane,704,919,1995,30
+921,87,800553,85995 Susan Way,76,220,2010,14
+922,61,361674,8264 Manley Road,2234,145,1985,15
+923,62,527905,10957 Bartelt Terrace,863,4,2010,19
+924,94,209589,7 Hudson Hill,52980,741,1993,18
+925,82,822782,5378 Trailsway Court,3,793,2010,17
+926,55,310190,34 Grover Avenue,35,837,2000,14
+927,51,435282,77 Acker Place,9,388,2001,24
+928,41,844929,01273 Sachtjen Point,79,974,2007,6
+929,98,714062,5289 Melvin Center,875,345,1995,24
+930,93,968075,206 Rigney Way,1,921,2010,4
+931,86,795326,854 Monterey Crossing,74827,157,1986,16
+932,59,436357,7087 Sloan Lane,1732,971,2007,14
+933,57,758531,38 Golden Leaf Hill,565,111,2009,10
+934,81,667830,93 Sutherland Park,16,422,1990,14
+935,76,643124,5 Becker Street,4444,535,1996,4
+936,69,638819,63 Mayfield Street,68533,792,2012,27
+937,59,582764,3008 Morningstar Park,88,966,1998,29
+938,63,343067,3914 Chive Crossing,397,887,2007,4
+939,58,873543,3253 Express Trail,65,356,2011,6
+940,77,211129,31 Cody Crossing,1,959,1992,19
+941,55,293120,44 Prentice Center,8619,550,2002,17
+942,59,948109,46984 Trailsway Plaza,311,87,2010,29
+943,45,560172,84153 Harbort Parkway,5589,60,1995,16
+944,92,246606,9824 Fulton Junction,37,306,2010,1
+945,48,646659,434 Kings Drive,88,13,2004,4
+946,41,326407,14870 Monterey Drive,5786,39,2002,6
+947,62,505083,80 Annamark Parkway,34,671,2006,28
+948,51,411334,943 Vahlen Lane,869,603,2009,18
+949,44,872769,48092 Fallview Crossing,076,608,2010,25
+950,46,611457,38351 Novick Street,66739,751,2011,22
+951,53,400083,52276 Kinsman Terrace,57338,576,1991,3
+952,83,351183,94792 Bluestem Center,0939,32,2000,24
+953,86,790095,04 Grim Lane,6038,621,2002,12
+954,75,246889,9275 Hanson Lane,9024,342,1998,23
+955,65,475031,7596 Buhler Park,00,477,2002,24
+956,100,820125,887 Amoth Lane,8,480,1983,1
+957,82,289991,89 Sachs Alley,09,853,2003,11
+958,63,851773,167 Mockingbird Avenue,69252,166,2002,5
+959,58,378723,4 Pawling Terrace,33,250,2005,2
+960,53,768151,0 Southridge Alley,06,864,2009,11
+961,80,917740,2286 Upham Place,5718,607,2001,24
+962,89,408940,8 Fairview Trail,495,760,2012,6
+963,42,984318,32 Kim Avenue,6605,394,2002,1
+964,84,433797,25 Lakewood Alley,615,801,2010,7
+965,55,980155,055 Steensland Avenue,28,90,2011,22
+966,59,842980,11 Dawn Alley,199,390,2010,19
+967,49,850952,4 Golden Leaf Plaza,8034,467,2005,23
+968,93,929769,99523 Clove Terrace,496,830,2005,22
+969,58,677462,85506 Main Place,8,130,2001,13
+970,47,894281,1161 Claremont Junction,6777,127,1995,18
+971,92,430758,08 Forest Dale Place,84066,18,2011,18
+972,80,866591,34 Veith Road,08,260,2009,13
+973,93,691237,74 Rockefeller Terrace,916,464,1991,13
+974,85,225835,5 Gerald Plaza,16,883,2005,1
+975,47,261878,40633 Lyons Avenue,24,314,1998,26
+976,50,896209,93 Fieldstone Terrace,5972,247,1987,28
+977,77,565138,58221 Reinke Terrace,0704,163,2011,26
+978,80,809265,1 Summit Place,7,78,2008,5
+979,40,207934,2507 4th Road,7744,982,1980,8
+980,40,527362,2193 Hazelcrest Road,08301,761,1987,22
+981,45,333551,46 Red Cloud Hill,90934,401,1992,20
+982,69,768570,86205 Graceland Pass,4263,788,2009,18
+983,84,361548,0528 Fisk Plaza,19653,2,1997,23
+984,41,854935,7 Forster Center,48,521,1994,1
+985,43,437708,7 Nova Street,16,268,1996,15
+986,68,586326,1 La Follette Hill,5831,222,2008,3
+987,44,871980,6436 Rigney Way,56,19,1997,27
+988,40,994228,1033 Delladonna Road,17,404,1994,17
+989,89,805437,207 Linden Trail,7,25,1993,19
+990,71,644291,47709 Mayfield Park,9312,330,2009,2
+991,80,639728,67875 High Crossing Center,0,583,2007,21
+992,63,657988,614 Sommers Street,4833,328,2000,4
+993,92,942088,2 Walton Hill,066,699,2003,28
+994,61,642650,7118 Brickson Park Terrace,11400,431,1985,26
+995,64,453006,4110 Village Court,79105,344,2011,22
+996,78,381866,92869 Tennessee Court,18,144,1996,28
+997,82,891448,9 Brentwood Terrace,55595,395,1993,12
+998,82,238244,72 Butterfield Plaza,173,848,1996,17
+999,84,936836,223 High Crossing Plaza,9116,523,2012,22
+1000,48,414167,39 Old Gate Way,3841,812,2009,22

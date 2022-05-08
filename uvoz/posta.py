@@ -23,7 +23,7 @@ def pobrisi_tabelo():
     conn.commit()
 
 def uvozi_podatke():
-    with open("podatki/posta.csv", encoding="utf-16", errors='ignore') as f:
+    with open("podatki/posta.csv", encoding="utf-8", errors='ignore') as f:
         rd = csv.reader(f)
         next(rd) # izpusti naslovno vrstico
         for r in rd:
@@ -40,5 +40,5 @@ conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, passwo
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
 # pobrisi_tabelo()
-# ustvari_tabelo()
+#ustvari_tabelo()
 uvozi_podatke()

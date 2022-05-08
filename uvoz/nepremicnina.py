@@ -15,10 +15,9 @@ def ustvari_tabelo():
         cena INTEGER NOT NULL,
         ulica TEXT NOT NULL,
         hisna_stevilka INTEGER NOT NULL,
-        postna_stevilka INTEGER REFERENCES posta(postna_stevilka)
+        postna_stevilka INTEGER REFERENCES posta(postna_stevilka),
         leto_izgradnje INTEGER NOT NULL,
-        datum_nakupa DATE NOT NULL,
-        kupuje_agencija TEXT REFERENCES agencija(ime) 
+        kupuje_agencija INTEGER REFERENCES agencija(id)  
     );
     """) 
     conn.commit()
@@ -30,22 +29,21 @@ def pobrisi_tabelo():
     conn.commit()
 
 def uvozi_podatke():
-    with open("podatki/nepremicnina.csv", encoding="utf-16", errors='ignore') as f:
+    with open("podatki/nepremicnina.csv", encoding="utf-8", errors='ignore') as f:
         rd = csv.reader(f)
         next(rd) # izpusti naslovno vrstico
         for r in rd:
             cur.execute("""
                 INSERT INTO nepremicnina
-                (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, datum_nakupa, kupuje_agencija)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             """, r)
-            print("Uvožena nepremicnina %s z ID-jem %s" % (r[3], r[0]))
     conn.commit()
 
 
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-# pobrisi_tabelo()
-# ustvari_tabelo()
+#pobrisi_tabelo()
+#ustvari_tabelo()
 uvozi_podatke()
