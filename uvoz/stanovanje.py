@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import auth as auth
+import uvoz.auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
