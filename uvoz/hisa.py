@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import uvoz.auth as auth
+import auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -10,7 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE hisa (
-        id INTEGER REFERENCES nepremicnina(id),
+        id INTEGER REFERENCES nepremicnina(id) NOT NULL,
         bazen INTEGER NOT NULL,
         igrisce INTEGER NOT NULL,
         velikost_vrta INTEGER NOT NULL

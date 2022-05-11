@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import uvoz.auth as auth
+import auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -10,14 +10,14 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE oseba (
-        id SERIAL UNIQUE PRIMARY KEY,
+        id SERIAL UNIQUE PRIMARY KEY NOT NULL,
         ime TEXT NOT NULL,
         priimek TEXT NOT NULL,
         ulica TEXT NOT NULL,
         hisna_stevilka INTEGER NOT NULL,
         email TEXT NOT NULL unique,
         telefon TEXT NOT NULL,
-        posta_id INTEGER REFERENCES posta(postna_stevilka)  
+        posta_id INTEGER REFERENCES posta(postna_stevilka) NOT NULL 
     );
     """) 
     conn.commit()

@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import uvoz.auth as auth
+import auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -10,7 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE posta (
-        postna_stevilka SERIAL UNIQUE PRIMARY KEY,
+        postna_stevilka SERIAL UNIQUE PRIMARY KEY NOT NULL,
         posta TEXT NOT NULL
     );
     """) 
@@ -39,6 +39,6 @@ def uvozi_podatke():
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-# pobrisi_tabelo()
+#pobrisi_tabelo()
 #ustvari_tabelo()
 #uvozi_podatke()

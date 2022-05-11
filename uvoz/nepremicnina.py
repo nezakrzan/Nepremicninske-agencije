@@ -10,14 +10,14 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE nepremicnina (
-        id SERIAL UNIQUE PRIMARY KEY ,
+        id SERIAL UNIQUE PRIMARY KEY NOT NULL,
         velikost INTEGER NOT NULL,
         cena INTEGER NOT NULL,
         ulica TEXT NOT NULL,
         hisna_stevilka INTEGER NOT NULL,
-        postna_stevilka INTEGER REFERENCES posta(postna_stevilka),
+        postna_stevilka INTEGER REFERENCES posta(postna_stevilka) NOT NULL,
         leto_izgradnje INTEGER NOT NULL,
-        kupuje_agencija INTEGER REFERENCES agencija(id)  
+        kupuje_agencija INTEGER REFERENCES agencija(id) NOT NULL 
     );
     """) 
     conn.commit()

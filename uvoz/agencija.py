@@ -1,5 +1,5 @@
 # uvozimo ustrezne podatke za povezavo
-import uvoz.auth as auth
+import auth as auth
 
 # uvozimo psycopg2
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -13,7 +13,7 @@ def ustvari_tabelo():
             id SERIAL UNIQUE PRIMARY KEY NOT NULL,
             ime TEXT NOT NULL,
             mesto TEXT NOT NULL,
-            postna_st INTEGER REFERENCES posta(postna_stevilka)
+            postna_st INTEGER REFERENCES posta(postna_stevilka) NOT NULL
             );
     """)
     conn.commit()
@@ -42,5 +42,5 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
 #pobrisi_tabelo()
 #ustvari_tabelo()
-#uvozi_podatke()
+uvozi_podatke()
 
