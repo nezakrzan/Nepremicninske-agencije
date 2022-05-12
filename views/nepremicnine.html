@@ -1,0 +1,26 @@
+%rebase('osnova.html', naslov='Nepremičnine')
+
+  <table cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>id</th>
+     <th>Velikost</th>
+     <th>Cena</th>
+     <th>Ulica</th>
+     <th>Hišna številka</th>
+     <th>Poštna številka</th>
+     <th>Leto izgradnje</th>
+     <th>Kupuje agencija</th>
+  </tr>
+  %for (id,velikost,cena,ulica,hisna_stevilka,postna_stevilka,leto_izgradnje,kupuje_agencija) in nepremicnine:
+    <tr>
+       <td>{{id}}</td>
+       <td>{{velikost}}</td>
+       <td>{{cena}}</td>
+       <td>{{ulica}}</td>
+       <td>{{hisna_stevilka}}</td>
+       <td>{{postna_stevilka}}</td>
+       <td>{{leto_izgradnje}}</td>
+       <td>{{kupuje_agencija}}</td>
+    </tr>
+  %end
+  </table>

@@ -1,0 +1,26 @@
+%rebase('osnova.html', naslov='Osebe')
+
+  <table cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>id</th>
+     <th>Ime</th>
+     <th>Priimek</th>
+     <th>Ulica</th>
+     <th>Hišna številka</th>
+     <th>e-mail</th>
+     <th>Telefonska številka</th>
+     <th>Pošta</th>
+  </tr>
+  %for (id,ime,priimek,ulica,hisna_stevilka,email,telefon,posta_id) in osebe:
+    <tr>
+       <td>{{id}}</td>
+       <td>{{ime}}</td>
+       <td>{{priimek}}</td>
+       <td>{{ulica}}</td>
+       <td>{{hisna_stevilka}}</td>
+       <td>{{email}}</td>
+       <td>{{telefon}}</td>
+       <td>{{posta_id}}</td>
+    </tr>
+  %end
+  </table>

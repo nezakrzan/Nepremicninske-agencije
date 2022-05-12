@@ -27,7 +27,16 @@ def static(filename):
 
 @get('/')
 def index():
-    return 'Začetna stran'
+    cur.execute("SELECT * FROM oseba ORDER BY priimek, ime")
+    return template('oseba.html', osebe=cur)
+
+######################################################################
+#Izpis tabel
+
+#@get('/oseba')
+#def oseba():
+    #cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
+    #oseba = cur.execute("SELECT * ")
 
 ######################################################################
 # Glavni program
