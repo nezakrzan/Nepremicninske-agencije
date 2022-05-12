@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-from bottle import *
+from bottleext import *
 
 ######################################################################
 import psycopg2, psycopg2.extensions, psycopg2.extras
@@ -32,6 +32,11 @@ def index():
 
 ######################################################################
 #Izpis tabel
+
+@get('/nepremicnine/<x:int>/')
+def transakcije(x):
+    cur.execute("SELECT * FROM nepremicnine ORDER BY id", [x])
+    return template('nepremicnine.html', x=x, transakcije=cur)
 
 #@get('/oseba')
 #def oseba():
