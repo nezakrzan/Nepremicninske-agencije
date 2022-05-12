@@ -33,10 +33,10 @@ def index():
 ######################################################################
 #Izpis tabel
 
-@get('/nepremicnine/<x:int>/')
-def nepremicnine(x):
-    cur.execute("SELECT * FROM nepremicnine ORDER BY id", [x])
-    return template('nepremicnine.html', x=x, nepremicnine=cur)
+@get('/nepremicnina/<x:int>/')
+def nepremicnina(x):
+    cur.execute("SELECT * FROM nepremicnina ORDER BY id", [x])
+    return template('nepremicnina.html', x=x, nepremicnina=cur)
 
 #@get('/oseba')
 #def oseba():
