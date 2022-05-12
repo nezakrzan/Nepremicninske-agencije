@@ -34,9 +34,9 @@ def index():
 #Izpis tabel
 
 @get('/nepremicnine/<x:int>/')
-def transakcije(x):
+def nepremicnine(x):
     cur.execute("SELECT * FROM nepremicnine ORDER BY id", [x])
-    return template('nepremicnine.html', x=x, transakcije=cur)
+    return template('nepremicnine.html', x=x, nepremicnine=cur)
 
 #@get('/oseba')
 #def oseba():
