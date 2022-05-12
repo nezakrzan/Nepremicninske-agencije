@@ -38,3 +38,5 @@ def index():
 # Iz bottle dokumentacije o parametru reloader=True: Every time you edit a module file, 
 # the reloader restarts the server process and loads the newest version of your code. 
 run(host='localhost', port=8080, reloader=True)
+
+######################################################################
