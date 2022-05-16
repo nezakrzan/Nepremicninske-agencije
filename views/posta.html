@@ -1,0 +1,14 @@
+%rebase('osnova.html', naslov='posta')
+
+  <table cellpadding="0" cellspacing="0" border="1">
+    <tr>
+       <th>Poštna številka</th>
+       <th>Kraj</th>
+    </tr>
+    %for (postna_stevilka, posta) in posta:
+      <tr>
+         <td>{{postna_stevilka}}</td>
+         <td>{{posta}}</td>
+      </tr>
+    %end
+    </table>
