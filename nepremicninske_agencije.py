@@ -56,6 +56,16 @@ def komitent():
      """)
     return template('komitent.html', komitent=cur)
 
+#tabela agenta
+@get('/agent')
+def agent():
+    cur.execute("""
+    SELECT id_agent, oseba.ime, oseba.priimek, plača, agencija, agencija.ime FROM agent
+    LEFT JOIN oseba ON agent.id_agent = oseba.id
+    LEFT JOIN agencija ON agent.agencija = agencija.id
+     """)
+    return template('agent.html', agent=cur)
+
 @get('/posta')
 def posta():
     cur.execute("""
