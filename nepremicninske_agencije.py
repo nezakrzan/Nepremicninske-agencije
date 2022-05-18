@@ -46,7 +46,15 @@ def oseba():
     SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta FROM oseba
     INNER JOIN posta ON posta.postna_stevilka = oseba.posta_id
     ORDER BY oseba.priimek """)
-    return template('oseba.html', osebe=cur)
+    return template('oseba.html', oseba=cur)
+
+@get('/komitent')
+def komitent():
+    cur.execute("""
+    SELECT id_komitent, oseba.ime, oseba.priimek, kupuje_nepremicnino, njegov_agent FROM komitent
+    LEFT JOIN oseba ON komitent.id_komitent = oseba.id
+     """)
+    return template('komitent.html', komitent=cur)
 
 @get('/posta')
 def posta():
