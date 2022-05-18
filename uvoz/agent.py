@@ -10,9 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE agent (
-        id_agent INTEGER REFERENCES oseba(id) NOT NULL,
-        ime TEXT NOT NULL,
-        priimek TEXT NOT NULL,
+        id_agent INTEGER UNIQUE REFERENCES oseba(id) NOT NULL,
         plača INTEGER NOT NULL,
         agencija INTEGER REFERENCES agencija(id) NOT NULL
     );
@@ -21,7 +19,7 @@ def ustvari_tabelo():
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE agent;
+        DROP TABLE agent CASCADE;
     """)
     conn.commit()
 
@@ -32,8 +30,8 @@ def uvozi_podatke():
         for r in rd:
             cur.execute("""
                 INSERT INTO agent
-                (id_agent,ime,priimek,plača, agencija)
-                VALUES (%s, %s, %s, %s, %s)
+                (id_agent,plača, agencija)
+                VALUES (%s, %s, %s)
             """, r)
     conn.commit()
 
@@ -41,6 +39,6 @@ def uvozi_podatke():
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-#pobrisi_tabelo()
-#ustvari_tabelo()
-#uvozi_podatke()
+pobrisi_tabelo()
+ustvari_tabelo()
+uvozi_podatke()

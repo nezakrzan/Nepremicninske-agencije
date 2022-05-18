@@ -11,8 +11,6 @@ def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE komitent (
         id_komitent INTEGER REFERENCES oseba(id) NOT NULL,
-        ime TEXT NOT NULL,
-        priimek TEXT NOT NULL,
         kupuje_nepremicnino INTEGER REFERENCES nepremicnina(id) NOT NULL,
         njegov_agent INTEGER REFERENCES agent(id_agent) NOT NULL
     );
@@ -32,8 +30,8 @@ def uvozi_podatke():
         for r in rd:
             cur.execute("""
                 INSERT INTO komitent
-                (id_komitent,ime,priimek, kupuje_nepremicnino, njegov_agent)
-                VALUES (%s, %s, %s, %s, %s)
+                (id_komitent,kupuje_nepremicnino, njegov_agent)
+                VALUES (%s, %s, %s)
             """, r)
     conn.commit()
 
@@ -41,7 +39,7 @@ def uvozi_podatke():
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-#pobrisi_tabelo()
+pobrisi_tabelo()
 ustvari_tabelo()
-#uvozi_podatke()
+uvozi_podatke()
 
