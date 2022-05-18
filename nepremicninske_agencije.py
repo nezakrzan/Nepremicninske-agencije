@@ -37,10 +37,11 @@ def static(filename):
 #začetna stran 
 @get('/')
 def hello():
-    return 'Začetna stran'
+    return template('index.html', naslov='nepremicnine')
 
-@get('/osebe')
-def index():
+
+@get('/oseba')
+def oseba():
     cur.execute("""
     SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta FROM oseba
     INNER JOIN posta ON posta.postna_stevilka = oseba.posta_id
