@@ -1,0 +1,16 @@
+%rebase('osnova.html', naslov='komitent')
+
+<table cellpadding="0" cellspacing="0" border="1">
+    <tr>
+       <th>Id</th>
+       <th>Kupuje nepremičnino</th>
+       <th>Njegov Agent</th>
+    </tr>
+    %for (id, kupuje_nepremičnino, njegov_agent) in osebe:
+      <tr>
+         <td>{{id}}</td>
+         <td>{{kupuje_nepremičnino}}</td>
+         <td>{{njegov_agent}}</td>
+      </tr>
+    %end
+    </table>

@@ -24,7 +24,7 @@ def ustvari_tabelo():
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE oseba;
+        DROP TABLE oseba CASCADE;
     """)
     conn.commit()
 
@@ -44,6 +44,6 @@ def uvozi_podatke():
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-#pobrisi_tabelo()
-#ustvari_tabelo()
-#uvozi_podatke()
+pobrisi_tabelo()
+ustvari_tabelo()
+uvozi_podatke()
