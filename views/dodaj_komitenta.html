@@ -1,0 +1,13 @@
+% setdefault('naslov', 'Dodajanje komitenta')
+% rebase('osnova.html')
+
+%if napaka:
+  <p class="opozorilo">{{napaka}}</p>
+%end
+
+  <form action="{{url('dodaj_komitenta')}}" method="POST">
+    <p>ID Komitenta: <input type="numeric" name="id_komitent" value="{{id_komitent}}"></p>
+    <p>Ime: <input type="text" name="ime" value="{{ime}}"></p>
+    <p>Cena: <input type="numeric" name="cena" value="{{cena}}"></p>
+    <p><input type="submit" value="Dodaj"></p>
+  </form>
