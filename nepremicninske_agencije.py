@@ -48,6 +48,30 @@ def oseba():
     ORDER BY oseba.priimek """)
     return template('oseba.html', oseba=cur)
 
+@get('/dodaj_oseba')
+def dodaj_oseba():
+    return template('dodaj_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', napaka=None)
+
+@post('/dodaj_oseba')
+def dodaj_oseba_post():
+    id = request.forms.id
+    ime = request.forms.ime
+    priimek = request.forms.priimek
+    ulica = request.forms.ulica
+    hisna_stevilka = request.forms.hisna_stevilka
+    email = request.forms.email
+    telefon = request.forms.telefon
+    posta_id = request.forms.posta_id
+    try:
+        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id))
+        conn.commit()
+    except Exception as ex:
+        conn.rollback()
+        return template('dodaj_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id,
+                        napaka='Zgodila se je napaka: %s' % ex)
+    redirect(url('/oseba'))
+
 @get('/komitent')
 def komitent():
     cur.execute("""
