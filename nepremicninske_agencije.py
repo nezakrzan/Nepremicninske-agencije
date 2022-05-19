@@ -76,7 +76,7 @@ def posta():
 @get('/nepremicnina')
 def nepremicnina():
     cur.execute("""
-        SELECT agencija.id, agencija.ime, agencija.mesto, agencija.id FROM nepremicnina
+        SELECT nepremicnina.id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija FROM nepremicnina
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
     """)
     return template('nepremicnina.html', nepremicnina=cur)
