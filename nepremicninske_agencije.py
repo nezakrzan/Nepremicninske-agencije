@@ -162,7 +162,7 @@ def oseba():
 
 @get('/dodaj_oseba')
 def dodaj_oseba():
-    return template('dodaj_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', napaka=None)
+    return template('dodaj_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
 
 @post('/dodaj_oseba')
 def dodaj_oseba_post():
@@ -174,17 +174,46 @@ def dodaj_oseba_post():
     email = request.forms.email
     telefon = request.forms.telefon
     posta_id = request.forms.posta_id
-
+    uporabnisko_ime = request.forms.uporabnisko_ime
+    geslo = request.forms.geslo
 
     try:
-        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id))
+        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
         conn.commit()
     except Exception as ex:
         conn.rollback()
-        return template('dodaj_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id,
+        return template('dodaj_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
                         napaka='Zgodila se je napaka: %s' % ex)
     redirect(url('/oseba'))
+
+def najdi_id_osebe():
+    cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
+    return cur.fetchall()
+
+@get('/uredi_oseba')
+def uredi_oseba():
+    #uporabnik = preveriUporabnika()
+    #if uporabnik is None: 
+        #return
+    return template('uredi_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None, oseba=najdi_id_osebe())
+
+@post('/uredi_oseba')
+def uredi_oseba_post():
+    #uporabnik = preveriUporabnika()
+    #if uporabnik is None: 
+        #return
+    id = request.forms.id
+    ime = request.forms.ime
+    try:
+        cur.execute("UPDATE oseba SET ime=%s WHERE id=%s",
+                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, Uporabnisko_ime, geslo))
+        conn.commit()
+    except Exception as ex:
+        conn.rollback()
+        return template('uredi_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
+                        napaka='Zgodila se je napaka: %s' % ex)
+    redirect(url('oseba'))
 
 @get('/komitent')
 def komitent():
