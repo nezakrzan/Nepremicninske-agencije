@@ -10,8 +10,10 @@
      <th>e-mail</th>
      <th>Telefonska številka</th>
      <th>Pošta</th>
+     <th>Uprabniško ime</th>
+     <th>Geslo</th>
   </tr>
-  %for (id,ime,priimek,ulica,hisna_stevilka,email,telefon,postna_stevilka, kraj) in oseba:
+  %for (id,ime,priimek,ulica,hisna_stevilka,email,telefon,postna_stevilka, kraj, uporabnisko_ime, geslo) in oseba:
     <tr>
        <td>{{id}}</td>
        <td>{{ime}}</td>
@@ -21,6 +23,8 @@
        <td>{{email}}</td>
        <td>{{telefon}}</td>
        <td>{{postna_stevilka}} {{kraj}}</td>
+       <td>{{uporabnisko_ime}}</td>
+       <td>{{geslo}}</td>
     </tr>
   %end
   </table>

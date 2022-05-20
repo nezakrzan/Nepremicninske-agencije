@@ -43,7 +43,7 @@ def hello():
 @get('/oseba')
 def oseba():
     cur.execute("""
-    SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta FROM oseba
+    SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta, uporabnisko_ime, geslo FROM oseba
     INNER JOIN posta ON posta.postna_stevilka = oseba.posta_id
     ORDER BY oseba.priimek """)
     return template('oseba.html', oseba=cur)
