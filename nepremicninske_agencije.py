@@ -11,6 +11,14 @@ import auth_public as auth
 import psycopg2, psycopg2.extensions, psycopg2.extras
 psycopg2.extensions.register_type(psycopg2.extensions.UNICODE) # se znebimo problemov s šumniki
 
+import os
+import hashlib
+
+# privzete nastavitve
+SERVER_PORT = os.environ.get('BOTTLE_PORT', 8080)
+RELOADER = os.environ.get('BOTTLE_RELOADER', True)
+DB_PORT = os.environ.get('POSTGRES_PORT', 5432)
+
 # Zakomentiraj, če ne želiš sporočil o napakah
 debug = True
 
@@ -33,14 +41,28 @@ def nastaviSporocilo(sporocilo = None):
 def static(filename):
     return static_file(filename, root='static')
 
+def preveriUporabnika(): 
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    if uporabnisko_ime:
+       # cur = baza.cursor()    
+        uporabnik = None
+        try: 
+            cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
+            uporabnik = cur.fetchone()
+        except:
+            uporabnik = None
+        if uporabnik: 
+            return uporabnik
+    redirect('/prijava')
 
+####################################################################
+#začetna stran
 @get('/')
 def hello():
-#    return 'Začetna stran'
     return template('zacetna_stran.html')
 
+####################################################################
 # prijava, registracija, odjava
-
 def hashGesla(s):
     m = hashlib.sha256()
     m.update(s.encode("utf-8"))
@@ -129,7 +151,7 @@ def odjava_get():
     bottle.Response.delete_cookie(key='uporabnisko_ime')
     redirect('/prijava')
 
-
+####################################################################
 @get('/oseba')
 def oseba():
     cur.execute("""
