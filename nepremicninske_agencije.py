@@ -19,10 +19,10 @@ skrivnost = "rODX3ulHw3ZYRdbIVcp1IfJTDn8iQTH6TFaNBgrSkjIulr"
 def nastaviSporocilo(sporocilo = None):
     # global napakaSporocilo
     staro = request.get_cookie("sporocilo", secret=skrivnost)
-    if sporocilo is None:
-        bottle.Response.delete_cookie(key='sporocilo', path='/', secret=skrivnost)
-    else:
-        bottle.Response.set_cookie(key='sporocilo', value=sporocilo, path="/", secret=skrivnost)
+#    if sporocilo is None:
+#        bottle.Response.delete_cookie(key='sporocilo', path='/', secret=skrivnost)
+#    else:
+#        bottle.Response.set_cookie(key='sporocilo', value=sporocilo, path="/", secret=skrivnost)
     return staro 
 
 # Funkcije za izgradnjo strani
@@ -34,10 +34,100 @@ def static(filename):
     return static_file(filename, root='static')
 
 
-#začetna stran 
 @get('/')
 def hello():
-    return template('index.html', naslov='nepremicnine')
+#    return 'Začetna stran'
+    return template('zacetna_stran.html')
+
+# prijava, registracija, odjava
+
+def hashGesla(s):
+    m = hashlib.sha256()
+    m.update(s.encode("utf-8"))
+    return m.hexdigest()
+
+@get('/registracija')
+def registracija_get():
+    napaka = nastaviSporocilo()
+    return template('registracija.html', napaka=napaka)
+
+@post('/registracija')
+def registracija_post():
+    id = request.forms.id
+    ime = request.forms.ime
+    priimek = request.forms.priimek
+    ulica = request.forms.ulica
+    hisna_stevilka = request.forms.hisna_stevilka
+    email = request.forms.email
+    telefon = request.forms.telefon
+    posta_id = request.forms.posta_id
+    uporabnisko_ime = request.forms.uporabnisko_ime
+    geslo = request.forms.geslo
+    geslo2 = request.forms.geslo2
+    if uporabnisko_ime is None or geslo is None or geslo2 is None:
+        nastaviSporocilo('Registracija ni možna') 
+        redirect('/registracija')
+        return
+    oseba = cur 
+    uporabnik = None
+    try: 
+        uporabnik = cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = ?", [uporabnisko_ime])
+    except:
+        uporabnik = None
+    if uporabnik is None:
+        nastaviSporocilo('Registracija ni možna') 
+        redirect('/registracija')
+        return
+    if len(geslo) < 4:
+        nastaviSporocilo('Geslo mora imeti vsaj 4 znake.') 
+        redirect('/registracija')
+        return
+    if geslo != geslo2:
+        nastaviSporocilo('Gesli se ne ujemata.') 
+        redirect('/registracija')
+        return
+    zgostitev = hashGesla(geslo)
+    cur.execute("""INSERT INTO oseba
+                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
+    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, path='/', secret=skrivnost)
+    redirect('/osebe')
+
+
+@get('/prijava')
+def prijava_get():
+    return template('prijava.html')
+
+@post('/prijava')
+def prijava_post():
+    uporabnisko_ime = request.forms.uporabnisko_ime
+    geslo = request.forms.geslo
+    if uporabnisko_ime is None or geslo is None:
+        nastaviSporocilo('Uporabniško ima in geslo morata biti neprazna') 
+        redirect('/prijava')
+        return
+    oseba = cur   
+    hashBaza = None
+    try: 
+        hashBaza = cur.execute("SELECT geslo FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
+        hashBaza = hashBaza[0]
+    except:
+        hashBaza = None
+    if hashBaza is None:
+        nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
+        redirect('/prijava')
+        return
+    if hashGesla(geslo) != hashBaza:
+        nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
+        redirect('/prijava')
+        return
+    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, secret=skrivnost)
+    redirect('/komitent')
+    
+@get('/odjava')
+def odjava_get():
+    bottle.Response.delete_cookie(key='uporabnisko_ime')
+    redirect('/prijava')
 
 
 @get('/oseba')
