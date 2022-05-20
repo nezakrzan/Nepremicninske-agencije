@@ -1,11 +1,11 @@
-% setdefault('naslov', 'Dodajanje komitenta')
+% setdefault('naslov', 'Dodajanje osbebe')
 % rebase('osnova.html')
 
 %if napaka:
   <p class="opozorilo">{{napaka}}</p>
 %end
 
-  <form action="{{url('dodaj_komitenta')}}" method="POST">
+  <form action="{{url('dodaj_oseba')}}" method="POST">
     <p>ID osebe: <input type="numeric" name="id" value="{{id}}"></p>
     <p>Ime: <input type="text" name="ime" value="{{ime}}"></p>
     <p>Priimek: <input type="text" name="priimek" value="{{priimek}}"></p>
