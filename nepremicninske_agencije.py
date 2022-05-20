@@ -62,6 +62,7 @@ def dodaj_oseba_post():
     email = request.forms.email
     telefon = request.forms.telefon
     posta_id = request.forms.posta_id
+
     try:
         cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
                     (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id))
