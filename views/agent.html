@@ -8,13 +8,13 @@
        <th>Plača</th>
        <th>Agencija</th>
     </tr>
-    %for (id_agent, ime, priimek, plača, agencija, ime) in agent:
+    %for (id_agent, ime, priimek, plača, agencija, ime_agencije) in agent:
       <tr>
          <td>{{id_agent}}</td>
          <td>{{ime}}</td>
          <td>{{priimek}}</td>
          <td>{{plača}}</td>
-         <td>{{agencija}} {{ime}}</td>
+         <td>{{agencija}} {{ime_agencije}}</td>
       </tr>
     %end
     </table>

@@ -11,7 +11,7 @@ def ustvari_tabelo():
     cur.execute("""
         CREATE TABLE agencija (
             id SERIAL UNIQUE PRIMARY KEY NOT NULL,
-            ime TEXT NOT NULL,
+            ime_agencije TEXT NOT NULL,
             mesto TEXT NOT NULL,
             postna_st INTEGER REFERENCES posta(postna_stevilka) NOT NULL
             );
@@ -31,7 +31,7 @@ def uvozi_podatke():
         for r in rd:
             cur.execute("""
                 INSERT INTO agencija
-                (id,ime,mesto, postna_st)
+                (id,ime_agencije,mesto, postna_st)
                 VALUES (%s, %s, %s, %s)
                 """, r)
     conn.commit()
