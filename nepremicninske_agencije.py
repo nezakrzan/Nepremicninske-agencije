@@ -127,8 +127,8 @@ def registracija_post():
     cur.execute("""INSERT INTO oseba
                 (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
-    response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, path='/', secret=skrivnost)
-    redirect('/osebe')
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+    redirect(url('/prijava'))
 
 
 @get('/prijava')
