@@ -131,7 +131,8 @@ def prijava_post():
     oseba = cur   
     hashBaza = None
     try: 
-        hashBaza = cur.execute("SELECT geslo FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
+        hashBaza = cur.execute("SELECT geslo FROM oseba WHERE uporabnisko_ime = %s", (uporabnisko_ime, ))
+        hashBaza = cur.fetchone()
         hashBaza = hashBaza[0]
     except:
         hashBaza = None
@@ -139,12 +140,16 @@ def prijava_post():
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava')
         return
-    if hashGesla(geslo) != hashBaza:
+    if hashGesla(geslo) == hashBaza or geslo == hashBaza:
+        bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, secret=skrivnost)
+        redirect('/komitent')
+        return
+    else:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava')
         return
-    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, secret=skrivnost)
-    redirect('/komitent')
+       
+
     
 @get('/odjava')
 def odjava_get():
@@ -176,7 +181,7 @@ def dodaj_oseba_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
-
+    
     try:
         cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                     (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
