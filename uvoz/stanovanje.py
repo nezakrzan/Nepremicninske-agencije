@@ -10,7 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE stanovanje (
-        id INTEGER REFERENCES nepremicnina(id) NOT NULL,
+        id_stanovanje INTEGER REFERENCES nepremicnina(id) NOT NULL,
         nadstropje INTEGER NOT NULL,
         balkon INTEGER NOT NULL,
         parkirisce INTEGER NOT NULL
@@ -31,7 +31,7 @@ def uvozi_podatke():
         for r in rd:
             cur.execute("""
                 INSERT INTO stanovanje
-                (id,nadstropje, balkon, parkirisce)
+                (id_stanovanje,nadstropje, balkon, parkirisce)
                 VALUES (%s, %s, %s, %s)
             """, r)
             print("Uvoženo stanovanje %s z ID-jem %s" % (r[1], r[0]))
@@ -41,6 +41,6 @@ def uvozi_podatke():
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
-#pobrisi_tabelo()
-#ustvari_tabelo()
-#uvozi_podatke()
+pobrisi_tabelo()
+ustvari_tabelo()
+uvozi_podatke()

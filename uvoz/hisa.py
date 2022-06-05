@@ -10,7 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE hisa (
-        id INTEGER REFERENCES nepremicnina(id) NOT NULL,
+        id_hisa INTEGER REFERENCES nepremicnina(id) NOT NULL,
         bazen INTEGER NOT NULL,
         igrisce INTEGER NOT NULL,
         velikost_vrta INTEGER NOT NULL
@@ -31,7 +31,7 @@ def uvozi_podatke():
         for r in rd:
             cur.execute("""
                 INSERT INTO hisa
-                (id,bazen,igrisce,velikost_vrta)
+                (id_hisa,bazen,igrisce,velikost_vrta)
                 VALUES (%s, %s, %s, %s)
             """, r)
             print("Uvožena hisa %s z ID-jem %s" % (r[1], r[0]))

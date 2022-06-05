@@ -1,0 +1,30 @@
+%rebase('osnova.html', naslov='Hiše')
+
+  <table class="table table-hover">
+  <tr>
+     <th>id</th>
+     <th>Bazen</th>
+     <th>Igrisce</th>
+     <th>Velikost_vrta</th>
+     <th>Cena</th>
+     <th>Ulica</th>
+     <th>Hišna številka</th>
+     <th>Poštna številka</th>
+     <th>Leto izgradnje</th>
+     <th>Kupuje agencija</th>
+  </tr>
+  %for (id_hisa,bazen,igrisce,velikost_vrta, cena,ulica,hisna_stevilka,postna_stevilka,kraj,leto_izgradnje,kupuje_agencija, ime_agencije) in hisa:
+    <tr>
+       <td>{{id_hisa}}</td>
+       <td>{{bazen}}</td>
+       <td>{{igrisce}}</td>
+       <td>{{velikost_vrta}}</td>
+       <td>{{cena}}</td>
+       <td>{{ulica}}</td>
+       <td>{{hisna_stevilka}}</td>
+       <td>{{postna_stevilka}} {{kraj}}</td>
+       <td>{{leto_izgradnje}}</td>
+       <td>{{kupuje_agencija}} {{ime_agencije}}</td>
+    </tr>
+  %end
+  </table>
