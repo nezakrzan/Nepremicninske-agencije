@@ -59,7 +59,7 @@ def preveriUporabnika():
 #začetna stran
 @get('/')
 def hello():
-    return template('index.html')
+    return template('prijava.html')
 
 ####################################################################
 # prijava, registracija, odjava
@@ -112,7 +112,7 @@ def registracija_post():
     cur.execute("""INSERT INTO oseba
                 (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
-    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, path='/', secret=skrivnost)
+    response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, path='/', secret=skrivnost)
     redirect('/osebe')
 
 
@@ -141,14 +141,23 @@ def prijava_post():
         redirect('/prijava')
         return
     if hashGesla(geslo) == hashBaza or geslo == hashBaza:
-        bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, secret=skrivnost)
-        redirect('/komitent')
+        response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+        
+        redirect('/index')
         return
     else:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava')
         return
-       
+
+@get('/index')
+def index():
+    uporabnik = request.get_cookie('uporabnisko_ime', secret=skrivnost)
+    emso = cur.execute("""SELECT emso from oseba where uporabnisko_ime = %s""", uporabnik)
+    if emso in cur.execute("""SELECT id FROM agent"""):
+        return template('oseba.html')
+    else:
+        return template('index.html')
 
     
 @get('/odjava')
