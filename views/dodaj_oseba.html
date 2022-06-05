@@ -1,4 +1,4 @@
-% setdefault('naslov', 'Dodajanje osbebe')
+% setdefault('naslov', 'Dodajanje osebe')
 % rebase('osnova.html')
 
 %if napaka:
@@ -6,10 +6,6 @@
 %end
 
   <form action="{{url('dodaj_oseba')}}" method="POST">
-      <select name="vloga" id="vloga">
-      <option value="agent">Agent</option>
-      <option value="komitent">Komitent</option>
-    </select>
     <p>ID osebe: <input type="numeric" name="id" value="{{id}}"></p>
     <p>Ime: <input type="text" name="ime" value="{{ime}}"></p>
     <p>Priimek: <input type="text" name="priimek" value="{{priimek}}"></p>

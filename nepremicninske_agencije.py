@@ -153,11 +153,17 @@ def prijava_post():
 @get('/index')
 def index():
     uporabnik = request.get_cookie('uporabnisko_ime', secret=skrivnost)
-    emso = cur.execute("""SELECT emso from oseba where uporabnisko_ime = %s""", uporabnik)
-    if emso in cur.execute("""SELECT id FROM agent"""):
-        return template('oseba.html')
+    cur.execute("""SELECT id FROM oseba WHERE uporabnisko_ime = %s""", (uporabnik, ))
+    emso = cur.fetchone()[0]
+
+    cur.execute("""SELECT id_agent FROM agent""")
+    agenti = cur.fetchall()
+
+    if [emso] in agenti:
+        return template('agent_stran.html')
     else:
-        return template('index.html')
+        return template('komitent_stran.html')
+
 
     
 @get('/odjava')
@@ -204,6 +210,10 @@ def dodaj_oseba_post():
 def najdi_id_osebe():
     cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
     return cur.fetchall()
+
+#@get('dodaj_komitenta')
+#def dodaj_komitenta():
+   # return template('dodaj_komitenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', njegov_komitent='' napaka=None)
 
 @get('/uredi_oseba')
 def uredi_oseba():
