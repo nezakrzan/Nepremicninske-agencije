@@ -229,9 +229,9 @@ def najdi_id_osebe():
     cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
     return cur.fetchall()
 
-@get('dodaj_komitenta')
+@get('/dodaj_komitenta')
 def dodaj_komitenta():
-    return template('dodaj_komitenta.html', id_komitent='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', njegov_komitent='', napaka=None)
+    return template('dodaj_komitenta.html', id_komitent='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', njegov_agent='', napaka=None)
 
 @post('/dodaj_komitenta')
 def dodaj_komitenta_post():
@@ -248,7 +248,7 @@ def dodaj_komitenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
-    njegov_agent = request.forms.njegov_komitent
+    njegov_agent = request.forms.njegov_agent
 
     try:
         cur.execute("INSERT INTO komitent (id_komitent, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo, njegov_agent) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
