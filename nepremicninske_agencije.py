@@ -101,6 +101,10 @@ def registracija_post():
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
     geslo2 = request.forms.geslo2
+    njegov_agent = request.forms.agent
+    agencija = request.forms.agencija
+    tip = request.forms.tip
+    placa = request.forms.placa
     if uporabnisko_ime is None or geslo is None or geslo2 is None:
         nastaviSporocilo('Registracija ni možna') 
         redirect('/registracija')
@@ -123,11 +127,17 @@ def registracija_post():
         nastaviSporocilo('Gesli se ne ujemata.') 
         redirect('/registracija')
         return
+     
     zgostitev = hashGesla(geslo)
     cur.execute("""INSERT INTO oseba
                 (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+    if tip == 'agent':
+     cur.execute("""INSERT INTO agent
+                (id, agencija, placa)
+                VALUES (%s, %s, %s)""", (id, agencija, placa))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/prijava'))
 
 

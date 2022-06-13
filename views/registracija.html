@@ -99,8 +99,39 @@
           oninput="this.setCustomValidity('')"
           oninvalid="this.setCustomValidity('Obvezno polje')"
           />
+
       </div>
     </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="agent">Tvoj agent</label>
+      <input id="agent" name="agent" type="number" class="form-control" 
+        />
+        <small id="agent" class="form-text text-muted">Če se vpisuješ kot komitent, vpiši številko svojega agenta.</small>
+    </div>
+  </div>
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="agencija">Agencija</label>
+    <input id="agencija" name="agencija" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če se vpisuješ kot agent, vpiši številko svoje agencije.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="placa">Plača</label>
+    <input id="placa" name="agent" type="number" class="form-control" 
+      />
+      <small id="placa" class="form-text text-muted">Če se vpisuješ kot komitent, vpiši placo.</small>
+  </div>
+</div>
+    <form>
+      <input type = "radio" name = "tip" value = "agent"> Agent
+      <input type = "radio" name = "tip" value = "komitent"> Komitent
+   </form>
+
     <div class="form-row col">
       <button class="btn btn-primary" type="submit">
         Registriraj se!
