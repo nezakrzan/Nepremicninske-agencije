@@ -241,14 +241,14 @@ def najdi_id_osebe():
 
 @get('/dodaj_komitenta')
 def dodaj_komitenta():
-    return template('dodaj_komitenta.html', id_komitent='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', njegov_agent='', napaka=None)
+    return template('dodaj_komitenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
 
 @post('/dodaj_komitenta')
 def dodaj_komitenta_post():
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
-    id_komitent = request.forms.id_komitent
+    id = request.forms.id
     ime = request.forms.ime
     priimek = request.forms.priimek
     ulica = request.forms.ulica
@@ -258,15 +258,14 @@ def dodaj_komitenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
-    njegov_agent = request.forms.njegov_agent
-
+    
     try:
-        cur.execute("INSERT INTO komitent (id_komitent, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo, njegov_agent) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id_komitent, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo, njegov_agent))
+        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
         conn.commit()
     except Exception as ex:
         conn.rollback()
-        return template('dodaj_komitenta.html', id_komitent=id_komitent, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo, njegov_agent=njegov_agent,
+        return template('dodaj_komitenta.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
                         napaka='Zgodila se je napaka: %s' % ex)
     redirect(url('/komitent'))
 

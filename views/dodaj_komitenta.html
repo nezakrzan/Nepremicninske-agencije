@@ -6,7 +6,7 @@
 %end
 
   <form action="{{url('dodaj_komitenta')}}" method="POST">
-    <p>ID Komitenta: <input type="numeric" name="id_komitent" value="{{id_komitent}}"></p>
+    <p>ID Komitenta: <input type="numeric" name="id" value="{{id}}"></p>
     <p>Ime: <input type="text" name="ime" value="{{ime}}"></p>
     <p>Priimek: <input type="text" name="priimek" value="{{priimek}}"></p>
     <p>Ulica: <input type="text" name="ulica" value="{{ulica}}"></p>
@@ -16,7 +16,6 @@
     <p>Poštna številka: <input type="numeric" name="posta_id" value="{{posta_id}}"></p>
     <p>Uporabniško ime: <input type="text" name="uporabnisko_ime" value="{{uporabnisko_ime}}"></p>
     <p>Geslo: <input type="text" name="geslo" value="{{geslo}}"></p>
-    <p>Njegov agent <input type="numeric" name="njegov_agent" value="{{njegov_agent}}"></p>
     <p><input type="submit" value="Dodaj"></p>
   </form>
 
