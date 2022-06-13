@@ -267,7 +267,34 @@ def dodaj_komitenta_post():
         conn.rollback()
         return template('dodaj_komitenta.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
                         napaka='Zgodila se je napaka: %s' % ex)
-    redirect(url('/komitent'))
+    redirect(url('/oseba'))
+
+##########################
+@get('/dodaj_nepremicnino')
+def dodaj_nepremicnino():
+    return template('dodaj_nepremicnino.html', id='', velikost='', cena='', ulica='', hisna_stevilka='', postna_stevilka='', leto_izgradnje='', kupuje_agencija='', napaka=None)
+
+@post('/dodaj_nepremicnino')
+def dodaj_nepremicnino_post():
+    id = request.forms.id
+    velikost = request.forms.velikost
+    cena = request.forms.cena
+    ulica = request.forms.ulica
+    hisna_stevilka = request.forms.hisna_stevilka
+    postna_stevilka = request.forms.postna_stevilka
+    leto_izgradnje = request.forms.leto_izgradnje
+    kupuje_agencija = request.forms.kupuje_agencija 
+    try:
+        cur.execute("INSERT INTO nepremicnina (id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
+        conn.commit()
+    except Exception as ex:
+        conn.rollback()
+        return template('dodaj_nepremicnino.html', id=id, velikost=velikost, cena=cena, ulica=ulica, hisna_stevilka=hisna_stevilka,postna_stevilka=postna_stevilka, leto_izgradnje=leto_izgradnje, kupuje_agencija=kupuje_agencija)
+    redirect(url('/nepremicnina'))
+
+########################
+
 
 @get('/uredi_oseba')
 def uredi_oseba():
