@@ -276,7 +276,7 @@ def dodaj_komitenta_post():
 
 @get('/dodaj_agenta')
 def dodaj_agenta():
-    return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
+    return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', placa='', agencija='', napaka=None)
 
 @post('/dodaj_agenta')
 def dodaj_agenta_post():
@@ -293,16 +293,19 @@ def dodaj_agenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
+    placa = request.forms.placa
+    agencija = request.forms.agencija
+
     
     try:
-        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
+        cur.execute("INSERT INTO agent (id, ime, priimek, placa, agencija) VALUES (%s, %s, %s, %s, %s)",
+                    (id, ime, priimek, placa, agencija))
         conn.commit()
     except Exception as ex:
         conn.rollback()
-        return template('dodaj_agenta.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
+        return template('dodaj_agenta.html', id=id, ime=ime, priimek=priimek, placa=placa, agencija=agencija,
                         napaka='Zgodila se je napaka: %s' % ex)
-    redirect(url('/oseba'))
+    redirect(url('/agent'))
 
 
 ##########################
