@@ -276,7 +276,7 @@ def dodaj_komitenta_post():
 
 @get('/dodaj_agenta')
 def dodaj_agenta():
-    return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', placa='', agencija='', napaka=None)
+    return template('dodaj_agenta.html', id='', ime='', priimek='', placa='', agencija='', napaka=None)
 
 @post('/dodaj_agenta')
 def dodaj_agenta_post():
@@ -286,13 +286,13 @@ def dodaj_agenta_post():
     id = request.forms.id
     ime = request.forms.ime
     priimek = request.forms.priimek
-    ulica = request.forms.ulica
-    hisna_stevilka = request.forms.hisna_stevilka
-    email = request.forms.email
-    telefon = request.forms.telefon
-    posta_id = request.forms.posta_id
-    uporabnisko_ime = request.forms.uporabnisko_ime
-    geslo = request.forms.geslo
+    #ulica = request.forms.ulica
+    #hisna_stevilka = request.forms.hisna_stevilka
+    #email = request.forms.email
+    #telefon = request.forms.telefon
+    #posta_id = request.forms.posta_id
+    #uporabnisko_ime = request.forms.uporabnisko_ime
+    #geslo = request.forms.geslo
     placa = request.forms.placa
     agencija = request.forms.agencija
 
@@ -333,8 +333,6 @@ def dodaj_nepremicnino_post():
     redirect(url('/nepremicnina'))
 
 ########################
-
-
 @get('/uredi_oseba')
 def uredi_oseba():
     #uporabnik = preveriUporabnika()
@@ -360,7 +358,6 @@ def uredi_oseba_post():
     redirect(url('oseba'))
 
 ########################## TABELE ##################################
-
 @get('/komitent')
 def komitent():
     cur.execute("""
