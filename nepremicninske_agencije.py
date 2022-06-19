@@ -206,47 +206,9 @@ def oseba():
     return template('oseba.html', oseba=cur)
 
 ################################
-@get('/dodaj_oseba')
-def dodaj_oseba_get():
-    napaka = nastaviSporocilo()
-    return template('dodaj_oseba.html', napaka=napaka)
 
-@post('/dodaj_oseba')
-def dodaj_oseba_post():
-    uporabnik = preveriUporabnika()
-    if uporabnik is None: 
-        return
-    id = request.forms.id
-    ime = request.forms.ime
-    priimek = request.forms.priimek
-    ulica = request.forms.ulica
-    hisna_stevilka = request.forms.hisna_stevilka
-    email = request.forms.email
-    telefon = request.forms.telefon
-    posta_id = request.forms.posta_id
-    uporabnisko_ime = request.forms.uporabnisko_ime
-    geslo = request.forms.geslo
-    agencija = request.forms.agencija
-    tip = request.forms.tip
-    placa = request.forms.placa
-
-    cur.execute("""INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
-    if tip == 'agent':
-        cur.execute("""INSERT INTO agent
-                (id_agent, agencija, plača)
-                VALUES (%s, %s, %s)""", (id, agencija, placa))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
-    redirect(url('/prijava'))
-
-
-#def najdi_id_osebe():
-    #cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
-    #return cur.fetchall()
-
-####################################
+    
+##########################DODAJANJE KOMITENTA##########################
 
 @get('/dodaj_komitenta')
 def dodaj_komitenta():
@@ -267,17 +229,22 @@ def dodaj_komitenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
-    
-    try:
-        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
-        conn.commit()
-    except Exception as ex:
-        conn.rollback()
-        return template('dodaj_komitenta.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
-                        napaka='Zgodila se je napaka: %s' % ex)
-    redirect(url('/oseba'))
-##########################
+    tip  = request.forms.tip
+    kupuje_nepremicnino = request.forms.kupuje_nepremicnino
+    njegov_agent = request.forms.njegov_agent
+
+    cur.execute("""INSERT INTO oseba
+                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+    if tip == 'komitent':
+        cur.execute("""INSERT INTO komitent
+                (id_komitent,kupuje_nepremicnino, njegov_agent)
+                VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
+    redirect(url('/komitent'))
+
+########################## DODAJANJE AGENTA ######################
 @get('/dodaj_agenta')
 def dodaj_agenta():
     return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
@@ -329,8 +296,8 @@ def dodaj_nepremicnino_post():
     leto_izgradnje = request.forms.leto_izgradnje
     kupuje_agencija = request.forms.kupuje_agencija 
     try:
-        cur.execute("INSERT INTO nepremicnina (id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
+        cur.execute("INSERT INTO nepremicnina (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
         conn.commit()
     except Exception as ex:
         conn.rollback()
