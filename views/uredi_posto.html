@@ -1,0 +1,22 @@
+% setdefault('naslov', 'Urejanje pošte')
+% rebase('osnova.html')
+
+
+  <form action="{{url('uredi_posto')}}" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="posta_id">Nova poštna številka</label>
+            <input id="posta_id" name="posta_id" type="text" class="form-control" required 
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-info" type="submit">
+        Uredi
+      </button>
+    </div>
+  </form>
+

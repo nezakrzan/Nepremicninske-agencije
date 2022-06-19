@@ -1,0 +1,22 @@
+% setdefault('naslov', 'Urejanje ulice')
+% rebase('osnova.html')
+
+
+  <form action="{{url('uredi_ulico')}}" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="ulica">Nova ulica</label>
+            <input id="ulica" name="ulica" type="text" class="form-control" required 
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-info" type="submit">
+        Uredi
+      </button>
+    </div>
+  </form>
+

@@ -1,0 +1,22 @@
+% setdefault('naslov', 'Urejanje hišne številke')
+% rebase('osnova.html')
+
+
+  <form action="{{url('uredi_hisno_stevilko')}}" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="hisna_stevilka">Vpiši novo hišno številko</label>
+            <input id="hisna_stevilka" name="hisna_stevilka" type="number" class="form-control" required 
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-info" type="submit">
+        Uredi
+      </button>
+    </div>
+  </form>
+

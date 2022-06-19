@@ -1,0 +1,22 @@
+% setdefault('naslov', 'Urejanje telefona')
+% rebase('osnova.html')
+
+
+  <form action="{{url('uredi_telefon')}}" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="telefon">Nova telefonska številka</label>
+            <input id="telefon" name="telefon" type="number" class="form-control" required 
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-info" type="submit">
+        Uredi
+      </button>
+    </div>
+  </form>
+

@@ -243,6 +243,142 @@ def dodaj_komitenta_post():
                 VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/komitent'))
+###############################UREJANJE KOMITENTA#####################
+@get('/uredi_ulico')
+def uredi_ulico():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_ulico.html', ulica='')
+
+@post('/uredi_ulico')
+def uredi_ulico_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    ulica = request.forms.ulica
+
+    cur.execute("UPDATE oseba SET ulica=%s WHERE uporabnisko_ime=%s",
+                    (ulica, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+@get('/uredi_priimek')
+def uredi_priimek():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_priimek.html', priimek='')
+
+@post('/uredi_priimek')
+def uredi_priimek_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    priimek = request.forms.priimek
+
+    cur.execute("UPDATE oseba SET priimek=%s WHERE uporabnisko_ime=%s",
+                    (priimek, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+@get('/uredi_hisno_stevilko')
+def uredi_hisno_stevilko():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_hisno_stevilko.html', priimek='')
+
+@post('/uredi_hisno_stevilko')
+def uredi_hisno_stevilko_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    hisna_stevilka = request.forms.hisna_stevilka
+
+    cur.execute("UPDATE oseba SET hisna_stevilka=%s WHERE uporabnisko_ime=%s",
+                    (hisna_stevilka, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+@get('/uredi_email')
+def uredi_email():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_email.html', priimek='')
+
+@post('/uredi_email')
+def uredi_email_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    email = request.forms.email
+
+    cur.execute("UPDATE oseba SET email=%s WHERE uporabnisko_ime=%s",
+                    (email, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+@get('/uredi_telefon')
+def uredi_telefon():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_telefon.html', priimek='')
+
+@post('/uredi_telefon')
+def uredi_email_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    telefon = request.forms.telefon
+
+    cur.execute("UPDATE oseba SET telefon=%s WHERE uporabnisko_ime=%s",
+                    (telefon, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+@get('/uredi_posto')
+def uredi_posto():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_posto.html', priimek='')
+
+@post('/uredi_posto')
+def uredi_posto_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    posta_id = request.forms.posta_id
+
+    cur.execute("UPDATE oseba SET posta_id=%s WHERE uporabnisko_ime=%s",
+                    (posta_id, uporabnisko_ime))
+    conn.commit()
+    redirect(url('podatki_prijavljenega'))
+
+
+
+
+########################PODATKI PRIJAVLJENEGA######################
+@get('/podatki_prijavljenega')
+def podatki_prijavljenega():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    cur.execute("""SELECT uporabnisko_ime,ime,priimek,ulica,hisna_stevilka,email,telefon,posta_id
+                FROM oseba WHERE uporabnisko_ime=%s""",[uporabnisko_ime])
+    return template('podatki_prijavljenega.html', oseba=cur)
+
+
 
 ########################## DODAJANJE AGENTA ######################
 @get('/dodaj_agenta')

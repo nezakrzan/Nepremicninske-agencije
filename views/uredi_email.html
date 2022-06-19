@@ -1,0 +1,22 @@
+% setdefault('naslov', 'Urejanje e-poštnega naslova')
+% rebase('osnova.html')
+
+
+  <form action="{{url('uredi_email')}}" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="email">Nov e-poštni naslov</label>
+            <input id="email" name="email" type="text" class="form-control" required 
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-info" type="submit">
+        Uredi
+      </button>
+    </div>
+  </form>
+
