@@ -332,6 +332,14 @@ def dodaj_nepremicnino_post():
         return template('dodaj_nepremicnino.html', id=id, velikost=velikost, cena=cena, ulica=ulica, hisna_stevilka=hisna_stevilka,postna_stevilka=postna_stevilka, leto_izgradnje=leto_izgradnje, kupuje_agencija=kupuje_agencija)
     redirect(url('/nepremicnina'))
 
+#@post('/brisi_nepremicnino'):
+#def brisi_nepremicnino(id):
+    #uporabnik = preveriUporabnika()
+    #if uporabnik is None: 
+    #    return
+    #cur.execute("DELETE FROM nepremicnina WHERE id = %s", (id, ))
+
+
 ########################
 @get('/uredi_oseba')
 def uredi_oseba():
