@@ -206,10 +206,10 @@ def oseba():
     return template('oseba.html', oseba=cur)
 
 ################################
-
 @get('/dodaj_oseba')
-def dodaj_oseba():
-    return template('dodaj_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
+def dodaj_oseba_get():
+    napaka = nastaviSporocilo()
+    return template('dodaj_oseba.html', napaka=napaka)
 
 @post('/dodaj_oseba')
 def dodaj_oseba_post():
@@ -226,20 +226,25 @@ def dodaj_oseba_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
-    
-    try:
-        cur.execute("INSERT INTO oseba (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo))
-        conn.commit()
-    except Exception as ex:
-        conn.rollback()
-        return template('dodaj_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
-                        napaka='Zgodila se je napaka: %s' % ex)
-    redirect(url('/oseba'))
+    agencija = request.forms.agencija
+    tip = request.forms.tip
+    placa = request.forms.placa
 
-def najdi_id_osebe():
-    cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
-    return cur.fetchall()
+    cur.execute("""INSERT INTO oseba
+                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+    if tip == 'agent':
+        cur.execute("""INSERT INTO agent
+                (id_agent, agencija, plača)
+                VALUES (%s, %s, %s)""", (id, agencija, placa))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
+    redirect(url('/prijava'))
+
+
+#def najdi_id_osebe():
+    #cur.execute("SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, uporabnisko_ime, geslo FROM oseba;")
+    #return cur.fetchall()
 
 ####################################
 
@@ -273,10 +278,9 @@ def dodaj_komitenta_post():
                         napaka='Zgodila se je napaka: %s' % ex)
     redirect(url('/oseba'))
 ##########################
-
 @get('/dodaj_agenta')
 def dodaj_agenta():
-    return template('dodaj_agenta.html', id='', ime='', priimek='', placa='', agencija='', napaka=None)
+    return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
 
 @post('/dodaj_agenta')
 def dodaj_agenta_post():
@@ -286,27 +290,28 @@ def dodaj_agenta_post():
     id = request.forms.id
     ime = request.forms.ime
     priimek = request.forms.priimek
-    #ulica = request.forms.ulica
-    #hisna_stevilka = request.forms.hisna_stevilka
-    #email = request.forms.email
-    #telefon = request.forms.telefon
-    #posta_id = request.forms.posta_id
-    #uporabnisko_ime = request.forms.uporabnisko_ime
-    #geslo = request.forms.geslo
-    placa = request.forms.placa
+    ulica = request.forms.ulica
+    hisna_stevilka = request.forms.hisna_stevilka
+    email = request.forms.email
+    telefon = request.forms.telefon
+    posta_id = request.forms.posta_id
+    uporabnisko_ime = request.forms.uporabnisko_ime
+    geslo = request.forms.geslo
+    tip  = request.forms.tip
     agencija = request.forms.agencija
+    tip = request.forms.tip
+    placa = request.forms.placa
 
-    
-    try:
-        cur.execute("INSERT INTO agent (id, ime, priimek, placa, agencija) VALUES (%s, %s, %s, %s, %s)",
-                    (id, ime, priimek, placa, agencija))
-        conn.commit()
-    except Exception as ex:
-        conn.rollback()
-        return template('dodaj_agenta.html', id=id, ime=ime, priimek=priimek, placa=placa, agencija=agencija,
-                        napaka='Zgodila se je napaka: %s' % ex)
+    cur.execute("""INSERT INTO oseba
+                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
+    if tip == 'agent':
+        cur.execute("""INSERT INTO agent
+                (id_agent, agencija, plača)
+                VALUES (%s, %s, %s)""", (id, agencija, placa))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/agent'))
-
 
 ##########################
 @get('/dodaj_nepremicnino')
