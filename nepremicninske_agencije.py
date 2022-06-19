@@ -280,29 +280,46 @@ def dodaj_agenta_post():
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/agent'))
 
-##########################
+########################## DODAJANJE NEPREMIČNINE ###############################
+
 @get('/dodaj_nepremicnino')
 def dodaj_nepremicnino():
-    return template('dodaj_nepremicnino.html', id='', velikost='', cena='', ulica='', hisna_stevilka='', postna_stevilka='', leto_izgradnje='', kupuje_agencija='', napaka=None)
+    return template('dodaj_nepremicnino.html', napaka=None)
 
 @post('/dodaj_nepremicnino')
 def dodaj_nepremicnino_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     id = request.forms.id
     velikost = request.forms.velikost
     cena = request.forms.cena
     ulica = request.forms.ulica
     hisna_stevilka = request.forms.hisna_stevilka
     postna_stevilka = request.forms.postna_stevilka
-    leto_izgradnje = request.forms.leto_izgradnje
-    kupuje_agencija = request.forms.kupuje_agencija 
-    try:
-        cur.execute("INSERT INTO nepremicnina (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+    leto_izgradnje = request.forms.leto_igradnje
+    kupuje_agencija = request.forms.kupuje_agencija
+    tip = request.forms.tip
+    bazen = request.forms.bazen
+    igrisce= request.forms.igrisce
+    velikost_vrta=request.forms.velikost_vrta
+    nadstropje = request.forms.nadstropje
+    balkon = request.forms.balkon
+    parkirisce = request.forms.parkirisce
+
+    cur.execute("INSERT INTO nepremicnina (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
                     (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
-        conn.commit()
-    except Exception as ex:
-        conn.rollback()
-        return template('dodaj_nepremicnino.html', id=id, velikost=velikost, cena=cena, ulica=ulica, hisna_stevilka=hisna_stevilka,postna_stevilka=postna_stevilka, leto_izgradnje=leto_izgradnje, kupuje_agencija=kupuje_agencija)
+    if tip == 'hisa':
+        cur.execute(""" INSERT INTO hisa
+                (id,bazen,igrisce,velikost_vrta)
+                VALUES (%s, %s, %s)""", (id,bazen,igrisce,velikost_vrta))
+    if tip == 'stanovanje':
+        cur.execute(""" INSERT INTO stanovanje
+                (id,nadstropje, balkon, parkirisce)
+                VALUES (%s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)    
     redirect(url('/nepremicnina'))
+
 
 #@post('/brisi_nepremicnino'):
 #def brisi_nepremicnino(id):

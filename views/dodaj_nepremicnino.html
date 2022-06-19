@@ -20,6 +20,15 @@
           />
       </div>
     </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cena">cena</label>
+        <input id="cena" name="cena" type="number" class="form-control" required
+          oninput="this.setCustomValidity('')"
+          oninvalid="this.setCustomValidity('Obvezno polje')"
+          />
+      </div>
+    </div>
 <div class="form-row">
   <div class="form-group col-md-6">
     <label for="ulica">ulica</label>
@@ -49,7 +58,7 @@
 </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="leto_izgradnje">leto izgradnje</label>
+    <label for="leto_izgradnje">leto_izgradnje</label>
     <input id="leto_izgradnje" name="leto_izgradnje" type="number" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -65,6 +74,59 @@
       />
   </div>
 </div>
+<div>
+  <input type = "radio" name = "tip" value = "hisa"> Hiša
+  <input type = "radio" name = "tip" value = "stanovanje"> Stanovanje
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="bazen">Ali ima hiša bazen?</label>
+    <input id="bazen" name="bazen" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite 1, če ima bazen in 0 sicer.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="igrisce">Ali ima hiša igrišče?</label>
+    <input id="igrisce" name="igrisce" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite 1, če ima igrišče in 0 sicer.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="velikost_vrta">Vpišite velikost vrta okoli hiše.</label>
+    <input id="velikost_vrta" name="velikost_vrta" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite velikost vrta.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="nadstropje">V katerem nadstropju se nahaja stanovanje?</label>
+    <input id="nadstropje" name="igrisce" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite v katerem nadstropju se nahaja.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="balkon">Ali ima stanovanje balkon?</label>
+    <input id="balkon" name="balkon" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite 1, če ima balkon in 0 sicer.</small>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="parkirisce">Ali ima stanovanje zagotovljeno parkirno mesto?</label>
+    <input id="parkirisce" name="parkirisce" type="number" class="form-control" 
+      />
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite 1, če ima parkirišče in 0 sicer.</small>
+  </div>
+</div>
+
 <div class="form-row col">
   <button class="btn btn-primary" type="submit">
     Dodaj nepremicnino!
