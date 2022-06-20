@@ -365,14 +365,14 @@ def uredi_posto_post():
     redirect(url('podatki_prijavljenega'))
 
 ############################### IZBRIS KOMITENTA ####################
-@post('/izbrisi_komitenta')
-def izbrisi_komitenta():
+@post('/izbrisi_komitenta/<id>')
+def izbrisi_komitenta(id):
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    cur.execute("SELECT * FROM oseba WHERE id =%s",
-                    (id, uporabnisko_ime))
+    cur.execute("DELETE FROM komitent WHERE id_komitent=%s" %
+                    (id))
     redirect(url('/komitent'))
 
 ########################PODATKI PRIJAVLJENEGA######################
@@ -470,29 +470,29 @@ def izbrisi_nepremicnino(id):
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    try:
-        cur.execute("DELETE FROM hisa WHERE id_hisa =%s" ,
+    cur.execute("DELETE FROM hisa WHERE id_hisa =%s" %
                     (id))
-        conn.commit()
-    except:
-        cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" ,
+    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" %
                     (id))
-        conn.commit()
-    cur.execute("DELETE FROM nepremicnina WHERE id =%s" ,
+    conn.commit()
+    cur.execute("DELETE FROM komitent WHERE id_komitent=%s"%
+                    (id))
+    conn.commit()
+    cur.execute("DELETE FROM nepremicnina WHERE id =%s" %
                     (id))
     conn.commit()
     redirect(url('/nepremicnina'))
 
 ###############################UREJANJE NEPREMICNINE#################
-@get('/uredi_nepremicnino')
-def uredi_nepremicnino():
+@get('/uredi_nepremicnino/<id>')
+def uredi_nepremicnino(id):
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
-    return template('uredi_nepremicnino.html')
+    return template('uredi_nepremicnino.html', id=id)
 
-@post('/uredi_nepremicnino')
-def uredi_nepremicnino_post():
+@post('/uredi_nepremicnino/<id>')
+def uredi_nepremicnino_post(id):
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
@@ -538,6 +538,9 @@ def komitent():
 
 @get('/agent')
 def agent():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     cur.execute("""
     SELECT id_agent, oseba.ime, oseba.priimek, plača, agencija, agencija.ime FROM agent
     LEFT JOIN oseba ON agent.id_agent = oseba.id
@@ -547,6 +550,9 @@ def agent():
 
 @get('/posta')
 def posta():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     cur.execute("""
         SELECT * FROM posta
     """)
@@ -554,6 +560,9 @@ def posta():
 
 @get('/nepremicnina')
 def nepremicnina():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     cur.execute("""
         SELECT nepremicnina.id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija FROM nepremicnina
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
@@ -562,6 +571,9 @@ def nepremicnina():
 
 @get('/hisa')
 def hisa():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     cur.execute("""
         SELECT id_hisa,bazen,igrisce,velikost_vrta, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime FROM hisa
         INNER JOIN nepremicnina ON nepremicnina.id = id_hisa
@@ -572,6 +584,9 @@ def hisa():
 
 @get('/stanovanja')
 def stanovanja():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
     cur.execute("""
         SELECT id_stanovanje,nadstropje, balkon, parkirisce, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime FROM stanovanje
         INNER JOIN nepremicnina ON nepremicnina.id = id_stanovanje
