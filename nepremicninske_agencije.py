@@ -61,6 +61,34 @@ def preveriUporabnika():
 def hello():
     return template('prijava.html')
 
+#def preveriAgenta(): 
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    if uporabnisko_ime:
+        conn.cursor() 
+        uporabnik = None
+        try: 
+            cur.execute('SELECT * FROM agent WHERE uporabnisko_ime= %s', (uporabnisko_ime, ))
+            uporabnik = cur.fetchone()
+        except:
+            uporabnik = None
+        if uporabnik: 
+            return uporabnik
+    redirect(url('/nepremicnina'))
+
+#def preveriKomitenta(): 
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    if uporabnisko_ime:
+        cur = conn.cursor()    
+        uporabnik = None
+        try: 
+            cur.execute('SELECT * FROM komitent WHERE uporabnisko_ime= %s', (uporabnisko_ime, ))
+            uporabnik = cur.fetchone()
+        except:
+            uporabnik = None
+        if uporabnik: 
+            return uporabnik
+    redirect(url('/prijava'))
+
 ####################################################################
 # prijava, registracija, odjava
 def preveriUporabnika(): 
@@ -192,10 +220,9 @@ def index():
 
     
 @get('/odjava')
-def odjava_get():
-    bottle.Response.delete_cookie(key='uporabnisko_ime')
-    redirect('/prijava')
-
+def odjava():
+    response.delete_cookie('uporabnisko_ime')
+    redirect(url('/prijava'))
 ####################################################################
 @get('/oseba')
 def oseba():
@@ -503,29 +530,7 @@ def uredi_nepremicnino_post(id):
     redirect(url('nepremicnina'))
 
 ########################
-@get('/uredi_oseba')
-def uredi_oseba():
-    #uporabnik = preveriUporabnika()
-    #if uporabnik is None: 
-        #return
-    return template('uredi_oseba.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None, oseba=najdi_id_osebe())
 
-@post('/uredi_oseba')
-def uredi_oseba_post():
-    #uporabnik = preveriUporabnika()
-    #if uporabnik is None: 
-        #return
-    id = request.forms.id
-    ime = request.forms.ime
-    try:
-        cur.execute("UPDATE oseba SET ime=%s WHERE id=%s",
-                    (id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta_id, Uporabnisko_ime, geslo))
-        conn.commit()
-    except Exception as ex:
-        conn.rollback()
-        return template('uredi_oseba.html', id=id, ime=ime, priimek=priimek, ulica=ulica, hisna_stevilka=hisna_stevilka, email=email, telefon=telefon, posta_id=posta_id, uporabnisko_ime=uporabnisko_ime, geslo=geslo,
-                        napaka='Zgodila se je napaka: %s' % ex)
-    redirect(url('oseba'))
 
 ########################## TABELE ##################################
 @get('/komitent')
