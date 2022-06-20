@@ -1,0 +1,20 @@
+%rebase('osnova.html', naslov='Urejanje')
+
+<form action="{{url('uredi_nepremicnino')}}" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="cena">Cena</label>
+            <input id="cena" name="cena" type="text" class="form-control" required value="{{gost[1]}}"
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    </div>
+
+    <div class="form-row d-flex justify-content-end">
+        <button class="btn btn-primary" type="submit">
+            Posodobi
+        </button>
+    </div>
+</form>

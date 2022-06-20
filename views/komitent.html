@@ -15,6 +15,13 @@
          <td>{{priimek}}</td>
          <td>{{kupuje_nepremicnino}}</td>
          <td>{{njegov_agent}}</td>
+         <td>
+            <div>
+              <form action="{{url('izbrisi_komitenta')}}" method="post">
+                <a href="#" onclick="this.parentElement.submit()">Briši</a>
+              </form>
+            </div>
+          </td>
       </tr>
     %end
     </table>
