@@ -364,8 +364,16 @@ def uredi_posto_post():
     conn.commit()
     redirect(url('podatki_prijavljenega'))
 
-
-
+############################### IZBRIS KOMITENTA ####################
+@post('/izbrisi_komitenta')
+def izbrisi_komitenta():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    cur.execute("SELECT * FROM oseba WHERE id =%s",
+                    (id, uporabnisko_ime))
+    redirect(url('/komitent'))
 
 ########################PODATKI PRIJAVLJENEGA######################
 @get('/podatki_prijavljenega')
@@ -456,14 +464,35 @@ def dodaj_nepremicnino_post():
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)    
     redirect(url('/nepremicnina'))
 
+#################################IZBRIS NEPREMIčNIN###############
+@post('/izbrisi_nepremicnino')
+def izbrisi_nepremicnino():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    cur.execute("SELECT * FROM nepremicnina WHERE id =%s",
+                    (id, uporabnisko_ime))
+    redirect(url('/nepremicnina'))
 
-#@post('/brisi_nepremicnino'):
-#def brisi_nepremicnino(id):
-    #uporabnik = preveriUporabnika()
-    #if uporabnik is None: 
-    #    return
-    #cur.execute("DELETE FROM nepremicnina WHERE id = %s", (id, ))
+###############################UREJANJE NEPREMICNINE#################
+@get('/uredi_nepremicnino')
+def uredi_nepremicnino():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    return template('uredi_nepremicnino.html')
 
+@post('/uredi_nepremicnino')
+def uredi_nepremicnino_post():
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    cena = request.forms.cena
+    cur.execute("UPDATE nepremicnina SET cena=%s WHERE id=%s",
+                    (cena, id))
+    conn.commit()
+    redirect(url('nepremicnina'))
 
 ########################
 @get('/uredi_oseba')
