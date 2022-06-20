@@ -541,6 +541,23 @@ def komitent():
      """)
     return template('komitent.html', komitent=cur)
 
+@get('/agencija')
+def agencija():
+    cur.execute("""
+    SELECT id,ime,mesto, postna_st FROM agencija
+     """)
+    return template('agencija.html', agencija=cur)
+
+@get('/agenti_agencije_get/<x:int>/')
+def agenti_agencije_get(x):
+    uporabnik = preveriUporabnika()
+    if uporabnik is None: 
+        return
+    cur.execute("""SELECT id_agent, plača, agencija 
+                FROM agent WHERE agencija = %s""", [x])
+    return template('agenti_agencije.html', x=x, oseba=cur)
+
+
 @get('/agent')
 def agent():
     uporabnik = preveriUporabnika()

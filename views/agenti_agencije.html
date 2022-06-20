@@ -1,0 +1,19 @@
+% setdefault('naslov', 'Agenti agencije')
+%rebase('osnova.html', naslov='AGENTI')
+
+<table class="table table-hover"> 
+    <tr>
+       <th>Id</th>
+       <th>Plača</th>
+       <th>Agencija</th>
+    </tr>
+    %for (id_agent, plača, agencija) in agent:
+      <tr>
+         <td>{{id_agent}}</td>
+         <td>{{plača}}</td>
+         <td>{{agencija}}</td>
+      </tr>
+    %end
+    </table>
+
+

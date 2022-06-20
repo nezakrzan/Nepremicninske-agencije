@@ -1,0 +1,29 @@
+%rebase('osnova.html', naslov='AGENCIJE')
+
+<table class="table table-hover"></a>
+    <tr>
+       <th>Id</th>
+       <th>Ime agencije</th>
+       <th>Mesto</th>
+       <th>Poštna številka</th>
+       <th>Agenti agencije</th>
+    </tr>
+    %for (id,ime, mesto, postna_st) in agencija:
+      <tr>
+         <td>{{id}}</td>
+         <td>{{ime}}</td>
+         <td>{{mesto}}</td>
+         <td>{{postna_st}}</td>
+         <td>
+          <div>
+            <form action="agenti_agencije_get/{{id}}" method="get">
+              <a href="{{url('agenti_agencije_get', x=id)}}" onclick="this.parentElement.submit()">
+            </form>
+          </div>
+        </td>
+      </tr>
+    %end
+    </table>
+
+
+    
