@@ -26,14 +26,14 @@
        <td>{{kupuje_agencija}}</td>
        <td>
         <div>
-          <form action="{{url('izbrisi_nepremicnino')}}" method="post">
+          <form action="{{url('izbrisi_nepremicnino', id=id)}}" method="post">
             <a href="#" onclick="this.parentElement.submit()">Briši</a>
           </form>
         </div>
       </td>
       <td>
         <div>
-          <form action="{{url('uredi_nepremicnino')}}" method="post">
+          <form action="{{url('uredi_nepremicnino', id=id)}}" method="post">
             <a href="#" onclick="this.parentElement.submit()">Uredi</a>
           </form>
         </div>

@@ -461,18 +461,26 @@ def dodaj_nepremicnino_post():
         cur.execute(""" INSERT INTO stanovanje
                 (id_stanovanje,nadstropje, balkon, parkirisce)
                 VALUES (%s, %s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)    
     redirect(url('/nepremicnina'))
 
 #################################IZBRIS NEPREMIčNIN###############
-@post('/izbrisi_nepremicnino')
-def izbrisi_nepremicnino():
+@post('/izbrisi_nepremicnino/<id>')
+def izbrisi_nepremicnino(id):
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    cur.execute("SELECT * FROM nepremicnina WHERE id =%s",
-                    (id, uporabnisko_ime))
+    try:
+        cur.execute("DELETE FROM hisa WHERE id_hisa =%s" ,
+                    (id))
+        conn.commit()
+    except:
+        cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" ,
+                    (id))
+        conn.commit()
+    cur.execute("DELETE FROM nepremicnina WHERE id =%s" ,
+                    (id))
+    conn.commit()
     redirect(url('/nepremicnina'))
 
 ###############################UREJANJE NEPREMICNINE#################
@@ -489,7 +497,7 @@ def uredi_nepremicnino_post():
     if uporabnik is None: 
         return
     cena = request.forms.cena
-    cur.execute("UPDATE nepremicnina SET cena=%s WHERE id=%s",
+    cur.execute("UPDATE nepremicnina SET cena=%s WHERE id=%s " ,
                     (cena, id))
     conn.commit()
     redirect(url('nepremicnina'))
