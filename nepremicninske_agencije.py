@@ -441,7 +441,7 @@ def dodaj_nepremicnino_post():
     ulica = request.forms.ulica
     hisna_stevilka = request.forms.hisna_stevilka
     postna_stevilka = request.forms.postna_stevilka
-    leto_izgradnje = request.forms.leto_igradnje
+    leto_izgradnje = request.forms.leto_izgradnje
     kupuje_agencija = request.forms.kupuje_agencija
     tip = request.forms.tip
     bazen = request.forms.bazen
@@ -455,12 +455,12 @@ def dodaj_nepremicnino_post():
                     (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
     if tip == 'hisa':
         cur.execute(""" INSERT INTO hisa
-                (id,bazen,igrisce,velikost_vrta)
-                VALUES (%s, %s, %s)""", (id,bazen,igrisce,velikost_vrta))
+                (id_hisa,bazen,igrisce,velikost_vrta)
+                VALUES (%s, %s, %s, %s)""", (id,bazen,igrisce,velikost_vrta))
     if tip == 'stanovanje':
         cur.execute(""" INSERT INTO stanovanje
-                (id,nadstropje, balkon, parkirisce)
-                VALUES (%s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
+                (id_stanovanje,nadstropje, balkon, parkirisce)
+                VALUES (%s, %s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)    
     redirect(url('/nepremicnina'))
 
