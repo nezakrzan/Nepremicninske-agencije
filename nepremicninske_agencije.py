@@ -129,10 +129,11 @@ def registracija_post():
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
     geslo2 = request.forms.geslo2
-    njegov_agent = request.forms.agent
     agencija = request.forms.agencija
     tip = request.forms.tip
     placa = request.forms.placa
+    kupuje_nepremicnino = request.forms.kupuje_nepremicnino
+    njegov_agent = request.forms.njegov_agent
     if uporabnisko_ime is None or geslo is None or geslo2 is None:
         nastaviSporocilo('Registracija ni možna') 
         redirect('/registracija')
@@ -165,6 +166,10 @@ def registracija_post():
         cur.execute("""INSERT INTO agent
                 (id_agent, agencija, plača)
                 VALUES (%s, %s, %s)""", (id, agencija, placa))
+    if tip == 'komitent':
+        cur.execute("""INSERT INTO komitent
+                (id_komitent,kupuje_nepremicnino, njegov_agent)
+                VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/prijava'))
 
