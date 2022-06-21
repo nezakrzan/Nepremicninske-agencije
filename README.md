@@ -27,5 +27,7 @@ Zavihka `Agenti`in `Agencije` mu služita za pregled in dodajanje novih agentov,
 
 V zavihku `Komitenti` ima izpisane vse komitente in njihove osnovne podatke. Komitenta pa lahko tudi izbriše iz baze.
 
+V zavihku `Profil` se agentu prikažejo vsi njegovi podatki in možnost spremembe le teh. Omogočena je tudi sprememba gesla.
+
 ## Spletni dostop
 [![bottle.py](https://mybinder.org/badge_logo.svg)](...)
