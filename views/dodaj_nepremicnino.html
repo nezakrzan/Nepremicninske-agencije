@@ -4,7 +4,7 @@
 <form action="/dodaj_nepremicnino" method="post" autocomplete="off">
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="id">id</label>
+        <label for="id">ID</label>
         <input id="id" name="id" type="number" class="form-control" required
           oninput="this.setCustomValidity('')"
           oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -13,7 +13,7 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="velikost">velikost</label>
+        <label for="velikost">Velikost nepremičnine</label>
         <input id="velikost" name="velikost" type="number" class="form-control" required
           oninput="this.setCustomValidity('')"
           oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -22,7 +22,7 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="cena">cena</label>
+        <label for="cena">Cena</label>
         <input id="cena" name="cena" type="number" class="form-control" required
           oninput="this.setCustomValidity('')"
           oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -31,7 +31,7 @@
     </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="ulica">ulica</label>
+    <label for="ulica">Ulica</label>
     <input id="ulica" name="ulica" type="text" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -40,7 +40,7 @@
 </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="hisna_stevilka">hišna številka</label>
+    <label for="hisna_stevilka">Hišna številka</label>
     <input id="hisna_stevilka" name="hisna_stevilka" type="number" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -49,7 +49,7 @@
 </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="postna_stevilka">poštna številka</label>
+    <label for="postna_stevilka">Poštna številka</label>
     <input id="postna_stevilka" name="postna_stevilka" type="number" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -58,7 +58,7 @@
 </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="leto_izgradnje">leto_izgradnje</label>
+    <label for="leto_izgradnje">Leto izgradnje</label>
     <input id="leto_izgradnje" name="leto_izgradnje" type="number" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -67,7 +67,7 @@
 </div>
 <div class="form-row">
   <div class="form-group col-md-6">
-    <label for="kupuje_agencija">kupuje agencija</label>
+    <label for="kupuje_agencija">ID agencije, ki kupuje nepremičnino</label>
     <input id="kupuje_agencija" name="kupuje_agencija" type="number" class="form-control" required
       oninput="this.setCustomValidity('')"
       oninvalid="this.setCustomValidity('Obvezno polje')"
@@ -83,7 +83,7 @@
     <label for="bazen">Ali ima hiša bazen?</label>
     <input id="bazen" name="bazen" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite 1, če ima bazen in 0 sicer.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate hišo z bazenom vpišite 1 in 0 sicer.</small>
   </div>
 </div>
 <div class="form-row">
@@ -91,7 +91,7 @@
     <label for="igrisce">Ali ima hiša igrišče?</label>
     <input id="igrisce" name="igrisce" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite 1, če ima igrišče in 0 sicer.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate hišo z igriščem vpišite 1 in 0 sicer.</small>
   </div>
 </div>
 <div class="form-row">
@@ -99,7 +99,7 @@
     <label for="velikost_vrta">Vpišite velikost vrta okoli hiše.</label>
     <input id="velikost_vrta" name="velikost_vrta" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate hišo vpišite velikost vrta.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate hišo z vrtom, vpišite velikost vrta.</small>
   </div>
 </div>
 <div class="form-row">
@@ -107,7 +107,7 @@
     <label for="nadstropje">V katerem nadstropju se nahaja stanovanje?</label>
     <input id="nadstropje" name="nadstropje" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite v katerem nadstropju se nahaja.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje, vpišite v katerem nadstropju se nahaja.</small>
   </div>
 </div>
 <div class="form-row">
@@ -115,7 +115,7 @@
     <label for="balkon">Ali ima stanovanje balkon?</label>
     <input id="balkon" name="balkon" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite 1, če ima balkon in 0 sicer.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje z balkonom vpišite 1 in 0 sicer.</small>
   </div>
 </div>
 <div class="form-row">
@@ -123,13 +123,13 @@
     <label for="parkirisce">Ali ima stanovanje zagotovljeno parkirno mesto?</label>
     <input id="parkirisce" name="parkirisce" type="number" class="form-control" 
       />
-      <small id="agent" class="form-text text-muted">Če dodajate stanovanje vpišite 1, če ima parkirišče in 0 sicer.</small>
+      <small id="agent" class="form-text text-muted">Če dodajate stanovanje z zagotovljenim parkirnim mestom vpišite 1 in 0 sicer.</small>
   </div>
 </div>
 
 <div class="form-row col">
   <button class="btn btn-primary" type="submit">
-    Dodaj nepremicnino!
+    Dodaj nepremičnino!
   </button>
 </div>
 </form></p>

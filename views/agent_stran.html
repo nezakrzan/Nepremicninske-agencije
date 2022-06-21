@@ -1,5 +1,6 @@
 %rebase('osnova_agent.html', naslov='')
-
+%setdefault('naslov', 'Moji podatki')
+%rebase('osnova.html')
 
 <!--<a class="btn btn-primary" href="nepremicnina" role="button">Nepremičnine</a>-->
 <!--<a class="btn btn-primary" href="komitent" role="button">Komitent</a>-->
@@ -7,16 +8,72 @@
 <!--<a class="btn btn-primary" href="posta" role="button">Pošta</a>-->
 <!--<a class="btn btn-primary" href="podatki_prijavljenega"role="button">Moji podatki</a>-->
 
-<div class="container mt-3">
-    <ul>
-    <li class="nav-item">
-         <a class="nav-link" href="podatki_prijavljenega">Moji podatki</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="odjava">Odjava</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="spremeni_geslo">Spremeni geslo</a>
-    </li>
-    </ul>
-</div>
+<table class="table table-hover">
+<a class="btn btn-primary" href="podatki_prijavljenega" role="button">Profil</a>
+<br><a class="btn btn-primary" href="odjava" role="button">Odjava</a>
+<br><a class="btn btn-primary" href="spremeni_geslo"role="button">Spremeni geslo</a>
+<thead class="thead-light">
+  <th></th>
+  <th>Moji podatki</th>
+  <th>Uredi</th>
+</thead>
+% for (uporabnisko_ime,ime,priimek,ulica,hisna_stevilka,email,telefon,posta_id) in oseba:
+<tr>
+    <td>Uporabniško ime</td>
+    <td>{{uporabnisko_ime}}</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Geslo</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Ime</td>
+    <td>{{ime}}</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Priimek</td>
+    <td>{{priimek}}</td>
+    <td><a href="uredi_priimek">Uredi priimek</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Ulica</td>
+    <td>{{ulica}}</td>
+    <td><a href="uredi_ulico">Uredi ulico</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Hišna številka</td>
+    <td>{{hisna_stevilka}}</td>
+    <td><a href="uredi_hisno_stevilko">Uredi hišno številko</a></td>
+    <td></td>
+</tr>       
+<tr>
+    <td>Email</td>
+    <td>{{email}}</td>
+    <td><a href="uredi_email">Uredi e-poštni naslov</a></td>
+    <td></td>
+</tr>        
+<tr>
+    <td>Telefon</td>
+    <td>{{telefon}}</td>
+    <td><a href="uredi_telefon">Uredi telefon</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Poštna številka</td>
+    <td>{{posta_id}}</td>
+    <td><a href="uredi_posto">Uredi poštno številko</a></td>
+    <td></td>
+</tr>
+
+
+
+% end
+
+
+
+</table>
