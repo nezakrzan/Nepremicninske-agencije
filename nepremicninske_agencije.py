@@ -55,7 +55,7 @@ def preveriUporabnika():
             return uporabnik
     redirect('/prijava')
 
-####################################################################
+########################## ZAČETNA STRAN ##########################
 #začetna stran
 @get('/')
 def hello():
@@ -89,8 +89,7 @@ def hello():
             return uporabnik
     redirect(url('/prijava'))
 
-####################################################################
-# prijava, registracija, odjava
+########################## PRIJAVA, REGISTRACIJA, ODJAVA, SPREMEBA GESLA ##########################
 def preveriUporabnika(): 
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
     if uporabnisko_ime:
@@ -104,7 +103,6 @@ def preveriUporabnika():
         if uporabnik: 
             return uporabnik
     redirect('/prijava')
-
 
 def hashGesla(s):
     m = hashlib.sha256()
@@ -173,7 +171,6 @@ def registracija_post():
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/prijava'))
 
-
 @get('/prijava')
 def prijava_get():
     return template('prijava.html')
@@ -221,9 +218,7 @@ def index():
         return template('agent_stran.html')
     else:
         return template('komitent_stran.html')
-
-
-    
+  
 @get('/odjava')
 def odjava():
     response.delete_cookie('uporabnisko_ime')
@@ -277,7 +272,6 @@ def spremeni_geslo_post():
     nastaviSporocilo('Obvezna registracija') 
     redirect(url('/registracija'))
 
-####################################################################
 @get('/oseba')
 def oseba():
     cur.execute("""
@@ -285,12 +279,8 @@ def oseba():
     INNER JOIN posta ON posta.postna_stevilka = oseba.posta_id
     ORDER BY oseba.priimek """)
     return template('oseba.html', oseba=cur)
-
-################################
-
     
-##########################DODAJANJE KOMITENTA##########################
-
+########################## DODAJANJE KOMITENTA ##########################
 @get('/dodaj_komitenta')
 def dodaj_komitenta():
     return template('dodaj_komitenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
@@ -324,7 +314,8 @@ def dodaj_komitenta_post():
                 VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/komitent'))
-###############################UREJANJE KOMITENTA#####################
+
+########################## UREJANJE KOMITENTA ##########################
 @get('/uredi_ulico')
 def uredi_ulico():
     uporabnik = preveriUporabnika()
@@ -445,7 +436,7 @@ def uredi_posto_post():
     conn.commit()
     redirect(url('podatki_prijavljenega'))
 
-############################### IZBRIS KOMITENTA ####################
+########################## IZBRIS KOMITENTA ##########################
 @post('/izbrisi_komitenta/<id>')
 def izbrisi_komitenta(id):
     uporabnik = preveriUporabnika()
@@ -456,7 +447,7 @@ def izbrisi_komitenta(id):
                     (id))
     redirect(url('/komitent'))
 
-########################PODATKI PRIJAVLJENEGA######################
+########################## PODATKI PRIJAVLJENEGA ##########################
 @get('/podatki_prijavljenega')
 def podatki_prijavljenega():
     uporabnik = preveriUporabnika()
@@ -467,9 +458,7 @@ def podatki_prijavljenega():
                 FROM oseba WHERE uporabnisko_ime=%s""",[uporabnisko_ime])
     return template('podatki_prijavljenega.html', oseba=cur)
 
-
-
-########################## DODAJANJE AGENTA ######################
+########################## DODAJANJE AGENTA ##########################
 @get('/dodaj_agenta')
 def dodaj_agenta():
     return template('dodaj_agenta.html', id='', ime='', priimek='', ulica='', hisna_stevilka='', email='', telefon='', posta_id='', uporabnisko_ime='', geslo='', napaka=None)
@@ -505,8 +494,7 @@ def dodaj_agenta_post():
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('/agent'))
 
-########################## DODAJANJE NEPREMIČNINE ###############################
-
+########################## DODAJANJE NEPREMIČNINE ##########################
 @get('/dodaj_nepremicnino')
 def dodaj_nepremicnino():
     return template('dodaj_nepremicnino.html', napaka=None)
@@ -544,7 +532,7 @@ def dodaj_nepremicnino_post():
                 VALUES (%s, %s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
     redirect(url('/nepremicnina'))
 
-#################################IZBRIS NEPREMIčNIN###############
+########################## IZBRIS NEPREMICNIN ##########################
 @post('/izbrisi_nepremicnino/<id>')
 def izbrisi_nepremicnino(id):
     uporabnik = preveriUporabnika()
@@ -564,7 +552,7 @@ def izbrisi_nepremicnino(id):
     conn.commit()
     redirect(url('/nepremicnina'))
 
-###############################UREJANJE NEPREMICNINE#################
+########################## UREJANJE NEPREMICNINE ##########################
 @get('/uredi_nepremicnino/<id>')
 def uredi_nepremicnino(id):
     uporabnik = preveriUporabnika()
@@ -583,10 +571,7 @@ def uredi_nepremicnino_post(id):
     conn.commit()
     redirect(url('nepremicnina'))
 
-########################
-
-
-########################## TABELE ##################################
+########################## TABELE ##########################
 @get('/komitent')
 def komitent():
     cur.execute("""
@@ -610,7 +595,6 @@ def agenti_agencije_get(x):
     cur.execute("""SELECT id_agent, plača, agencija 
                 FROM agent WHERE agencija = %s""", [x])
     return template('agenti_agencije.html', x=x, oseba=cur)
-
 
 @get('/agent')
 def agent():
@@ -670,6 +654,7 @@ def stanovanja():
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
     """)
     return template('stanovanje.html', stanovanja=cur)
+
 ######################################################################
 # Glavni program
 # tu bi se priklopili na bazo
