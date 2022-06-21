@@ -228,6 +228,55 @@ def index():
 def odjava():
     response.delete_cookie('uporabnisko_ime')
     redirect(url('/prijava'))
+
+@get('/spremeni_geslo')
+def spremeni_geslo():
+    napaka = nastaviSporocilo()
+    uporabnik = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    return template('spremeni_geslo.html')
+
+@post('/spremeni_geslo')
+def spremeni_geslo_post():
+    uporabnik = request.get_cookie("uporabnisko_ime", secret=skrivnost)
+    geslo = request.forms.geslo
+    geslo2 = request.forms.geslo2
+    if geslo != geslo2:
+        nastaviSporocilo('Gesli se ne ujemata') 
+        redirect(url('/spremeni_geslo'))
+        return
+    if len(geslo) < 4:
+        nastaviSporocilo('Geslo mora vsebovati vsaj štiri znake') 
+        redirect(url('/spremeni_geslo'))
+        return 
+    cur = conn.cursor()
+    if uporabnik:    
+        uporabnik1 = None
+        uporabnik2 = None
+        try: 
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = %s", (uporabnik, ))
+            uporabnik1 = cur.fetchone()
+        except:
+            uporabnik1 = None
+        try: 
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = %s", (uporabnik, ))
+            uporabnik2 = cur.fetchone()            
+        except:
+            uporabnik2 = None    
+        if uporabnik1: 
+            zgostitev1 = hashGesla(geslo)
+            cur.execute("UPDATE oseba SET  geslo = %s WHERE uporabnisko_ime = %s", (zgostitev1 ,uporabnik))
+            conn.commit()
+            return redirect(url('/prijava'))
+        if uporabnik2:
+            zgostitev2 = hashGesla(geslo)
+            cur.execute("UPDATE oseba SET  geslo = %s WHERE uporabnisko_ime = %s", (zgostitev2 ,uporabnik))
+            conn.commit()
+            return redirect(url('/prijava'))
+    nastaviSporocilo('Obvezna registracija') 
+    redirect(url('/registracija'))
+
 ####################################################################
 @get('/oseba')
 def oseba():
