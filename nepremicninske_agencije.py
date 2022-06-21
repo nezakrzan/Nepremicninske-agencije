@@ -215,7 +215,7 @@ def index():
     agenti = cur.fetchall()
 
     if [emso] in agenti:
-        return template('agnet_stran.html')
+        return template('agent_stran.html')
     else:
         return template('komitent_stran.html')
   
