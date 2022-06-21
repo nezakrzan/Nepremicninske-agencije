@@ -520,11 +520,16 @@ def dodaj_nepremicnino_post():
     balkon = request.forms.balkon
     parkirisce = request.forms.parkirisce
 
-    cur.execute("DELETE FROM hisa WHERE id_hisa =%s" % (id))
-    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" % (id))
-    cur.execute("DELETE FROM komitent WHERE kupuje_nepremicnino=%s" % (id))
-    cur.execute("DELETE FROM nepremicnina WHERE id =%s" % (id))
-    conn.commit()
+    cur.execute("INSERT INTO nepremicnina (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (id,velikost,cena,ulica,hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija))
+    if tip == 'hisa':
+        cur.execute(""" INSERT INTO hisa
+                (id_hisa,bazen,igrisce,velikost_vrta)
+                VALUES (%s, %s, %s, %s)""", (id,bazen,igrisce,velikost_vrta))
+    if tip == 'stanovanje':
+        cur.execute(""" INSERT INTO stanovanje
+                (id_stanovanje,nadstropje, balkon, parkirisce)
+                VALUES (%s, %s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
     redirect(url('/nepremicnina'))
 
 ########################## IZBRIS NEPREMICNIN ##########################
@@ -534,18 +539,14 @@ def izbrisi_nepremicnino(id):
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    cur.execute("DELETE FROM hisa WHERE id_hisa =%s" %
-                    (id))
-    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" %
-                    (id))
-    conn.commit()
-    cur.execute("DELETE FROM komitent WHERE id_komitent=%s"%
-                    (id))
-    conn.commit()
-    cur.execute("DELETE FROM nepremicnina WHERE id =%s" %
-                    (id))
+    cur.execute("DELETE FROM hisa WHERE id_hisa =%s" % (id))
+    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" % (id))
+    cur.execute("DELETE FROM komitent WHERE kupuje_nepremicnino=%s" % (id))
+    cur.execute("DELETE FROM nepremicnina WHERE id =%s" % (id))
     conn.commit()
     redirect(url('/nepremicnina'))
+
+
 
 ########################## UREJANJE NEPREMICNINE ##########################
 @get('/uredi_nepremicnino/<id>')
