@@ -4,14 +4,18 @@
 <table class="table table-hover"> 
     <tr>
        <th>ID</th>
-       <th>Plača</th>
-       <th>Agencija</th>
+       <th>Ime</th>
+       <th>Priimek</th>
+       <th>Telefon</th>
+       <th>Email</th>
     </tr>
-    %for (id_agent, plača, agencija) in agent:
+    %for (id_agent, ime, priimek, telefon, email) in agent:
       <tr>
          <td>{{id_agent}}</td>
-         <td>{{plača}}</td>
-         <td>{{agencija}}</td>
+         <td>{{ime}}</td>
+         <td>{{priimek}}</td>
+         <td>{{telefon}}</td>
+         <td>{{email}}</td>
       </tr>
     %end
     </table>

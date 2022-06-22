@@ -61,33 +61,23 @@ def preveriUporabnika():
 def hello():
     return template('prijava.html')
 
-#def preveriAgenta(): 
+def preveriAgenta(): 
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
     if uporabnisko_ime:
-        conn.cursor() 
-        uporabnik = None
+        cur = conn.cursor() 
+        cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
+        uporabnik = cur.fetchone()
         try: 
-            cur.execute('SELECT * FROM agent WHERE uporabnisko_ime= %s', (uporabnisko_ime, ))
-            uporabnik = cur.fetchone()
+            cur.execute('SELECT * FROM agent WHERE id_agent = %s', (uporabnik[1], ))
+            agent = cur.fetchone()
         except:
-            uporabnik = None
-        if uporabnik: 
-            return uporabnik
+            agent = None
+        if agent: 
+            return True
+        else:
+            return False
     redirect(url('/nepremicnina'))
 
-#def preveriKomitenta(): 
-    uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    if uporabnisko_ime:
-        cur = conn.cursor()    
-        uporabnik = None
-        try: 
-            cur.execute('SELECT * FROM komitent WHERE uporabnisko_ime= %s', (uporabnisko_ime, ))
-            uporabnik = cur.fetchone()
-        except:
-            uporabnik = None
-        if uporabnik: 
-            return uporabnik
-    redirect(url('/prijava'))
 
 ########################## PRIJAVA, REGISTRACIJA, ODJAVA, SPREMEBA GESLA ##########################
 def preveriUporabnika(): 
@@ -116,7 +106,7 @@ def registracija_get():
 
 @post('/registracija')
 def registracija_post():
-    id = request.forms.id
+    emso = request.forms.id
     ime = request.forms.ime
     priimek = request.forms.priimek
     ulica = request.forms.ulica
@@ -152,24 +142,24 @@ def registracija_post():
         return
     if geslo != geslo2:
         nastaviSporocilo('Gesli se ne ujemata.') 
-        redirect('/registracija')
+        redirect('registracija_get')
         return
      
     zgostitev = hashGesla(geslo)
     cur.execute("""INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
+                (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'agent':
         cur.execute("""INSERT INTO agent
                 (id_agent, agencija, plača)
-                VALUES (%s, %s, %s)""", (id, agencija, placa))
+                VALUES (%s, %s, %s)""", (emso, agencija, placa))
     if tip == 'komitent':
         cur.execute("""INSERT INTO komitent
                 (id_komitent,kupuje_nepremicnino, njegov_agent)
-                VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
+                VALUES (%s, %s, %s)""", (emso, kupuje_nepremicnino, njegov_agent))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
-    redirect(url('/prijava'))
+    redirect(url('prijava_get'))
 
 @get('/prijava')
 def prijava_get():
@@ -198,7 +188,7 @@ def prijava_post():
     if hashGesla(geslo) == hashBaza or geslo == hashBaza:
         response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
         
-        redirect('/index')
+        redirect('/podatki_prijavljenega')
         return
     else:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
@@ -207,14 +197,7 @@ def prijava_post():
 
 @get('/index')
 def index():
-    uporabnik = request.get_cookie('uporabnisko_ime', secret=skrivnost)
-    cur.execute("""SELECT id FROM oseba WHERE uporabnisko_ime = %s""", (uporabnik, ))
-    emso = cur.fetchone()[0]
-
-    cur.execute("""SELECT id_agent FROM agent""")
-    agenti = cur.fetchall()
-
-    if [emso] in agenti:
+    if preveriAgenta():
         return template('agent_stran.html')
     else:
         return template('komitent_stran.html')
@@ -275,7 +258,7 @@ def spremeni_geslo_post():
 @get('/oseba')
 def oseba():
     cur.execute("""
-    SELECT id, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta, uporabnisko_ime, geslo FROM oseba
+    SELECT emso, ime, priimek, ulica, hisna_stevilka, email, telefon, posta.postna_stevilka , posta.posta, uporabnisko_ime, geslo FROM oseba
     INNER JOIN posta ON posta.postna_stevilka = oseba.posta_id
     ORDER BY oseba.priimek """)
     return template('oseba.html', oseba=cur)
@@ -300,13 +283,14 @@ def dodaj_komitenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
+    geslo1 = hashGesla(geslo)
     tip  = request.forms.tip
     kupuje_nepremicnino = request.forms.kupuje_nepremicnino
     njegov_agent = request.forms.njegov_agent
 
     cur.execute("""INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo))
+                (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo1))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'komitent':
         cur.execute("""INSERT INTO komitent
@@ -443,8 +427,8 @@ def izbrisi_komitenta(id):
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    cur.execute("DELETE FROM komitent WHERE id_komitent=%s" %
-                    (id))
+    cur.execute("DELETE FROM komitent WHERE id_komitent=%s",
+                    [id])
     redirect(url('/komitent'))
 
 ########################## PODATKI PRIJAVLJENEGA ##########################
@@ -478,14 +462,15 @@ def dodaj_agenta_post():
     posta_id = request.forms.posta_id
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
+    geslo1 = hashGesla(geslo)
     tip  = request.forms.tip
     agencija = request.forms.agencija
     tip = request.forms.tip
     placa = request.forms.placa
 
     cur.execute("""INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo))
+                (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo1))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'agent':
         cur.execute("""INSERT INTO agent
@@ -572,14 +557,14 @@ def uredi_nepremicnino_post(id):
 def komitent():
     cur.execute("""
     SELECT id_komitent, oseba.ime, oseba.priimek, kupuje_nepremicnino, njegov_agent FROM komitent
-    LEFT JOIN oseba ON komitent.id_komitent = oseba.id
+    LEFT JOIN oseba ON komitent.id_komitent = oseba.emso
      """)
     return template('komitent.html', komitent=cur)
 
 @get('/agencija')
 def agencija():
     cur.execute("""
-    SELECT id,ime,mesto, postna_st FROM agencija
+    SELECT id,ime_agencije,mesto, postna_st FROM agencija
      """)
     return template('agencija.html', agencija=cur)
 
@@ -588,9 +573,11 @@ def agenti_agencije_get(x):
     uporabnik = preveriUporabnika()
     if uporabnik is None: 
         return
-    cur.execute("""SELECT id_agent, plača, agencija 
-                FROM agent WHERE agencija = %s""", [x])
-    return template('agenti_agencije.html', x=x, oseba=cur)
+    cur.execute("""SELECT id_agent,oseba.ime,oseba.priimek, oseba.telefon, oseba.email
+                FROM agent 
+                LEFT JOIN oseba ON oseba.emso = agent.id_agent
+                WHERE agencija = %s""", [x])
+    return template('agenti_agencije.html', x=x, agent=cur)
 
 @get('/agent')
 def agent():
@@ -598,8 +585,8 @@ def agent():
     if uporabnik is None: 
         return
     cur.execute("""
-    SELECT id_agent, oseba.ime, oseba.priimek, plača, agencija, agencija.ime FROM agent
-    LEFT JOIN oseba ON agent.id_agent = oseba.id
+    SELECT id_agent, oseba.ime, oseba.priimek, plača, agencija, agencija.ime_agencije FROM agent
+    LEFT JOIN oseba ON agent.id_agent = oseba.emso
     LEFT JOIN agencija ON agent.agencija = agencija.id
      """)
     return template('agent.html', agent=cur)
@@ -623,7 +610,10 @@ def nepremicnina():
         SELECT nepremicnina.id, velikost, cena, ulica, hisna_stevilka, postna_stevilka, leto_izgradnje, kupuje_agencija FROM nepremicnina
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
     """)
-    return template('nepremicnina.html', nepremicnina=cur)
+    if preveriAgenta():
+        return template('nepremicnina.html', nepremicnina=cur)
+    else:
+        return template('nepremicnina_komitent.html', nepremicnina=cur)
 
 @get('/hisa')
 def hisa():
@@ -631,7 +621,7 @@ def hisa():
     if uporabnik is None: 
         return
     cur.execute("""
-        SELECT id_hisa,bazen,igrisce,velikost_vrta, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime FROM hisa
+        SELECT id_hisa,bazen,igrisce,velikost_vrta, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime_agencije FROM hisa
         INNER JOIN nepremicnina ON nepremicnina.id = id_hisa
         INNER JOIN posta ON posta.postna_stevilka = nepremicnina.postna_stevilka
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
@@ -644,7 +634,7 @@ def stanovanja():
     if uporabnik is None: 
         return
     cur.execute("""
-        SELECT id_stanovanje,nadstropje, balkon, parkirisce, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime FROM stanovanje
+        SELECT id_stanovanje,nadstropje, balkon, parkirisce, cena, ulica, hisna_stevilka, posta.postna_stevilka, posta.posta, leto_izgradnje, kupuje_agencija, agencija.ime_agencije FROM stanovanje
         INNER JOIN nepremicnina ON nepremicnina.id = id_stanovanje
         INNER JOIN posta ON posta.postna_stevilka = nepremicnina.postna_stevilka
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija

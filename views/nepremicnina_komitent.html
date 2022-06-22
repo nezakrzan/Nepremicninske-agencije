@@ -1,15 +1,8 @@
-%rebase('osnova_agent.html', naslov='VSE NEPREMIČNINE')
+%rebase('osnova_komitent.html', naslov='VSE NEPREMIČNINE')
 
   <table class="table table-hover">
-<div>
 <a class="btn btn-primary" href="hisa" role="button">Hiše</a>
-</div>
-<div>
 <a class="btn btn-primary" href="stanovanja" role="button">Stanovanja</a>
-</div>
-<div></div>
-   <a class="btn btn-primary" href="dodaj_nepremicnino"role="button">Dodaj nepremičnino</a>
-  </div>
      <tr>
      <th>ID</th>
      <th>Velikost</th>
@@ -30,20 +23,7 @@
        <td>{{postna_stevilka}}</td>
        <td>{{leto_izgradnje}}</td>
        <td>{{kupuje_agencija}}</td>
-       <td>
-        <div>
-          <form action="{{url('izbrisi_nepremicnino', id=id)}}" method="post">
-            <a href="#" onclick="this.parentElement.submit()">Briši</a>
-          </form>
-        </div>
-      </td>
-      <td>
-        <div>
-          <form action="{{url('uredi_nepremicnino', id=id)}}" method="get">
-            <a href="#" onclick="this.parentElement.submit()">Uredi ceno</a>
-          </form>
-        </div>
-      </td>
+
     </tr>
   %end
   </table>
