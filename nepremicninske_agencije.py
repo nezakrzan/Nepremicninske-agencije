@@ -569,7 +569,11 @@ def agencija():
     cur.execute("""
     SELECT id,ime_agencije,mesto, postna_st FROM agencija
      """)
-    return template('agencija.html', agencija=cur)
+    if preveriAgenta():
+        return template('agencija.html', agencija=cur)
+    else:
+        return template('agencije_komitenti.html', agencija=cur)
+
 
 @get('/agenti_agencije_get/<x:int>/')
 def agenti_agencije_get(x):
