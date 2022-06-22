@@ -53,7 +53,7 @@ def preveriUporabnika():
             uporabnik = None
         if uporabnik: 
             return uporabnik
-    redirect(url('/prijava'))
+    redirect(url('prijava_get'))
 
 ########################## ZAČETNA STRAN ##########################
 #začetna stran
@@ -76,7 +76,7 @@ def preveriAgenta():
             return True
         else:
             return False
-    redirect(url('/nepremicnina'))
+    redirect(url('nepremicnina'))
 
 
 ########################## PRIJAVA, REGISTRACIJA, ODJAVA, SPREMEBA GESLA ##########################
@@ -92,7 +92,7 @@ def preveriUporabnika():
             uporabnik = None
         if uporabnik: 
             return uporabnik
-    redirect(url('/prijava'))
+    redirect(url('prijava_get'))
 
 def hashGesla(s):
     m = hashlib.sha256()
@@ -124,7 +124,7 @@ def registracija_post():
     njegov_agent = request.forms.njegov_agent
     if uporabnisko_ime is None or geslo is None or geslo2 is None:
         nastaviSporocilo('Registracija ni možna') 
-        redirect(url('/registracija'))
+        redirect(url('registracija_get'))
         return
     oseba = cur 
     uporabnik = None
@@ -134,15 +134,15 @@ def registracija_post():
         uporabnik = None
     if uporabnik is not None:
         nastaviSporocilo('Registracija ni možna') 
-        redirect(url('/registracija'))
+        redirect(url('registracija_get'))
         return
     if len(geslo) < 4:
         nastaviSporocilo('Geslo mora imeti vsaj 4 znake.') 
-        redirect(url('/registracija'))
+        redirect(url('registracija_get'))
         return
     if geslo != geslo2:
         nastaviSporocilo('Gesli se ne ujemata.') 
-        redirect(url('/registracija_get'))
+        redirect(url('registracija_get'))
         return
      
     zgostitev = hashGesla(geslo)
@@ -171,7 +171,7 @@ def prijava_post():
     geslo = request.forms.geslo
     if uporabnisko_ime is None or geslo is None:
         nastaviSporocilo('Uporabniško ima in geslo morata biti neprazna') 
-        redirect(url('/prijava'))
+        redirect(url('prijava_get'))
         return
     oseba = cur   
     hashBaza = None
@@ -183,16 +183,16 @@ def prijava_post():
         hashBaza = None
     if hashBaza is None:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
-        redirect(url('/prijava'))
+        redirect(url('prijava_get'))
         return
     if hashGesla(geslo) == hashBaza or geslo == hashBaza:
         response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
         
-        redirect(url('/podatki_prijavljenega'))
+        redirect(url('podatki_prijavljenega'))
         return
     else:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
-        redirect(url('/prijava'))
+        redirect(url('prijava_get'))
         return
 
 @get('/index')
@@ -205,7 +205,7 @@ def index():
 @get('/odjava')
 def odjava():
     response.delete_cookie('uporabnisko_ime')
-    redirect(url('/prijava'))
+    redirect(url('prijava_get'))
 
 @get('/spremeni_geslo')
 def spremeni_geslo():
@@ -220,11 +220,11 @@ def spremeni_geslo_post():
     geslo2 = request.forms.geslo2
     if geslo != geslo2:
         nastaviSporocilo('Gesli se ne ujemata') 
-        redirect(url('/spremeni_geslo'))
+        redirect(url('spremeni_geslo'))
         return
     if len(geslo) < 4:
         nastaviSporocilo('Geslo mora vsebovati vsaj štiri znake') 
-        redirect(url('/spremeni_geslo'))
+        redirect(url('spremeni_geslo'))
         return 
     cur = conn.cursor()
     if uporabnik:    
@@ -246,14 +246,14 @@ def spremeni_geslo_post():
             zgostitev1 = hashGesla(geslo)
             cur.execute("UPDATE oseba SET  geslo = %s WHERE uporabnisko_ime = %s", (zgostitev1 ,uporabnik))
             conn.commit()
-            return redirect(url('/prijava'))
+            return redirect(url('prijava_get'))
         if uporabnik2:
             zgostitev2 = hashGesla(geslo)
             cur.execute("UPDATE oseba SET  geslo = %s WHERE uporabnisko_ime = %s", (zgostitev2 ,uporabnik))
             conn.commit()
-            return redirect(url('/prijava'))
+            return redirect(url('prijava_get'))
     nastaviSporocilo('Obvezna registracija') 
-    redirect(url('/registracija'))
+    redirect(url('registracija_get'))
 
 @get('/oseba')
 def oseba():
@@ -297,7 +297,7 @@ def dodaj_komitenta_post():
                 (id_komitent,kupuje_nepremicnino, njegov_agent)
                 VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
-    redirect(url('/komitent'))
+    redirect(url('komitent'))
 
 ########################## UREJANJE KOMITENTA ##########################
 @get('/uredi_ulico')
@@ -429,7 +429,7 @@ def izbrisi_komitenta(id):
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
     cur.execute("DELETE FROM komitent WHERE id_komitent=%s",
                     [id])
-    redirect(url('/komitent'))
+    redirect(url('komitent'))
 
 ########################## PODATKI PRIJAVLJENEGA ##########################
 @get('/podatki_prijavljenega')
@@ -480,7 +480,7 @@ def dodaj_agenta_post():
                 (id_agent, agencija, plača)
                 VALUES (%s, %s, %s)""", (id, agencija, placa))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
-    redirect(url('/agent'))
+    redirect(url('agent'))
 
 ########################## DODAJANJE NEPREMIČNINE ##########################
 @get('/dodaj_nepremicnino')
@@ -518,7 +518,7 @@ def dodaj_nepremicnino_post():
         cur.execute(""" INSERT INTO stanovanje
                 (id_stanovanje,nadstropje, balkon, parkirisce)
                 VALUES (%s, %s, %s, %s)""", (id,nadstropje, balkon, parkirisce))
-    redirect(url('/nepremicnina'))
+    redirect(url('nepremicnina'))
 
 ########################## IZBRIS NEPREMICNIN ##########################
 @post('/izbrisi_nepremicnino/<id>')
@@ -532,7 +532,7 @@ def izbrisi_nepremicnino(id):
     cur.execute("DELETE FROM komitent WHERE kupuje_nepremicnino=%s", [id])
     cur.execute("DELETE FROM nepremicnina WHERE id =%s" ,[id])
     conn.commit()
-    redirect(url('/nepremicnina'))
+    redirect(url('nepremicnina'))
 
 
 
