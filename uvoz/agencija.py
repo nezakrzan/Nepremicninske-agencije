@@ -20,7 +20,7 @@ def ustvari_tabelo():
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE agencija;
+        DROP TABLE agencija CASCADE; 
     """)
     conn.commit()
 

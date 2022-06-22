@@ -539,10 +539,10 @@ def izbrisi_nepremicnino(id):
     if uporabnik is None: 
         return
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
-    cur.execute("DELETE FROM hisa WHERE id_hisa =%s" % (id))
-    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s" % (id))
-    cur.execute("DELETE FROM komitent WHERE kupuje_nepremicnino=%s" % (id))
-    cur.execute("DELETE FROM nepremicnina WHERE id =%s" % (id))
+    cur.execute("DELETE FROM hisa WHERE id_hisa =%s", [id])
+    cur.execute("DELETE FROM stanovanje WHERE id_stanovanje=%s", [id])
+    cur.execute("DELETE FROM komitent WHERE kupuje_nepremicnino=%s", [id])
+    cur.execute("DELETE FROM nepremicnina WHERE id =%s" ,[id])
     conn.commit()
     redirect(url('/nepremicnina'))
 

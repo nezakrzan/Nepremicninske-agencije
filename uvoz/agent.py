@@ -10,7 +10,7 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE agent (
-        id_agent INTEGER UNIQUE REFERENCES oseba(id) NOT NULL,
+        id_agent TEXT UNIQUE REFERENCES oseba(emso) NOT NULL,
         plača INTEGER NOT NULL,
         agencija INTEGER REFERENCES agencija(id) NOT NULL
     );

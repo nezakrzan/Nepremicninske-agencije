@@ -24,7 +24,7 @@ def ustvari_tabelo():
 
 def pobrisi_tabelo():
     cur.execute("""
-        DROP TABLE nepremicnina;
+        DROP TABLE nepremicnina CASCADE;
     """)
     conn.commit()
 

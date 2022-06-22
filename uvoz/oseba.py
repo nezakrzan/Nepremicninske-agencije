@@ -11,6 +11,7 @@ def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE oseba (
         id SERIAL UNIQUE PRIMARY KEY NOT NULL,
+        emso TEXT NOT NULL UNIQUE,
         ime TEXT NOT NULL,
         priimek TEXT NOT NULL,
         ulica TEXT NOT NULL,
@@ -33,13 +34,15 @@ def pobrisi_tabelo():
 def uvozi_podatke():
     with open("podatki/oseba.csv", encoding="utf-8", errors='ignore') as f:
         rd = csv.reader(f)
-        next(rd) # izpusti naslovno vrstico
+        next(rd)
+        i= 1 # izpusti naslovno vrstico
         for r in rd:
             cur.execute("""
                 INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """, r)
+                (id, emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, [i] + r)
+            i = i + 1
     conn.commit()
 
 

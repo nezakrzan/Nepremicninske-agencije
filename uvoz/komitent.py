@@ -10,9 +10,9 @@ import csv
 def ustvari_tabelo():
     cur.execute("""
     CREATE TABLE komitent (
-        id_komitent INTEGER REFERENCES oseba(id) NOT NULL,
+        id_komitent TEXT REFERENCES oseba(emso) NOT NULL,
         kupuje_nepremicnino INTEGER REFERENCES nepremicnina(id) NOT NULL,
-        njegov_agent INTEGER REFERENCES agent(id_agent) NOT NULL
+        njegov_agent TEXT REFERENCES agent(id_agent) NOT NULL
     );
     """) 
     conn.commit()
