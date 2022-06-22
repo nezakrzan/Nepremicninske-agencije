@@ -11,7 +11,7 @@ V projektu smo izdelale database za nepremičninske agencije, ki ga lahko uporab
 ## Uporaba strani za komitenta
 
 Najprej se mora v stran vsak nov komitent registrirati(kasneje se določeni podatki lahko tudi spreminjajo). Ko se enkrat registrira, ga stran doda v database tabelo oseba in komitent.
-Komitent se sedaj prijavi z izbranim uporabniškim imenom in geslom. Stran ga preusmeri na stran, kjer sta mu na voljo dva zavihka, in sicer vse nepremičnine in pa profil.
+Komitent se sedaj prijavi z izbranim uporabniškim imenom in geslom. Stran ga preusmeri na stran `Moji podatki`, kjer sta mu, poleg vseh svojih podatkov, na voljo dva zavihka, in sicer vse nepremičnine in pa profil.
 
 V zavihku `Nepremičnine` lahko komitent dostopa do vseh nepremičnin, omogočen mu je tudi vpogled samo stanovanj ali samo hiš. Komitent lahko tudi doda nepremičnino za prodajo.
 
@@ -19,7 +19,7 @@ V zavihku `Profil` se komitentu prikažejo vsi njegovi podatki in možnost sprem
 
 ## Uporaba strani za agenta
 
-Agent se prav tako registrira in prijavi kot komitent. Po prijavi se mu odpre stran z zavihki `Nepremičnine`, `Agenti`, `Agencije`, `Pošte`, `Komitenti` in `Profil`.
+Agent se prav tako registrira in prijavi kot komitent. Po prijavi ga stran preusmeri na stran `Moji podatki`, kjer so mu, poleg vseh svojih podatkov, na voljo zavihki `Nepremičnine`, `Agenti`, `Agencije`, `Pošte`, `Komitenti` in `Profil`.
 
 V zavihku `Nepremičnine` si lahko ogleda vse nepremičnine vpisane v bazo, posebaj lahko pregleda hiše in stanovanja, pri vsaki nepremičnini lahko uredi ceno ali pa jo izbriše iz baze. Seveda pa lahko nepremičnino tudi doda v database.
 
