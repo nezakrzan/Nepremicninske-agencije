@@ -53,7 +53,7 @@ def preveriUporabnika():
             uporabnik = None
         if uporabnik: 
             return uporabnik
-    redirect('/prijava')
+    redirect(url('/prijava'))
 
 ########################## ZAČETNA STRAN ##########################
 #začetna stran
@@ -92,7 +92,7 @@ def preveriUporabnika():
             uporabnik = None
         if uporabnik: 
             return uporabnik
-    redirect('/prijava')
+    redirect(url('/prijava'))
 
 def hashGesla(s):
     m = hashlib.sha256()
@@ -124,7 +124,7 @@ def registracija_post():
     njegov_agent = request.forms.njegov_agent
     if uporabnisko_ime is None or geslo is None or geslo2 is None:
         nastaviSporocilo('Registracija ni možna') 
-        redirect('/registracija')
+        redirect(url('/registracija'))
         return
     oseba = cur 
     uporabnik = None
@@ -134,15 +134,15 @@ def registracija_post():
         uporabnik = None
     if uporabnik is not None:
         nastaviSporocilo('Registracija ni možna') 
-        redirect('/registracija')
+        redirect(url('/registracija'))
         return
     if len(geslo) < 4:
         nastaviSporocilo('Geslo mora imeti vsaj 4 znake.') 
-        redirect('/registracija')
+        redirect(url('/registracija'))
         return
     if geslo != geslo2:
         nastaviSporocilo('Gesli se ne ujemata.') 
-        redirect('registracija_get')
+        redirect(url('/registracija_get'))
         return
      
     zgostitev = hashGesla(geslo)
@@ -171,7 +171,7 @@ def prijava_post():
     geslo = request.forms.geslo
     if uporabnisko_ime is None or geslo is None:
         nastaviSporocilo('Uporabniško ima in geslo morata biti neprazna') 
-        redirect('/prijava')
+        redirect(url('/prijava'))
         return
     oseba = cur   
     hashBaza = None
@@ -183,16 +183,16 @@ def prijava_post():
         hashBaza = None
     if hashBaza is None:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
-        redirect('/prijava')
+        redirect(url('/prijava'))
         return
     if hashGesla(geslo) == hashBaza or geslo == hashBaza:
         response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
         
-        redirect('/podatki_prijavljenega')
+        redirect(url('/podatki_prijavljenega'))
         return
     else:
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
-        redirect('/prijava')
+        redirect(url('/prijava'))
         return
 
 @get('/index')
