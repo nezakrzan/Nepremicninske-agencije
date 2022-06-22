@@ -440,7 +440,10 @@ def podatki_prijavljenega():
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
     cur.execute("""SELECT uporabnisko_ime,ime,priimek,ulica,hisna_stevilka,email,telefon,posta_id
                 FROM oseba WHERE uporabnisko_ime=%s""",[uporabnisko_ime])
-    return template('podatki_prijavljenega.html', oseba=cur)
+    if preveriAgenta():
+        return template('podatki_prijavljenega.html', oseba=cur)
+    else:
+        return template('podatki_prijavljenega_komitent.html', oseba=cur)
 
 ########################## DODAJANJE AGENTA ##########################
 @get('/dodaj_agenta')

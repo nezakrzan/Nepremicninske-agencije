@@ -30,4 +30,4 @@ V zavihku `Komitenti` ima izpisane vse komitente in njihove osnovne podatke. Kom
 V zavihku `Profil` se agentu prikažejo vsi njegovi podatki in možnost spremembe le teh. Omogočena je tudi sprememba gesla.
 
 ## Spletni dostop
-[![bottle.py](https://mybinder.org/badge_logo.svg)](...)
+* [![bottle.py](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nezakrzan/Nepremicninske-agencije/main?urlpath=proxy/8080/) Aplikacija `bottle.py`
