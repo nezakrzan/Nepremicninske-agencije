@@ -1,11 +1,11 @@
-%rebase('osnova_komitent.html', naslov='HIŠE')
+%rebase('osnova_komitent.html', naslov='STANOVANJA')
 
   <table class="table table-hover">
   <tr>
      <th>ID</th>
-     <th>Bazen</th>
-     <th>Igrišče</th>
-     <th>Velikost_vrta</th>
+     <th>Nadstropje</th>
+     <th>Balkon</th>
+     <th>Parkirišče</th>
      <th>Cena</th>
      <th>Ulica</th>
      <th>Hišna številka</th>
@@ -13,12 +13,12 @@
      <th>Leto izgradnje</th>
      <th>Kupuje agencija</th>
   </tr>
-  %for (id_hisa,bazen,igrisce,velikost_vrta, cena,ulica,hisna_stevilka,postna_stevilka,kraj,leto_izgradnje,kupuje_agencija, ime_agencije) in hisa:
+  %for (id_stanovanje,nadstropje, balkon, parkirisce, cena,ulica,hisna_stevilka,postna_stevilka,kraj,leto_izgradnje,kupuje_agencija, ime_agencije) in stanovanja:
     <tr>
-       <td>{{id_hisa}}</td>
-       <td>{{bazen}}</td>
-       <td>{{igrisce}}</td>
-       <td>{{velikost_vrta}}</td>
+       <td>{{id_stanovanje}}</td>
+       <td>{{nadstropje}}</td>
+       <td>{{balkon}}</td>
+       <td>{{parkirisce}}</td>
        <td>{{cena}}</td>
        <td>{{ulica}}</td>
        <td>{{hisna_stevilka}}</td>

@@ -149,7 +149,6 @@ def registracija_post():
     cur.execute("""INSERT INTO oseba
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, zgostitev))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'agent':
         cur.execute("""INSERT INTO agent
                 (id_agent, agencija, plača)
@@ -157,8 +156,7 @@ def registracija_post():
     if tip == 'komitent':
         cur.execute("""INSERT INTO komitent
                 (id_komitent,kupuje_nepremicnino, njegov_agent)
-                VALUES (%s, %s, %s)""", (emso, kupuje_nepremicnino, njegov_agent))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
+                VALUES (%s, %s, %s)""", (emso, kupuje_nepremicnino, njegov_agent))  
     redirect(url('prijava_get'))
 
 @get('/prijava')
@@ -291,12 +289,10 @@ def dodaj_komitenta_post():
     cur.execute("""INSERT INTO oseba
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo1))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'komitent':
         cur.execute("""INSERT INTO komitent
                 (id_komitent,kupuje_nepremicnino, njegov_agent)
                 VALUES (%s, %s, %s)""", (id, kupuje_nepremicnino, njegov_agent))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
     redirect(url('komitent'))
 
 ########################## UREJANJE KOMITENTA ##########################
@@ -474,12 +470,10 @@ def dodaj_agenta_post():
     cur.execute("""INSERT INTO oseba
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email,telefon, posta_id, uporabnisko_ime, geslo1))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     if tip == 'agent':
         cur.execute("""INSERT INTO agent
                 (id_agent, agencija, plača)
-                VALUES (%s, %s, %s)""", (id, agencija, placa))
-    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)      
+                VALUES (%s, %s, %s)""", (id, agencija, placa))     
     redirect(url('agent'))
 
 ########################## DODAJANJE NEPREMIČNINE ##########################
@@ -633,7 +627,11 @@ def hisa():
         INNER JOIN posta ON posta.postna_stevilka = nepremicnina.postna_stevilka
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
     """)
-    return template('hisa.html', hisa=cur)
+    if preveriAgenta():
+        return template('hisa_agent.html', hisa=cur)
+    else:
+        return template('hisa.html', hisa=cur)
+    
 
 @get('/stanovanja')
 def stanovanja():
@@ -646,7 +644,11 @@ def stanovanja():
         INNER JOIN posta ON posta.postna_stevilka = nepremicnina.postna_stevilka
         INNER JOIN agencija ON agencija.id = nepremicnina.kupuje_agencija
     """)
-    return template('stanovanje.html', stanovanja=cur)
+    if preveriAgenta():
+        return template('stanovanje.html', stanovanja=cur)
+    else:
+        return template('stanovanje_komitent.html', stanovanja=cur)
+  
 
 ######################################################################
 # Glavni program
